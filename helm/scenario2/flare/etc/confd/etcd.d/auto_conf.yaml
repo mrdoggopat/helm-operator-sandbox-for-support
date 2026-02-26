@@ -1,0 +1,9 @@
+ad_identifiers:
+  - etcd
+init_config: null
+instances:
+  - possible_prometheus_urls:
+      - https://%%host%%:2379/metrics
+      - http://%%host%%:2379/metrics
+    prometheus_url: http://localhost:2379/metrics
+    ssl_verify: false

@@ -1,0 +1,8 @@
+apiKeyExistingSecret: datadog-secret
+appKeyExistingSecret: datadog-secret
+
+datadogSLO:
+  enabled: true
+datadogCRDs:
+  crds:
+    datadogSLOs: true

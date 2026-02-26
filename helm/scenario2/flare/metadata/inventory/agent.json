@@ -1,0 +1,243 @@
+{
+    "hostname": "pattykube",
+    "timestamp": 1772131733667698208,
+    "agent_metadata": {
+        "agent_runtime_configuration": "proxy:\n  http: \"\"\n  https: \"\"\n  no_proxy:\n    - 169.254.169.254\n    - 100.100.100.200",
+        "agent_startup_time_ms": 1772131614947,
+        "agent_version": "7.75.4",
+        "application_monitoring_config": null,
+        "application_monitoring_config_fleet": null,
+        "auto_instrumentation_modes": [],
+        "cli_configuration": "{}",
+        "config_apm_dd_url": "",
+        "config_dd_url": "",
+        "config_eks_fargate": false,
+        "config_id": "",
+        "config_logs_dd_url": "",
+        "config_logs_socks5_proxy_address": "",
+        "config_no_proxy": [
+            "169.254.169.254",
+            "100.100.100.200"
+        ],
+        "config_process_dd_url": "",
+        "config_proxy_http": "",
+        "config_proxy_https": "",
+        "config_site": "",
+        "diagnostics": {
+            "connectivity": [
+                {
+                    "status": "success",
+                    "description": "Agent package yum",
+                    "metadata": {
+                        "endpoint": "https://yum.datadoghq.com"
+                    }
+                },
+                {
+                    "status": "success",
+                    "description": "Agent installation",
+                    "metadata": {
+                        "endpoint": "https://install.datadoghq.com"
+                    }
+                },
+                {
+                    "status": "success",
+                    "description": "Agent package apt",
+                    "metadata": {
+                        "endpoint": "https://apt.datadoghq.com"
+                    }
+                },
+                {
+                    "status": "success",
+                    "description": "Agent keys",
+                    "metadata": {
+                        "endpoint": "https://keys.datadoghq.com"
+                    }
+                },
+                {
+                    "status": "success",
+                    "description": "LLM obs",
+                    "metadata": {
+                        "endpoint": "https://llmobs-intake.datadoghq.com./api/v2/llmobs"
+                    }
+                },
+                {
+                    "status": "success",
+                    "description": "APM traces",
+                    "metadata": {
+                        "endpoint": "https://trace.agent.datadoghq.com./_health"
+                    }
+                },
+                {
+                    "status": "success",
+                    "description": "Remote configuration",
+                    "metadata": {
+                        "endpoint": "https://config.datadoghq.com./_health"
+                    }
+                },
+                {
+                    "status": "success",
+                    "description": "Connectivity to https://dbm-metrics-intake.datadoghq.com./api/v2/databasequery"
+                },
+                {
+                    "status": "success",
+                    "description": "Connectivity to https://dbm-metrics-intake.datadoghq.com./api/v2/dbmmetrics"
+                },
+                {
+                    "status": "success",
+                    "description": "Connectivity to https://dbm-metrics-intake.datadoghq.com./api/v2/dbmmetadata"
+                },
+                {
+                    "status": "success",
+                    "description": "Connectivity to https://dbm-metrics-intake.datadoghq.com./api/v2/dbmactivity"
+                },
+                {
+                    "status": "success",
+                    "description": "Connectivity to https://dbm-metrics-intake.datadoghq.com./api/v2/dbmhealth"
+                },
+                {
+                    "status": "success",
+                    "description": "Connectivity to https://ndm-intake.datadoghq.com./api/v2/ndm"
+                },
+                {
+                    "status": "success",
+                    "description": "Connectivity to https://snmp-traps-intake.datadoghq.com./api/v2/ndmtraps"
+                },
+                {
+                    "status": "success",
+                    "description": "Connectivity to https://ndmflow-intake.datadoghq.com./api/v2/ndmflow"
+                },
+                {
+                    "status": "success",
+                    "description": "Connectivity to https://netpath-intake.datadoghq.com./api/v2/netpath"
+                },
+                {
+                    "status": "success",
+                    "description": "Connectivity to https://ndm-intake.datadoghq.com./api/v2/ndmconfig"
+                },
+                {
+                    "status": "success",
+                    "description": "Connectivity to https://contlcycle-intake.datadoghq.com./api/v2/contlcycle"
+                },
+                {
+                    "status": "success",
+                    "description": "Connectivity to https://contimage-intake.datadoghq.com./api/v2/contimage"
+                },
+                {
+                    "status": "success",
+                    "description": "Connectivity to https://sbom-intake.datadoghq.com./api/v2/sbom"
+                },
+                {
+                    "status": "success",
+                    "description": "Connectivity to https://http-synthetics.datadoghq.com./api/v2/synthetics"
+                },
+                {
+                    "status": "success",
+                    "description": "Connectivity to https://trace.agent.datadoghq.com./api/v2/data_streams_messages"
+                },
+                {
+                    "status": "success",
+                    "description": "HTTPS connectivity to https://agent-http-intake.logs.datadoghq.com./api/v2/logs"
+                },
+                {
+                    "status": "success",
+                    "description": "Connectivity to https://app.datadoghq.com./api/v1/series"
+                },
+                {
+                    "status": "success",
+                    "description": "Connectivity to https://app.datadoghq.com./api/v1/check_run"
+                },
+                {
+                    "status": "success",
+                    "description": "Connectivity to https://app.datadoghq.com./intake/"
+                },
+                {
+                    "status": "success",
+                    "description": "Connectivity to https://app.datadoghq.com./api/v1/validate"
+                },
+                {
+                    "status": "success",
+                    "description": "Connectivity to https://app.datadoghq.com./api/v1/metadata"
+                },
+                {
+                    "status": "success",
+                    "description": "Connectivity to https://app.datadoghq.com./api/v2/series"
+                },
+                {
+                    "status": "success",
+                    "description": "Connectivity to https://app.datadoghq.com./api/beta/sketches"
+                },
+                {
+                    "status": "success",
+                    "description": "Connectivity to https://7-75-4-flare.agent.datadoghq.com./support/flare"
+                }
+            ]
+        },
+        "environment_variable_configuration": "api_key: '***************************d065d'\napm_config.apm_non_local_traffic: \"true\"\napm_config.enabled: \"true\"\napm_config.install_id: 474ce7d2-af98-42cf-820a-bf04793735a8\napm_config.install_time: \"1772131598\"\napm_config.install_type: k8s_manual\napm_config.receiver_port: \"8126\"\napm_config.receiver_socket: /var/run/datadog/apm.socket\nauth_token_file_path: /etc/datadog-agent/auth/token\nchecks_tag_cardinality: orchestrator\ncluster_agent.auth_token: '********'\ncluster_agent.enabled: \"true\"\ncluster_agent.kubernetes_service_name: datadog-cluster-agent\ncluster_name: very-good-startup-cluster\ncompliance_config.enabled: \"false\"\ncontainer_image.enabled: \"true\"\ncontainer_lifecycle.enabled: \"true\"\ncsi.enabled: \"false\"\ndogstatsd_non_local_traffic: \"true\"\ndogstatsd_port: \"8125\"\ndogstatsd_socket: /var/run/datadog/dsd.socket\ndogstatsd_tag_cardinality: low\nexpvar_port: \"6000\"\nextra_config_providers: clusterchecks endpointschecks\nhealth_port: \"5555\"\nignore_autoconf: kubernetes_state\nkubelet_core_check_enabled: \"true\"\nkubelet_tls_verify: \"false\"\nkubelet_use_api_server: \"false\"\nkubernetes_kubelet_host: 172.17.0.2\nkubernetes_kubelet_podresources_socket: /var/lib/kubelet/pod-resources/kubelet.sock\nlanguage_detection.enabled: \"false\"\nlanguage_detection.reporting.enabled: \"false\"\nlog_level: INFO\nlogs_config.auto_multi_line_detection: \"false\"\nlogs_config.container_collect_all: \"true\"\nlogs_config.k8s_container_use_file: \"true\"\nlogs_enabled: \"true\"\norchestrator_explorer.enabled: \"true\"\norchestrator_explorer.kubelet_config_check.enabled: \"true\"\notlp_config.logs.enabled: \"false\"\nprocess_config.container_collection.enabled: \"true\"\nprocess_config.process_collection.enabled: \"true\"\nprocess_config.process_discovery.enabled: \"true\"\nprocess_config.run_in_core_agent.enabled: \"true\"\nprocess_config.strip_proc_arguments: \"false\"\nremote_configuration.enabled: \"true\"\nsecret_backend_command_allow_group_exec_perm: \"true\"\nsecurity_agent.internal_profiling.api_key: '***************************d065d'",
+        "feature_apm_enabled": true,
+        "feature_auto_instrumentation_enabled": false,
+        "feature_container_images_enabled": true,
+        "feature_csm_vm_containers_enabled": false,
+        "feature_csm_vm_hosts_enabled": false,
+        "feature_cspm_enabled": false,
+        "feature_cspm_host_benchmarks_enabled": false,
+        "feature_cws_enabled": false,
+        "feature_cws_network_enabled": true,
+        "feature_cws_remote_config_enabled": false,
+        "feature_cws_security_profiles_enabled": false,
+        "feature_discovery_enabled": true,
+        "feature_dynamic_instrumentation_enabled": false,
+        "feature_gpu_monitoring_enabled": false,
+        "feature_imdsv2_enabled": false,
+        "feature_logs_enabled": true,
+        "feature_networks_enabled": true,
+        "feature_networks_http_enabled": true,
+        "feature_networks_https_enabled": true,
+        "feature_oom_kill_enabled": false,
+        "feature_otlp_enabled": false,
+        "feature_process_enabled": true,
+        "feature_process_language_detection_enabled": false,
+        "feature_processes_container_enabled": true,
+        "feature_remote_configuration_enabled": true,
+        "feature_remote_updates_enabled": true,
+        "feature_synthetics_collector_enabled": false,
+        "feature_tcp_queue_length_enabled": false,
+        "feature_traceroute_enabled": false,
+        "feature_usm_enabled": false,
+        "feature_usm_go_tls_enabled": true,
+        "feature_usm_http2_enabled": false,
+        "feature_usm_istio_enabled": true,
+        "feature_usm_kafka_enabled": false,
+        "feature_usm_postgres_enabled": false,
+        "feature_usm_redis_enabled": false,
+        "feature_windows_crash_detection_enabled": false,
+        "file_configuration": "apm_config:\n  apm_non_local_traffic: true\njmx_use_container_support: true",
+        "fips_mode": false,
+        "flavor": "agent",
+        "fleet_policies_applied": [],
+        "fleet_policies_configuration": "{}",
+        "full_configuration": "ac_exclude: []\nac_include: []\nac_load_timeout: 30000\nad_allowed_env_vars: []\nad_config_poll_interval: 10\nad_disable_env_var_resolution: false\nadditional_checksd: /etc/datadog-agent/checks.d\nadditional_endpoints: {}\nadmission_controller:\n  add_aks_selectors: false\n  agent_sidecar:\n    cluster_agent:\n      enabled: \"true\"\n    enabled: false\n    endpoint: /agentsidecar\n    image_name: agent\n    image_tag: latest\n    kubelet_api_logging:\n      enabled: false\n    profiles: '[]'\n    provider: \"\"\n    selectors: '[]'\n  auto_instrumentation:\n    default_dd_registries:\n      - gcr.io/datadoghq\n      - docker.io/datadog\n      - public.ecr.aws/datadog\n    enabled: true\n    endpoint: /injectlib\n    inject_auto_detected_libraries: true\n    patcher:\n      enabled: false\n      fallback_to_file_provider: false\n      file_provider_path: /etc/datadog-agent/patch/auto-instru.json\n  certificate:\n    expiration_threshold: 720\n    secret_name: webhook-certificate\n    validity_bound: 8760\n  container_registry: gcr.io/datadoghq\n  cws_instrumentation:\n    command_endpoint: /inject-command-cws\n    enabled: false\n    exclude: []\n    image_name: cws-instrumentation\n    image_tag: latest\n    include: []\n    mode: remote_copy\n    mutate_unlabelled: false\n    pod_endpoint: /inject-pod-cws\n    remote_copy:\n      directory: /tmp\n      mount_volume: false\n    timeout: 2\n  enabled: false\n  failure_policy: Ignore\n  inject_config:\n    enabled: true\n    endpoint: /injectconfig\n    local_service_name: datadog\n    mode: hostip\n    socket_path: /var/run/datadog\n    type_socket_volumes: false\n  inject_tags:\n    enabled: true\n    endpoint: /injecttags\n    pod_owners_cache_validity: 10\n  kubernetes_admission_events:\n    enabled: false\n  mutate_unlabelled: false\n  mutation:\n    enabled: true\n  namespace_selector_fallback: false\n  port: 8000\n  reinvocation_policy: IfNeeded\n  service_name: datadog-admission-controller\n  timeout_seconds: 10\n  validation:\n    enabled: true\n  webhook_name: datadog-webhook\nagent_ipc:\n  config_refresh_interval: 0\n  host: localhost\n  port: 0\nagent_telemetry:\n  batch_max_concurrent_send: 0\n  batch_max_content_size: 5000000\n  batch_max_size: 1000\n  batch_wait: 5\n  compression_kind: zstd\n  compression_level: 1\n  connection_reset_interval: 0\n  enabled: true\n  input_chan_size: 100\n  logs_no_ssl: false\n  sender_backoff_base: 1\n  sender_backoff_factor: 2\n  sender_backoff_max: 120\n  sender_recovery_interval: 2\n  sender_recovery_reset: false\n  startup_trace_sampling: 0\n  use_compression: true\n  use_v2_api: true\n  zstd_compression_level: 1\naggregator_buffer_size: 100\naggregator_flush_metrics_and_serialize_in_parallel_buffer_size: 4000\naggregator_flush_metrics_and_serialize_in_parallel_chan_size: 200\naggregator_stop_timeout: 2\naggregator_use_tags_store: true\nallow_arbitrary_tags: false\nallow_python_path_heuristics_failure: false\nallowed_additional_checks: []\nallowed_checks:\n  - cpu\n  - agent_telemetry\n  - agentcrashdetect\n  - disk\n  - file_handle\n  - filehandles\n  - io\n  - load\n  - memory\n  - network\n  - ntp\n  - process\n  - service_discovery\n  - system\n  - system_core\n  - system_swap\n  - telemetry\n  - telemetryCheck\n  - uptime\n  - win32_event_log\n  - wincrashdetect\n  - winkmem\n  - winproc\napi_key: '***************************d065d'\napm_config:\n  analyzed_rate_by_service: {}\n  apm_non_local_traffic: \"true\"\n  bucket_size_seconds: 10\n  client_stats_flush_interval: 1\n  compute_stats_by_span_kind: true\n  dd_agent_bin: \"\"\n  debug:\n    port: 5012\n  debug_v1_payloads: false\n  enable_container_tags_buffer: true\n  enable_v1_trace_endpoint: false\n  enabled: true\n  error_tracking_standalone:\n    enabled: false\n  extra_sample_rate: 0\n  features: []\n  filter_tags:\n    reject: []\n    require: []\n  filter_tags_regex:\n    reject: []\n    require: []\n  install_id: 474ce7d2-af98-42cf-820a-bf04793735a8\n  install_time: \"1772131598\"\n  install_type: k8s_manual\n  instrumentation:\n    disabled_namespaces: []\n    enabled: false\n    enabled_namespaces: []\n    injector_image_tag: \"0\"\n    lib_versions: {}\n  max_catalog_entries: 0\n  mode: \"\"\n  obfuscation:\n    cache:\n      enabled: true\n      max_size: 5000000\n    credit_cards:\n      enabled: true\n      keep_values: []\n      luhn: false\n    elasticsearch:\n      enabled: true\n      keep_values: []\n      obfuscate_sql_values: []\n    http:\n      remove_paths_with_digits: false\n      remove_query_string: false\n    memcached:\n      enabled: true\n      keep_command: false\n    mongodb:\n      enabled: true\n      keep_values: []\n      obfuscate_sql_values: []\n    opensearch:\n      enabled: true\n      keep_values: []\n      obfuscate_sql_values: []\n    redis:\n      enabled: true\n      remove_all_args: false\n    remove_stack_traces: false\n    sql_exec_plan:\n      enabled: false\n      keep_values: []\n      obfuscate_sql_values: []\n    sql_exec_plan_normalize:\n      enabled: false\n      keep_values: []\n      obfuscate_sql_values: []\n    valkey:\n      enabled: true\n      remove_all_args: false\n  peer_service_aggregation: true\n  peer_tags_aggregation: true\n  receiver_enabled: true\n  receiver_port: 8126\n  receiver_socket: /var/run/datadog/apm.socket\n  send_all_internal_stats: false\n  socket_activation:\n    enabled: false\n    handle_tcp_probe: false\n  sql_obfuscation_mode: \"\"\n  stats_writer:\n    connection_limit: 0\n    queue_size: 0\n  sync_flushing: false\n  telemetry:\n    enabled: true\n  trace_writer:\n    connection_limit: 0\n    queue_size: 0\n  watchdog_check_delay: 0\n  windows_pipe_buffer_size: 1000000\n  windows_pipe_security_descriptor: D:AI(A;;GA;;;WD)\n  workload_selection: true\napp_key: \"\"\nappsec:\n  proxy:\n    auto_detect: true\n    enabled: false\n    processor:\n      address: \"\"\n      port: 443\n    proxies: []\nauth_init_timeout: 30s\nauth_token_file_path: /etc/datadog-agent/auth/token\nauto_exit:\n  noprocess:\n    enabled: false\n    excluded_processes: []\n  validation_period: 60\nautoconf_config_files_poll: false\nautoconf_config_files_poll_interval: 60\nautoconf_template_dir: /datadog/check_configs\nautoconfig_exclude_features: []\nautoconfig_from_environment: true\nautoconfig_include_features: []\nautoscaling:\n  cluster:\n    enabled: false\n  failover:\n    enabled: false\n    metrics:\n      - container.memory.usage\n      - container.cpu.usage\n  workload:\n    enabled: false\n    external_recommender:\n      tls:\n        ca_file: \"\"\n        cert_file: \"\"\n        key_file: \"\"\n    limit: 1000\nazure_hostname_style: os\nazure_metadata_api_version: \"2021-02-01\"\nazure_metadata_timeout: 300\nbasic_telemetry_add_container_tags: false\nbosh_id: \"\"\nc_core_dump: false\nc_stacktrace_collection: false\ncel_workload_exclude: []\ncf_os_hostname_aliasing: false\ncheck_cancel_timeout: 500ms\ncheck_runner_utilization_monitor_interval: 1m0s\ncheck_runner_utilization_threshold: 0.95\ncheck_runner_utilization_warning_cooldown: 10m0s\ncheck_runners: 4\ncheck_sampler_allow_sketch_bucket_reset: true\ncheck_sampler_bucket_commits_count_expiry: 2\ncheck_sampler_context_metrics: false\ncheck_sampler_expire_metrics: true\ncheck_sampler_stateful_metric_expiration_time: 25h0m0s\ncheck_system_probe_startup_time: 5m0s\ncheck_system_probe_timeout: 1m0s\ncheck_watchdog_warning_timeout: 0s\nchecks_tag_cardinality: orchestrator\nclc_runner_enabled: false\nclc_runner_host: \"\"\nclc_runner_id: \"\"\nclc_runner_port: 5005\nclc_runner_remote_tagger_enabled: true\nclc_runner_server_readheader_timeout: 10\nclc_runner_server_write_timeout: 15\ncloud_foundry: false\ncloud_foundry_bbs:\n  ca_file: \"\"\n  cert_file: \"\"\n  env_exclude: []\n  env_include: []\n  key_file: \"\"\n  poll_interval: 15\n  url: https://bbs.service.cf.internal:8889\ncloud_foundry_buildpack: false\ncloud_foundry_cc:\n  apps_batch_size: 5000\n  client_id: \"\"\n  client_secret: \"\"\n  poll_interval: 60\n  skip_ssl_validation: false\n  url: https://cloud-controller-ng.service.cf.internal:9024\ncloud_foundry_container_tagger:\n  retry_count: 10\n  retry_interval: 10\n  shell_path: /bin/sh\ncloud_foundry_garden:\n  listen_address: /var/vcap/data/garden/garden.sock\n  listen_network: unix\ncloud_provider_metadata:\n  - aws\n  - gcp\n  - azure\n  - alibaba\n  - oracle\n  - ibm\ncluster_agent:\n  allow_legacy_tls: false\n  appsec:\n    injector:\n      annotations: {}\n      base_backoff: 5m\n      enabled: false\n      istio:\n        namespace: istio-system\n      labels: {}\n      max_backoff: 1h\n      processor:\n        service:\n          name: \"\"\n          namespace: \"\"\n  auth_token: \"********\"\n  client_reconnect_period_seconds: 1200\n  cluster_tagger:\n    grpc_max_message_size: 4194304\n  cmd_port: 5005\n  collect_kubernetes_tags: false\n  enabled: true\n  isolation_segments_tags: false\n  kube_metadata_collection:\n    enabled: false\n    resource_annotations_exclude: []\n    resources: []\n  kubernetes_resources_collection:\n    deployment_annotations_exclude:\n      - ^kubectl\\.kubernetes\\.io\\/last-applied-configuration$\n      - ^ad\\.datadoghq\\.com\\/([[:alnum:]]+\\.)?(checks|check_names|init_configs|instances)$\n    pod_annotations_exclude:\n      - ^kubectl\\.kubernetes\\.io\\/last-applied-configuration$\n      - ^ad\\.datadoghq\\.com\\/([[:alnum:]]+\\.)?(checks|check_names|init_configs|instances)$\n  kubernetes_service_name: datadog-cluster-agent\n  language_detection:\n    cleanup:\n      language_ttl: 30m\n      period: 10m\n    patcher:\n      base_backoff: 5m\n      enabled: true\n      max_backoff: 1h\n  max_leader_connections: 100\n  mcp:\n    enabled: false\n    endpoint: /mcp\n  refresh_on_cache_miss: true\n  serve_nozzle_data: false\n  server:\n    idle_timeout_seconds: 60\n    read_timeout_seconds: 2\n    write_timeout_seconds: 2\n  service_account_name: \"\"\n  sidecars_tags: false\n  tagging_fallback: false\n  token_name: datadogtoken\n  url: \"\"\ncluster_checks:\n  advanced_dispatching_enabled: true\n  clc_runners_port: 5005\n  cluster_tag_name: cluster_name\n  crd_collection: false\n  enabled: false\n  exclude_checks: []\n  exclude_checks_from_dispatching: []\n  extra_tags: []\n  ksm_sharding_enabled: false\n  node_expiration_timeout: 30\n  rebalance_min_percentage_improvement: 10\n  rebalance_period: 10m0s\n  rebalance_with_utilization: true\n  support_hybrid_ignore_ad_tags: false\n  unscheduled_check_threshold: 60\n  warmup_duration: 30\ncluster_name: very-good-startup-cluster\ncluster_trust_chain:\n  ca_cert_file_path: \"\"\n  ca_key_file_path: \"\"\n  enable_tls_verification: false\ncmd_host: localhost\ncmd_port: 5001\ncollect_ccrid: true\ncollect_ec2_instance_info: false\ncollect_ec2_tags: false\ncollect_ec2_tags_use_imds: false\ncollect_gce_tags: true\ncollect_gpu_tags: true\ncollect_kubernetes_events: false\ncompliance_config:\n  check_interval: 20m0s\n  check_max_events_per_run: 100\n  container_exclude: []\n  container_include: []\n  database_benchmarks:\n    enabled: false\n  dir: /etc/datadog-agent/compliance.d\n  enabled: false\n  endpoints:\n    batch_max_concurrent_send: 0\n    batch_max_content_size: 5000000\n    batch_max_size: 1000\n    batch_wait: 5\n    compression_kind: zstd\n    compression_level: 6\n    connection_reset_interval: 0\n    input_chan_size: 100\n    logs_no_ssl: false\n    sender_backoff_base: 1\n    sender_backoff_factor: 2\n    sender_backoff_max: 120\n    sender_recovery_interval: 2\n    sender_recovery_reset: false\n    use_compression: true\n    use_v2_api: true\n    zstd_compression_level: 1\n  exclude_pause_container: true\n  host_benchmarks:\n    enabled: true\n  metrics:\n    enabled: false\n  opa:\n    metrics:\n      enabled: false\n  xccdf:\n    enabled: false\nconf_path: .\nconfd_path: /etc/datadog-agent/conf.d\nconfig_id: \"\"\nconfig_stream:\n  sleep_interval: 3s\ncontainer_cgroup_prefix: \"\"\ncontainer_cgroup_root: /host/sys/fs/cgroup/\ncontainer_env_as_tags: {}\ncontainer_exclude: []\ncontainer_exclude_logs: []\ncontainer_exclude_metrics: []\ncontainer_exclude_stopped_age: 22\ncontainer_image:\n  batch_max_concurrent_send: 0\n  batch_max_content_size: 5000000\n  batch_max_size: 1000\n  batch_wait: 5\n  compression_kind: zstd\n  compression_level: 6\n  connection_reset_interval: 0\n  enabled: true\n  input_chan_size: 100\n  logs_no_ssl: false\n  sender_backoff_base: 1\n  sender_backoff_factor: 2\n  sender_backoff_max: 120\n  sender_recovery_interval: 2\n  sender_recovery_reset: false\n  use_compression: true\n  use_v2_api: true\n  zstd_compression_level: 1\ncontainer_include: []\ncontainer_include_logs: []\ncontainer_include_metrics: []\ncontainer_labels_as_tags: {}\ncontainer_lifecycle:\n  batch_max_concurrent_send: 0\n  batch_max_content_size: 5000000\n  batch_max_size: 1000\n  batch_wait: 5\n  compression_kind: zstd\n  compression_level: 6\n  connection_reset_interval: 0\n  enabled: true\n  input_chan_size: 100\n  logs_no_ssl: false\n  sender_backoff_base: 1\n  sender_backoff_factor: 2\n  sender_backoff_max: 120\n  sender_recovery_interval: 2\n  sender_recovery_reset: false\n  use_compression: true\n  use_v2_api: true\n  zstd_compression_level: 1\ncontainer_proc_root: /host/proc\ncontainerd_exclude_namespaces:\n  - moby\ncontainerd_namespace: []\ncontainerd_namespaces: []\nconvert_dd_site_fqdn:\n  enabled: true\ncore_agent:\n  enabled: true\ncri_connection_timeout: 1\ncri_query_timeout: 5\ncri_socket_path: \"\"\ncsi:\n  driver: k8s.csi.datadoghq.com\n  enabled: false\ndata_plane:\n  dogstatsd:\n    enabled: false\n  enabled: false\ndata_streams:\n  forwarder:\n    batch_max_concurrent_send: 0\n    batch_max_content_size: 5000000\n    batch_max_size: 1000\n    batch_wait: 0.1\n    compression_kind: zstd\n    compression_level: 6\n    connection_reset_interval: 0\n    input_chan_size: 100\n    logs_no_ssl: false\n    sender_backoff_base: 1\n    sender_backoff_factor: 2\n    sender_backoff_max: 120\n    sender_recovery_interval: 2\n    sender_recovery_reset: false\n    use_compression: true\n    use_v2_api: true\n    zstd_compression_level: 1\ndatabase_monitoring:\n  activity:\n    batch_max_concurrent_send: 0\n    batch_max_content_size: 5000000\n    batch_max_size: 1000\n    batch_wait: 5\n    compression_kind: zstd\n    compression_level: 6\n    connection_reset_interval: 0\n    input_chan_size: 100\n    logs_no_ssl: false\n    sender_backoff_base: 1\n    sender_backoff_factor: 2\n    sender_backoff_max: 120\n    sender_recovery_interval: 2\n    sender_recovery_reset: false\n    use_compression: true\n    use_v2_api: true\n    zstd_compression_level: 1\n  autodiscovery:\n    aurora:\n      dbm_tag: datadoghq.com/dbm:true\n      discovery_interval: 300\n      enabled: false\n      query_timeout: 10\n      region: \"\"\n      tags:\n        - datadoghq.com/scrape:true\n    rds:\n      dbm_tag: datadoghq.com/dbm:true\n      discovery_interval: 300\n      enabled: false\n      query_timeout: 10\n      region: \"\"\n      tags:\n        - datadoghq.com/scrape:true\n  metrics:\n    batch_max_concurrent_send: 0\n    batch_max_content_size: 5000000\n    batch_max_size: 1000\n    batch_wait: 5\n    compression_kind: zstd\n    compression_level: 6\n    connection_reset_interval: 0\n    input_chan_size: 100\n    logs_no_ssl: false\n    sender_backoff_base: 1\n    sender_backoff_factor: 2\n    sender_backoff_max: 120\n    sender_recovery_interval: 2\n    sender_recovery_reset: false\n    use_compression: true\n    use_v2_api: true\n    zstd_compression_level: 1\n  samples:\n    batch_max_concurrent_send: 0\n    batch_max_content_size: 5000000\n    batch_max_size: 1000\n    batch_wait: 5\n    compression_kind: zstd\n    compression_level: 6\n    connection_reset_interval: 0\n    input_chan_size: 100\n    logs_no_ssl: false\n    sender_backoff_base: 1\n    sender_backoff_factor: 2\n    sender_backoff_max: 120\n    sender_recovery_interval: 2\n    sender_recovery_reset: false\n    use_compression: true\n    use_v2_api: true\n    zstd_compression_level: 1\ndefault_integration_http_timeout: 9\ndisable_cluster_name_tag_key: false\ndisable_file_logging: false\ndisable_py3_validation: false\ndisable_unsafe_yaml: true\ndisk_check:\n  use_core_loader: true\ndjm_config:\n  enabled: false\ndocker_env_as_tags: {}\ndocker_labels_as_tags: {}\ndocker_query_timeout: 5\ndogstatsd_buffer_size: 8192\ndogstatsd_capture_depth: 0\ndogstatsd_capture_path: \"\"\ndogstatsd_context_expiry_seconds: 20\ndogstatsd_disable_verbose_logs: false\ndogstatsd_entity_id_precedence: false\ndogstatsd_eol_required: []\ndogstatsd_expiry_seconds: 300\ndogstatsd_flush_incomplete_buckets: false\ndogstatsd_host_socket_path: /var/run/datadog\ndogstatsd_log_file: \"\"\ndogstatsd_log_file_max_rolls: 3\ndogstatsd_log_file_max_size: 10Mb\ndogstatsd_logging_enabled: true\ndogstatsd_mapper_cache_size: 1000\ndogstatsd_mem_based_rate_limiter:\n  enabled: false\n  go_gc: 1\n  high_soft_limit: 0.8\n  low_soft_limit: 0.7\n  memory_ballast: 8589934592\n  rate_check:\n    factor: 2\n    max: 1\n    min: 0.01\n  soft_limit_freeos_check:\n    factor: 1.5\n    max: 0.1\n    min: 0.01\ndogstatsd_metrics_stats_enable: false\ndogstatsd_no_aggregation_pipeline: true\ndogstatsd_no_aggregation_pipeline_batch_size: 2048\ndogstatsd_non_local_traffic: true\ndogstatsd_origin_detection: false\ndogstatsd_origin_detection_client: false\ndogstatsd_origin_optout_enabled: true\ndogstatsd_packet_buffer_flush_timeout: 100ms\ndogstatsd_packet_buffer_size: 32\ndogstatsd_pipe_name: \"\"\ndogstatsd_pipeline_autoadjust: false\ndogstatsd_pipeline_count: 1\ndogstatsd_port: 8125\ndogstatsd_queue_size: 1024\ndogstatsd_so_rcvbuf: 0\ndogstatsd_socket: /var/run/datadog/dsd.socket\ndogstatsd_stats_buffer: 10\ndogstatsd_stats_enable: false\ndogstatsd_stats_port: 5000\ndogstatsd_stream_socket: \"\"\ndogstatsd_string_interner_size: 4096\ndogstatsd_tag_cardinality: low\ndogstatsd_tags: []\ndogstatsd_telemetry_enabled_listener_id: false\ndogstatsd_windows_pipe_security_descriptor: D:AI(A;;GA;;;WD)\ndogstatsd_workers_count: 0\nec2_imdsv2_transition_payload_enabled: true\nec2_metadata_timeout: 300\nec2_metadata_token_lifetime: 21600\nec2_prefer_imdsv2: false\nec2_prioritize_instance_id_as_hostname: false\nec2_use_dmi: true\nec2_use_windows_prefix_detection: false\necs_agent_container_name: ecs-agent\necs_agent_url: \"\"\necs_collect_resource_tags_ec2: false\necs_deployment_mode: auto\necs_metadata_retry_initial_interval: 100ms\necs_metadata_retry_max_elapsed_time: 3s\necs_metadata_retry_timeout_factor: 3\necs_metadata_timeout: 1000\necs_resource_tags_replace_colon: false\necs_task_cache_ttl: 3m0s\necs_task_collection_burst: 60\necs_task_collection_enabled: true\necs_task_collection_rate: 35\neks_fargate: false\nenable_cluster_agent_metadata_collection: true\nenable_gohai: true\nenable_json_stream_shared_compressor_buffers: true\nenable_metadata_collection: true\nenable_payloads:\n  events: true\n  json_to_v1_intake: true\n  series: true\n  service_checks: true\n  sketches: true\nenable_signing_metadata_collection: true\nenabled_rfc1123_compliant_cluster_name_tag: true\nenhanced_metrics: true\nevent_management:\n  forwarder:\n    batch_max_concurrent_send: 0\n    batch_max_content_size: 5000000\n    batch_max_size: 1000\n    batch_wait: 5\n    compression_kind: zstd\n    compression_level: 6\n    connection_reset_interval: 0\n    input_chan_size: 100\n    logs_no_ssl: false\n    sender_backoff_base: 1\n    sender_backoff_factor: 2\n    sender_backoff_max: 120\n    sender_recovery_interval: 2\n    sender_recovery_reset: false\n    use_compression: true\n    use_v2_api: true\n    zstd_compression_level: 1\nexclude_ec2_tags: []\nexclude_gce_tags:\n  - kube-env\n  - kubelet-config\n  - containerd-configure-sh\n  - startup-script\n  - shutdown-script\n  - configure-sh\n  - sshKeys\n  - ssh-keys\n  - user-data\n  - cli-cert\n  - ipsec-cert\n  - ssl-cert\n  - google-container-manifest\n  - bosh_settings\n  - windows-startup-script-ps1\n  - common-psm1\n  - k8s-node-setup-psm1\n  - serial-port-logging-enable\n  - enable-oslogin\n  - disable-address-manager\n  - disable-legacy-endpoints\n  - windows-keys\n  - kubeconfig\n  - gce-container-declaration\nexclude_pause_container: true\nexpected_tags_duration: 0s\nexpvar_port: 6000\nexternal_metrics:\n  aggregator: avg\nexternal_metrics_provider:\n  api_key: "********"  app_key: \"\"\n  batch_window: 10\n  bucket_size: 300\n  chunk_size: 35\n  config: {}\n  enable_datadogmetric_autogen: true\n  enabled: false\n  endpoint: \"\"\n  local_copy_refresh_rate: 30\n  max_age: 120\n  max_parallel_queries: 10\n  max_time_window: 86400\n  num_workers: 2\n  port: 8443\n  query_validity_period: 30\n  refresh_period: 30\n  rollup: 30\n  split_batches_with_backoff: false\n  use_datadogmetric_crd: false\n  wpa_controller: false\nextra_config_providers:\n  - clusterchecks\n  - endpointschecks\nextra_listeners: []\nextra_tags: []\nfips:\n  enabled: false\n  https: true\n  local_address: localhost\n  port_range_start: 9803\n  tls_verify: true\nflare:\n  profile_overhead_runtime: 10s\n  rc_profiling:\n    blocking_rate: 0\n    mutex_fraction: 0\n    profile_duration: 30s\n  rc_streamlogs:\n    duration: 1m0s\nflare_provider_timeout: 10s\nflare_stripped_keys: []\nfleet_layers: []\nforwarder_apikey_validation_interval: '********'\nforwarder_backoff_base: 2\nforwarder_backoff_factor: 2\nforwarder_backoff_max: 64\nforwarder_connection_reset_interval: 0\nforwarder_flush_to_disk_mem_ratio: 0.5\nforwarder_high_prio_buffer_size: 100\nforwarder_http_protocol: auto\nforwarder_low_prio_buffer_size: 100\nforwarder_max_concurrent_requests: 10\nforwarder_num_workers: 1\nforwarder_outdated_file_in_days: 10\nforwarder_recovery_interval: 2\nforwarder_recovery_reset: false\nforwarder_requeue_buffer_size: 100\nforwarder_retry_queue_capacity_time_interval_sec: 900\nforwarder_stop_timeout: 2\nforwarder_storage_max_disk_ratio: 0.8\nforwarder_storage_max_size_in_bytes: 0\nforwarder_storage_path: \"\"\nforwarder_timeout: 20\ngce_metadata_timeout: 1000\ngce_send_project_id_tag: false\ngo_core_dump: false\ngpu:\n  disabled_collectors: []\n  enabled: false\n  integrate_with_workloadmeta_processes: true\n  nvml_lib_path: \"\"\n  sp_process_metrics_request_timeout: 3s\n  use_sp_process_metrics: false\n  workload_tag_cache_size: 1024\ngui_host: localhost\ngui_port: -1\ngui_session_expiration: 0\nha_agent:\n  enabled: false\nhealth_platform:\n  enabled: false\nhealth_port: 5555\nheroku_dyno: false\nhistogram_aggregates:\n  - max\n  - median\n  - avg\n  - count\nhistogram_copy_to_distribution: false\nhistogram_copy_to_distribution_prefix: \"\"\nhistogram_percentiles:\n  - \"0.95\"\nhost_aliases: []\nhostname: \"\"\nhostname_drift_initial_delay: 20m0s\nhostname_drift_recurring_interval: 6h0m0s\nhostname_file: \"\"\nhostname_force_config_as_canonical: false\nhostname_fqdn: false\nhostname_trust_uts_namespace: false\nhpa_configmap_name: datadog-custom-metrics\nhpa_watcher_gc_period: 300\nhpa_watcher_polling_freq: 10\nibm_metadata_timeout: 5\nignore_autoconf:\n  - kubernetes_state\nignore_host_etc: false\ninclude_ephemeral_containers: false\ninfrastructure_mode: full\ninstaller:\n  gc_interval: 1h0m0s\n  mirror: \"\"\n  refresh_interval: 30s\n  registry:\n    auth: \"\"\n    password: "********"
+        "hostname_source": "container",
+        "infrastructure_mode": "full",
+        "install_method_installer_version": "datadog-3.175.2",
+        "install_method_tool": "helm",
+        "install_method_tool_version": "Helm",
+        "logs_transport": "HTTP",
+        "provided_configuration": "api_key: '***************************d065d'\napm_config:\n  apm_non_local_traffic: \"true\"\n  enabled: true\n  install_id: 474ce7d2-af98-42cf-820a-bf04793735a8\n  install_time: \"1772131598\"\n  install_type: k8s_manual\n  receiver_port: 8126\n  receiver_socket: /var/run/datadog/apm.socket\nauth_token_file_path: /etc/datadog-agent/auth/token\nchecks_tag_cardinality: orchestrator\ncluster_agent:\n  auth_token: \"********\"\n  enabled: true\n  kubernetes_service_name: datadog-cluster-agent\ncluster_name: very-good-startup-cluster\ncompliance_config:\n  enabled: false\ncontainer_image:\n  enabled: true\ncontainer_lifecycle:\n  enabled: true\ncsi:\n  enabled: false\ndogstatsd_non_local_traffic: true\ndogstatsd_port: 8125\ndogstatsd_socket: /var/run/datadog/dsd.socket\ndogstatsd_tag_cardinality: low\nexpvar_port: 6000\nextra_config_providers:\n  - clusterchecks\n  - endpointschecks\nhealth_port: 5555\nignore_autoconf:\n  - kubernetes_state\njmx_use_container_support: true\nkubelet_core_check_enabled: true\nkubelet_tls_verify: false\nkubelet_use_api_server: false\nkubernetes_kubelet_host: 172.17.0.2\nkubernetes_kubelet_podresources_socket: /var/lib/kubelet/pod-resources/kubelet.sock\nlanguage_detection:\n  enabled: false\n  reporting:\n    enabled: false\nlog_level: INFO\nlogs_config:\n  auto_multi_line_detection: false\n  container_collect_all: true\n  k8s_container_use_file: true\nlogs_enabled: true\norchestrator_explorer:\n  enabled: true\n  kubelet_config_check:\n    enabled: true\notlp_config:\n  logs:\n    enabled: false\nprocess_config:\n  container_collection:\n    enabled: true\n  process_collection:\n    enabled: true\n  process_discovery:\n    enabled: true\n  run_in_core_agent:\n    enabled: true\n  strip_proc_arguments: \"false\"\nproxy:\n  http: \"\"\n  https: \"\"\n  no_proxy:\n    - 169.254.169.254\n    - 100.100.100.200\nremote_configuration:\n  enabled: true\nsecret_backend_command_allow_group_exec_perm: true\nsecurity_agent:\n  internal_profiling:\n    api_key: '***************************d065d'",
+        "remote_configuration": "{}",
+        "source_local_configuration": "{}",
+        "system_probe_core_enabled": true,
+        "system_probe_gateway_lookup_enabled": true,
+        "system_probe_kernel_headers_download_enabled": false,
+        "system_probe_max_connections_per_message": 600,
+        "system_probe_prebuilt_fallback_enabled": false,
+        "system_probe_protocol_classification_enabled": true,
+        "system_probe_root_namespace_enabled": true,
+        "system_probe_runtime_compilation_enabled": false,
+        "system_probe_telemetry_enabled": false,
+        "system_probe_track_tcp_4_connections": true,
+        "system_probe_track_tcp_6_connections": true,
+        "system_probe_track_udp_4_connections": true,
+        "system_probe_track_udp_6_connections": true
+    },
+    "uuid": "9fa8865e-3751-4433-92c2-24835d1b1250"
+}

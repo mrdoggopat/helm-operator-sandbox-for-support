@@ -1,0 +1,773 @@
+2026-02-26 18:46:54 UTC | CORE | INFO | (pkg/util/log/setup/log.go:60 in SetupLogger) | CORE: using slog logger
+2026-02-26 18:46:54 UTC | CORE | INFO | (pkg/util/log/log.go:743 in func1) | Using '/opt/datadog-agent/embedded' as Python home
+2026-02-26 18:46:54 UTC | CORE | INFO | (pkg/util/log/log.go:738 in func1) | Starting to load the configuration
+2026-02-26 18:46:54 UTC | CORE | WARN | (pkg/util/log/log.go:783 in func1) | Unknown environment variable: DD_KUBERNETES_KUBE_SERVICE_IGNORE_READINESS
+2026-02-26 18:46:54 UTC | CORE | INFO | (pkg/util/log/log.go:738 in func1) | Loading proxy settings
+2026-02-26 18:46:54 UTC | CORE | INFO | (pkg/util/log/log.go:738 in func1) | Starting to resolve secrets
+2026-02-26 18:46:54 UTC | CORE | INFO | (pkg/util/log/log.go:738 in func1) | Finished resolving secrets
+2026-02-26 18:46:54 UTC | CORE | INFO | (pkg/util/log/log.go:743 in func1) | Agent did not find PodResources socket at /var/lib/kubelet/pod-resources/kubelet.sock
+2026-02-26 18:46:54 UTC | CORE | INFO | (pkg/util/log/log.go:743 in func1) | 4 Features detected from environment: kubernetes,kube_orchestratorexplorer,kubelet_config_orchestrator_check,docker
+2026-02-26 18:46:54 UTC | CORE | INFO | (pkg/config/setup/config.go:2431 in loadCustom) | Starting to load the configuration
+2026-02-26 18:46:54 UTC | CORE | WARN | (pkg/config/setup/config.go:2441 in loadCustom) | Unknown environment variable: DD_KUBERNETES_KUBE_SERVICE_IGNORE_READINESS
+2026-02-26 18:46:54 UTC | CORE | WARN | (pkg/config/setup/config.go:2254 in findUnexpectedUnicode) | config key "event_monitoring_config.socket" is unknown
+2026-02-26 18:46:54 UTC | CORE | WARN | (pkg/config/setup/config.go:2254 in findUnexpectedUnicode) | config key "runtime_security_config.activity_dump.cgroup_wait_list_size" is unknown
+2026-02-26 18:46:54 UTC | CORE | WARN | (pkg/config/setup/config.go:2254 in findUnexpectedUnicode) | config key "runtime_security_config.activity_dump.path_merge.enabled" is unknown
+2026-02-26 18:46:54 UTC | CORE | WARN | (pkg/config/setup/config.go:2254 in findUnexpectedUnicode) | config key "runtime_security_config.network.enabled" is unknown
+2026-02-26 18:46:54 UTC | CORE | WARN | (pkg/config/setup/config.go:2254 in findUnexpectedUnicode) | config key "runtime_security_config.syscall_monitor.enabled" is unknown
+2026-02-26 18:46:54 UTC | CORE | WARN | (pkg/system-probe/config/adjust.go:157 in deprecateCustom) | configuration key `runtime_security_config.activity_dump.cgroup_dump_timeout` is deprecated, use `runtime_security_config.activity_dump.dump_duration` instead
+2026-02-26 18:46:54 UTC | CORE | WARN | (pkg/system-probe/config/config.go:138 in load) | config key "event_monitoring_config.process.enabled" is unknown
+2026-02-26 18:46:54 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/forwarder.go:80 in createOptions) | starting forwarder with 1 endpoints
+2026-02-26 18:46:54 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/forwarder.go:86 in createOptions) | domain 'https://app.datadoghq.com.' has 1 keys: ***************************d065d
+2026-02-26 18:46:54 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:325 in NewDefaultForwarder) | Retry queue storage on disk is disabled
+2026-02-26 18:46:54 UTC | CORE | WARN | (comp/core/workloadfilter/baseimpl/filter_utils.go:239 in computeContainerComplianceFilters) | config key "compliance_config.exclude_pause_containers" is unknown
+2026-02-26 18:46:54 UTC | CORE | WARN | (comp/core/workloadfilter/baseimpl/filter_utils.go:248 in computeContainerRuntimeSecurityFilters) | config key "runtime_security_config.exclude_pause_containers" is unknown
+2026-02-26 18:46:54 UTC | CORE | INFO | (comp/core/ipc/impl/ipc.go:73 in NewReadWriteComponent) | starting to load the IPC auth primitives (timeout: 30s)
+2026-02-26 18:46:54 UTC | CORE | WARN | (pkg/api/security/cert/cert_getter.go:37 in getCertFilepath) | IPC cert/key created or retrieved next to auth_token_file_path location: /etc/datadog-agent/auth/ipc_cert.pem
+2026-02-26 18:46:54 UTC | CORE | INFO | (comp/core/ipc/impl/ipc.go:194 in printAuthSignature) | successfully loaded the IPC auth primitives (fingerprint: e9d2ecf9f12bc612)
+2026-02-26 18:46:54 UTC | CORE | INFO | (comp/core/tagger/impl/tagger.go:113 in NewComponent) | Tagger is created
+2026-02-26 18:46:56 UTC | CORE | INFO | (pkg/util/kubernetes/clustername/clustername.go:80 in getClusterName) | Got cluster name very-good-startup-cluster from config
+2026-02-26 18:46:56 UTC | CORE | INFO | (pkg/util/kubernetes/kubelet/kubelet_client.go:337 in checkKubeletConnection) | Successful configuration found for Kubelet, using URL: https://172.17.0.2:10250
+2026-02-26 18:46:57 UTC | CORE | INFO | (pkg/api/security/security.go:178 in getClusterAgentAuthToken) | Using configured cluster_agent.auth_token
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:325 in NewDefaultForwarder) | Retry queue storage on disk is disabled
+2026-02-26 18:46:57 UTC | CORE | INFO | (pkg/aggregator/demultiplexer.go:204 in getDogStatsDWorkerAndPipelineCount) | Dogstatsd workers and pipelines count:  2  workers,  1  pipelines
+2026-02-26 18:46:57 UTC | CORE | INFO | (pkg/aggregator/demultiplexer.go:153 in GetDogStatsDWorkerAndPipelineCount) | Dogstatsd configured to run with 2 workers and 1 pipelines
+2026-02-26 18:46:57 UTC | CORE | INFO | (pkg/aggregator/time_sampler.go:56 in NewTimeSampler) | Creating TimeSampler #0
+2026-02-26 18:46:57 UTC | CORE | INFO | (pkg/runtime/runtime.go:28 in func1) | runtime: set GOMAXPROCS to: 2
+2026-02-26 18:46:57 UTC | CORE | WARN | (pkg/util/cgroups/pid_mapper.go:110 in getPidMapper) | Usage of cgroupv2 detected but the Agent does not seem to run in host cgroup namespace. Make sure to run with --cgroupns=host, some feature may not work otherwise
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/healthplatform/impl/health-platform.go:69 in NewComponent) | Health platform component is disabled
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/rdnsquerier/impl/rdnsquerier.go:83 in NewComponent) | Reverse DNS Enrichment config: (enabled=false workers=0 chan_size=0 cache.enabled=true cache.entry_ttl=0 cache.clean_interval=0 cache.persist_interval=0 cache.max_retries=-1 cache.max_size=0 rate_limiter.enabled=true rate_limiter.limit_per_sec=0 rate_limiter.limit_throttled_per_sec=0 rate_limiter.throttle_error_threshold=0 rate_limiter.recovery_intervals=0 rate_limiter.recovery_interval=0)
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/netflow/server/server.go:63 in newServer) | Reverse DNS Enrichment is disabled for NDM NetFlow
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:325 in NewDefaultForwarder) | Retry queue storage on disk is disabled
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:325 in NewDefaultForwarder) | Retry queue storage on disk is disabled
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:325 in NewDefaultForwarder) | Retry queue storage on disk is disabled
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/gui/guiimpl/gui.go:103 in newGui) | GUI server port -1 specified: not starting the GUI.
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:458 in Start) | Forwarder started, sending to 1 endpoint(s) with 1 worker(s) each: "https://7-75-4-app.agent.datadoghq.com." (1 api key(s))
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:104 in start) | workloadmeta store initialized successfully
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:458 in Start) | Forwarder started, sending to 1 endpoint(s) with 1 worker(s) each: "https://orchestrator.datadoghq.com" (1 api key(s))
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/autodiscovery/listeners/types.go:85 in Register) | Service listener factory cloudfoundry-bbs does not exist.
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/autodiscovery/listeners/types.go:85 in Register) | Service listener factory kube_endpoints does not exist.
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/autodiscovery/listeners/types.go:85 in Register) | Service listener factory kube_services does not exist.
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/autodiscovery/providers/config_reader.go:215 in read) | Searching for configuration files at: /etc/datadog-agent/conf.d
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:664 in startCandidates) | workloadmeta collector "kubelet" started successfully
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:667 in startCandidates) | workloadmeta collector "ecs" could not start. error: component workloadmeta-ecs is disabled: Agent is not running on ECS
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:664 in startCandidates) | workloadmeta collector "process-collector" started successfully
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:667 in startCandidates) | workloadmeta collector "nvml" could not start. error: component workloadmeta-nvml is disabled: Agent does not have NVML library available
+2026-02-26 18:46:57 UTC | CORE | ERROR | (comp/core/workloadmeta/collectors/internal/kubemetadata/kubemetadata.go:90 in Start) | Could not initialise the communication with the cluster agent: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:667 in startCandidates) | workloadmeta collector "cloudfoundry-vm" could not start. error: component workloadmeta-cloudfoundry-vm is disabled: Agent is not running on CloudFoundry
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:667 in startCandidates) | workloadmeta collector "crio" could not start. error: component workloadmeta-crio is disabled: Crio not detected
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/tagger/collectors/workloadmeta_main.go:153 in stream) | workloadmeta tagger collector started
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/autodiscovery/providers/config_reader.go:298 in collectEntry) | Skipping 'auto_conf.yaml' for integration 'kubernetes_state'
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/autodiscovery/providers/config_reader.go:215 in read) | Searching for configuration files at: /opt/datadog-agent/bin/agent/dist/conf.d
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/autodiscovery/providers/config_reader.go:215 in read) | Searching for configuration files at: 
+2026-02-26 18:46:57 UTC | CORE | INFO | (pkg/config/autodiscovery/autodiscovery.go:136 in DiscoverComponentsFromEnv) | Adding KubeContainer provider from environment
+2026-02-26 18:46:57 UTC | CORE | INFO | (pkg/config/autodiscovery/autodiscovery.go:146 in DiscoverComponentsFromEnv) | Adding Kubelet listener from environment
+2026-02-26 18:46:57 UTC | CORE | WARN | (comp/core/autodiscovery/providers/endpointschecks.go:56 in NewEndpointsChecksConfigProvider) | Cannot get dca client: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/autodiscovery/autodiscoveryimpl/autoconfig.go:532 in initListenerCandidates) | kubelet listener successfully started
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/autodiscovery/listeners/workloadmeta.go:126 in Listen) | ad-kubeletlistener initialized successfully
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/autodiscovery/autodiscoveryimpl/autoconfig.go:532 in initListenerCandidates) | environment listener successfully started
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/autodiscovery/autodiscoveryimpl/autoconfig.go:532 in initListenerCandidates) | static config listener successfully started
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/logs/agent/agentimpl/agent.go:194 in start) | Starting logs-agent...
+2026-02-26 18:46:57 UTC | CORE | INFO | (pkg/logs/client/http/destination.go:509 in CheckConnectivity) | Checking HTTP connectivity...
+2026-02-26 18:46:57 UTC | CORE | INFO | (pkg/logs/client/http/destination.go:511 in CheckConnectivity) | Sending HTTP connectivity request to https://agent-http-intake.logs.datadoghq.com./api/v2/logs...
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/autodiscovery/listeners/environment.go:61 in createServices) | Listener created docker service from environment
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/autodiscovery/listeners/environment.go:61 in createServices) | Listener created kubelet service from environment
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/autodiscovery/listeners/environment.go:61 in createServices) | Listener created kube_orchestrator service from environment
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/autodiscovery/listeners/environment.go:61 in createServices) | Listener created kubelet_config_orchestrator service from environment
+2026-02-26 18:46:57 UTC | CORE | INFO | (comp/core/autodiscovery/listeners/environment.go:68 in createServices) | Listener created container service from environment
+2026-02-26 18:46:58 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:664 in startCandidates) | workloadmeta collector "docker" started successfully
+2026-02-26 18:46:58 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:667 in startCandidates) | workloadmeta collector "podman" could not start. error: component workloadmeta-podman is disabled: Podman not detected
+2026-02-26 18:46:58 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:667 in startCandidates) | workloadmeta collector "containerd" could not start. error: component workloadmeta-containerd is disabled: Agent is not running on containerd
+2026-02-26 18:46:58 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:667 in startCandidates) | workloadmeta collector "cloudfoundry-container" could not start. error: component workloadmeta-cloudfoundry-container is disabled: Agent is not running on CloudFoundry
+2026-02-26 18:46:58 UTC | CORE | INFO | (comp/core/autodiscovery/autodiscoveryimpl/autoconfig.go:162 in 1) | Workloadmeta collectors are ready, starting autodiscovery scheduler controller
+2026-02-26 18:46:58 UTC | CORE | INFO | (comp/core/autodiscovery/scheduler/controller.go:88 in Start) | Autodiscovery scheduler controller started
+2026-02-26 18:46:58 UTC | CORE | INFO | (pkg/logs/client/http/destination.go:516 in CheckConnectivity) | HTTP connectivity successful
+2026-02-26 18:46:58 UTC | CORE | INFO | (comp/logs/agent/agentimpl/agent.go:294 in func1) | logs-agent started
+2026-02-26 18:46:58 UTC | CORE | INFO | (comp/core/agenttelemetry/impl/agenttelemetry.go:606 in start) | Starting agent telemetry for 5 schedules and 13 profiles
+2026-02-26 18:46:58 UTC | CORE | INFO | (pkg/collector/runner/runner.go:107 in ensureMinWorkers) | Runner 1 added 4 workers (total: 4)
+2026-02-26 18:46:58 UTC | CORE | INFO | (pkg/process/subscribers/gpu_subscriber.go:40 in Run) | Starting GPU subscriber
+2026-02-26 18:46:58 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:458 in Start) | Forwarder started, sending to 1 endpoint(s) with 1 worker(s) each: "https://process.datadoghq.com." (1 api key(s))
+2026-02-26 18:46:58 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:458 in Start) | Forwarder started, sending to 1 endpoint(s) with 1 worker(s) each: "https://process.datadoghq.com." (1 api key(s))
+2026-02-26 18:46:58 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:458 in Start) | Forwarder started, sending to 1 endpoint(s) with 1 worker(s) each: "https://process.datadoghq.com." (1 api key(s))
+2026-02-26 18:46:58 UTC | CORE | INFO | (pkg/process/runner/submitter.go:194 in printStartMessage) | Starting CheckSubmitter for host=pattykube, endpoints=[https://process.datadoghq.com.]
+2026-02-26 18:46:58 UTC | CORE | INFO | (pkg/process/runner/runner.go:283 in Run) | Starting process-component with enabled checks=[process rtprocess]
+2026-02-26 18:46:58 UTC | CORE | INFO | (pkg/logs/launchers/container/launcher.go:104 in run) | Starting Container launcher
+2026-02-26 18:46:59 UTC | CORE | INFO | (pkg/util/containers/metrics/provider/registry.go:102 in collectorDiscovery) | Container metrics provider discovery process finished
+2026-02-26 18:46:59 UTC | CORE | INFO | (pkg/api/security/security.go:178 in getClusterAgentAuthToken) | Using configured cluster_agent.auth_token
+2026-02-26 18:46:59 UTC | CORE | ERROR | (comp/core/workloadmeta/collectors/internal/kubemetadata/kubemetadata.go:90 in Start) | Could not initialise the communication with the cluster agent: temporary failure in clusterAgentClient, will retry later: "https://10.96.161.153:5005/version" is unavailable: 403 Forbidden
+2026-02-26 18:47:00 UTC | CORE | ERROR | (comp/core/workloadmeta/collectors/internal/kubemetadata/kubemetadata.go:90 in Start) | Could not initialise the communication with the cluster agent: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:01 UTC | CORE | INFO | (pkg/process/checks/process.go:168 in Init) | no network ID detected: failed to get network ID after 4 attempts: no network ID detected and system-probe client not available: could not detect network ID: EC2: GetNetworkID failed to get mac addresses: could not fetch token from IMDSv2: Put "http://169.254.169.254/latest/api/token": dial tcp 169.254.169.254:80: connect: connection refused
+2026-02-26 18:47:01 UTC | CORE | INFO | (comp/dogstatsd/listeners/uds_datagram.go:75 in NewUDSDatagramListener) | dogstatsd-uds: /var/run/datadog/dsd.socket successfully initialized
+2026-02-26 18:47:01 UTC | CORE | INFO | (pkg/aggregator/demultiplexer.go:204 in getDogStatsDWorkerAndPipelineCount) | Dogstatsd workers and pipelines count:  2  workers,  1  pipelines
+2026-02-26 18:47:01 UTC | CORE | INFO | (pkg/aggregator/demultiplexer.go:153 in GetDogStatsDWorkerAndPipelineCount) | Dogstatsd configured to run with 2 workers and 1 pipelines
+2026-02-26 18:47:01 UTC | CORE | INFO | (pkg/aggregator/demultiplexer.go:204 in getDogStatsDWorkerAndPipelineCount) | Dogstatsd workers and pipelines count:  2  workers,  1  pipelines
+2026-02-26 18:47:01 UTC | CORE | INFO | (pkg/aggregator/demultiplexer.go:153 in GetDogStatsDWorkerAndPipelineCount) | Dogstatsd configured to run with 2 workers and 1 pipelines
+2026-02-26 18:47:01 UTC | CORE | INFO | (pkg/aggregator/demultiplexer.go:204 in getDogStatsDWorkerAndPipelineCount) | Dogstatsd workers and pipelines count:  2  workers,  1  pipelines
+2026-02-26 18:47:01 UTC | CORE | INFO | (pkg/aggregator/demultiplexer.go:153 in GetDogStatsDWorkerAndPipelineCount) | Dogstatsd configured to run with 2 workers and 1 pipelines
+2026-02-26 18:47:01 UTC | CORE | INFO | (comp/core/remoteagentregistry/impl/registry.go:229 in func1) | Remote Agent registry started.
+2026-02-26 18:47:01 UTC | CORE | INFO | (comp/dogstatsd/listeners/uds_datagram.go:89 in listen) | dogstatsd-uds: starting to listen on /var/run/datadog/dsd.socket
+2026-02-26 18:47:01 UTC | CORE | INFO | (comp/dogstatsd/listeners/udp.go:128 in listen) | dogstatsd-udp: starting to listen on [::]:8125
+2026-02-26 18:47:01 UTC | CORE | INFO | (comp/remote-config/rcservice/rcserviceimpl/rcservice.go:129 in func1) | remote config service started
+2026-02-26 18:47:01 UTC | CORE | INFO | (comp/api/api/apiimpl/server.go:32 in startServer) | Started HTTP server 'CMD API Server' on 127.0.0.1:5001
+2026-02-26 18:47:01 UTC | CORE | INFO | (pkg/config/remote/client/client.go:459 in pollLoop) | retrying the first update of remote-config state (rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp [::1]:5001: connect: connection refused"), consecutive failures: 1
+2026-02-26 18:47:01 UTC | CORE | INFO | (comp/metadata/host/hostimpl/hosttags/tags.go:145 in Get) | Adding both tags cluster_name and kube_cluster_name. You can use 'disable_cluster_name_tag_key' in the Agent config to keep the kube_cluster_name tag only
+2026-02-26 18:47:01 UTC | CORE | INFO | (cmd/agent/subcommands/run/command.go:600 in startAgent) | Starting Datadog Agent v7.75.4
+2026-02-26 18:47:01 UTC | CORE | INFO | (cmd/agent/subcommands/run/command.go:626 in startAgent) | Hostname is: pattykube
+2026-02-26 18:47:01 UTC | CORE | INFO | (pkg/process/runner/runner.go:235 in logCheckDuration) | Finished process check #1 in 11.862667ms
+2026-02-26 18:47:01 UTC | CORE | INFO | (comp/metadata/host/hostimpl/hosttags/tags.go:178 in Get) | Unable to get host tags from source: gce - using cached host tags
+2026-02-26 18:47:01 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:82 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:01 UTC | CORE | INFO | (comp/core/autodiscovery/autodiscoveryimpl/config_poller.go:171 in collectOnce) | file provider: collected 67 new configurations, removed 0
+2026-02-26 18:47:01 UTC | CORE | INFO | (pkg/collector/python/init.go:329 in resolvePythonHome) | Using '/opt/datadog-agent/embedded' as Python home
+2026-02-26 18:47:01 UTC | CORE | INFO | (pkg/collector/python/init.go:395 in Initialize) | Initializing rtloader with Python 3 /opt/datadog-agent/embedded
+2026-02-26 18:47:01 UTC | CORE | INFO | (comp/core/autodiscovery/autodiscoveryimpl/autoconfig.go:391 in LoadAndRun) | Started config provider "file"
+2026-02-26 18:47:01 UTC | CORE | ERROR | (comp/core/autodiscovery/autodiscoveryimpl/config_poller.go:216 in collect) | Unable to collect configurations from provider cluster-checks: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:01 UTC | CORE | INFO | (comp/core/autodiscovery/autodiscoveryimpl/autoconfig.go:389 in LoadAndRun) | Started config provider "cluster-checks", polled every 10s
+2026-02-26 18:47:01 UTC | CORE | ERROR | (comp/core/autodiscovery/autodiscoveryimpl/config_poller.go:216 in collect) | Unable to collect configurations from provider endpoints-checks: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:01 UTC | CORE | INFO | (comp/core/autodiscovery/autodiscoveryimpl/autoconfig.go:389 in LoadAndRun) | Started config provider "endpoints-checks", polled every 10s
+2026-02-26 18:47:01 UTC | CORE | INFO | (comp/core/autodiscovery/autodiscoveryimpl/config_poller.go:108 in stream) | kubernetes-container-allinone provider: collected 22 new configurations, removed 0
+2026-02-26 18:47:01 UTC | CORE | INFO | (comp/core/autodiscovery/autodiscoveryimpl/autoconfig.go:463 in processNewConfig) | jmx doesn't have an additional metric configuration file: not collecting default metrics
+2026-02-26 18:47:01 UTC | CORE | INFO | (comp/core/autodiscovery/autodiscoveryimpl/autoconfig.go:391 in LoadAndRun) | Started config provider "kubernetes-container-allinone"
+2026-02-26 18:47:01 UTC | CORE | INFO | (comp/core/autodiscovery/autodiscoveryimpl/autoconfig.go:391 in LoadAndRun) | Started config provider "dsm-live-messages"
+2026-02-26 18:47:01 UTC | CORE | INFO | (comp/core/autodiscovery/autodiscoveryimpl/autoconfig.go:391 in LoadAndRun) | Started config provider "dsm-live-messages"
+2026-02-26 18:47:01 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/transaction/transaction.go:462 in internalProcess) | Successfully posted payload to "https://7-75-4-app.agent.datadoghq.com./intake/" (202 Accepted), the agent will only log transaction success every 500 transactions
+2026-02-26 18:47:01 UTC | CORE | INFO | (pkg/config/remote/service/service.go:329 in poll) | [Remote Config] Remote Configuration is enabled for this organization and agent.
+2026-02-26 18:47:01 UTC | CORE | INFO | (pkg/collector/python/embed_python.go:21 in InitPython) | Embedding Python 3.13.11 (main, Feb 16 2026, 09:34:23) [GCC 12.3.0]
+2026-02-26 18:47:01 UTC | CORE | INFO | (comp/core/tagger/server/server.go:165 in TaggerStreamEntities) | tagger server has just finished initialization for subscription "streaming-client-trace_agent:d22a97ea-10f1-46aa-8e3a-46b8e5181a15" at time 1772131621
+2026-02-26 18:47:01 UTC | CORE | INFO | (pkg/util/cloudproviders/cloudproviders.go:184 in GetHostCCRID) | No Host CCRID, no cloudprovider detected
+2026-02-26 18:47:01 UTC | CORE | INFO | (comp/metadata/host/hostimpl/hosttags/tags.go:145 in Get) | Adding both tags cluster_name and kube_cluster_name. You can use 'disable_cluster_name_tag_key' in the Agent config to keep the kube_cluster_name tag only
+2026-02-26 18:47:01 UTC | CORE | INFO | (pkg/api/security/security.go:178 in getClusterAgentAuthToken) | Using configured cluster_agent.auth_token
+2026-02-26 18:47:01 UTC | CORE | INFO | (comp/metadata/host/hostimpl/hosttags/tags.go:178 in Get) | Unable to get host tags from source: gce - using cached host tags
+2026-02-26 18:47:01 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:82 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:01 UTC | CORE | ERROR | (comp/core/workloadmeta/collectors/internal/kubemetadata/kubemetadata.go:90 in Start) | Could not initialise the communication with the cluster agent: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:02 UTC | CORE | INFO | (comp/core/remoteagentregistry/impl/registry.go:200 in RegisterRemoteAgent) | Remote agent 'Trace Agent' (flavor: trace_agent, session_id: 2a63b5ae-7c14-43f4-9a1f-fabee7a2d449) registered. (exposed services: [])
+2026-02-26 18:47:02 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check coredns:ed54ae8994d722a with an interval of 15s
+2026-02-26 18:47:02 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check datadog_cluster_agent:e194f0fb2aae1489 with an interval of 15s
+2026-02-26 18:47:02 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:82 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:02 UTC | CORE | INFO | (pkg/collector/python/datadog_agent.go:148 in LogMessage) | unknown | (base_check.py:124) | Couldn't connect to https://172.17.0.2:2379/metrics: HTTPSConnectionPool(host='172.17.0.2', port=2379): Max retries exceeded with url: /metrics (Caused by SSLError(SSLError(1, '[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2658)'))), trying next possible URL.
+2026-02-26 18:47:02 UTC | CORE | INFO | (pkg/collector/python/datadog_agent.go:148 in LogMessage) | unknown | (base_check.py:124) | Couldn't connect to http://172.17.0.2:2379/metrics: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')), trying next possible URL.
+2026-02-26 18:47:02 UTC | CORE | WARN | (pkg/collector/python/check.go:334 in Configure) | could not get a 'etcd' check instance with the new api: Traceback (most recent call last):
+  File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/etcd/etcd.py", line 73, in __init__
+    super(Etcd, self).__init__(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        name,
+        ^^^^^
+    ...<12 lines>...
+        default_namespace='etcd',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 126, in __init__
+    raise CheckException(
+        "The agent could not connect to any of the following URLs: %s." % possible_urls
+    )
+datadog_checks.base.errors.CheckException: The agent could not connect to any of the following URLs: ['https://172.17.0.2:2379/metrics', 'http://172.17.0.2:2379/metrics'].
+2026-02-26 18:47:02 UTC | CORE | WARN | (pkg/collector/python/check.go:335 in Configure) | trying to instantiate the check with the old api, passing agentConfig to the constructor
+2026-02-26 18:47:02 UTC | CORE | INFO | (comp/core/tagger/server/server.go:165 in TaggerStreamEntities) | tagger server has just finished initialization for subscription "streaming-client-process_agent:c60e9fc4-70e3-48a4-bc7c-5ad7393b88f5" at time 1772131622
+2026-02-26 18:47:02 UTC | CORE | INFO | (comp/core/remoteagentregistry/impl/registry.go:200 in RegisterRemoteAgent) | Remote agent 'Process Agent' (flavor: process_agent, session_id: 2667a8b1-fe8b-4cf1-9041-14ce4a81c89d) registered. (exposed services: [datadog.remoteagent.telemetry.v1.TelemetryProvider])
+2026-02-26 18:47:02 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:82 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:02 UTC | CORE | ERROR | (pkg/collector/python/loader.go:290 in addExpvarConfigureError) | py.loader: could not configure check 'etcd (9.2.0)': could not invoke 'etcd' python check constructor. New constructor API returned:
+Traceback (most recent call last):
+  File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/etcd/etcd.py", line 73, in __init__
+    super(Etcd, self).__init__(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        name,
+        ^^^^^
+    ...<12 lines>...
+        default_namespace='etcd',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 126, in __init__
+    raise CheckException(
+        "The agent could not connect to any of the following URLs: %s." % possible_urls
+    )
+datadog_checks.base.errors.CheckException: The agent could not connect to any of the following URLs: ['https://172.17.0.2:2379/metrics', 'http://172.17.0.2:2379/metrics'].
+Deprecated constructor API returned:
+Etcd.__init__() got an unexpected keyword argument 'agentConfig'
+2026-02-26 18:47:02 UTC | CORE | ERROR | (pkg/collector/scheduler.go:226 in getChecks) | Unable to load a check from instance of config 'etcd': Core Check Loader: Check etcd not found in Catalog; Python Check Loader: could not configure check instance for python check etcd: could not invoke 'etcd' python check constructor. New constructor API returned:
+Traceback (most recent call last):
+  File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/etcd/etcd.py", line 73, in __init__
+    super(Etcd, self).__init__(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        name,
+        ^^^^^
+    ...<12 lines>...
+        default_namespace='etcd',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 126, in __init__
+    raise CheckException(
+        "The agent could not connect to any of the following URLs: %s." % possible_urls
+    )
+datadog_checks.base.errors.CheckException: The agent could not connect to any of the following URLs: ['https://172.17.0.2:2379/metrics', 'http://172.17.0.2:2379/metrics'].
+Deprecated constructor API returned:
+Etcd.__init__() got an unexpected keyword argument 'agentConfig'; 
+2026-02-26 18:47:02 UTC | CORE | INFO | (pkg/collector/python/datadog_agent.go:148 in LogMessage) | unknown | (base_check.py:124) | Couldn't connect to https://172.17.0.2:6443/metrics: HTTPSConnectionPool(host='172.17.0.2', port=6443): Max retries exceeded with url: /metrics (Caused by NewConnectionError("HTTPSConnection(host='172.17.0.2', port=6443): Failed to establish a new connection: [Errno 111] Connection refused")), trying next possible URL.
+2026-02-26 18:47:02 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check kube_apiserver_metrics:11675b2537f1d4d2 with an interval of 15s
+2026-02-26 18:47:02 UTC | CORE | INFO | (pkg/collector/python/datadog_agent.go:148 in LogMessage) | unknown | (base_check.py:124) | Couldn't connect to https://172.17.0.2:10257/metrics: HTTPSConnectionPool(host='172.17.0.2', port=10257): Max retries exceeded with url: /metrics (Caused by NewConnectionError("HTTPSConnection(host='172.17.0.2', port=10257): Failed to establish a new connection: [Errno 111] Connection refused")), trying next possible URL.
+2026-02-26 18:47:02 UTC | CORE | INFO | (pkg/collector/python/datadog_agent.go:148 in LogMessage) | unknown | (base_check.py:124) | Couldn't connect to https://localhost:10257/metrics: HTTPSConnectionPool(host='localhost', port=10257): Max retries exceeded with url: /metrics (Caused by NewConnectionError("HTTPSConnection(host='localhost', port=10257): Failed to establish a new connection: [Errno 111] Connection refused")), trying next possible URL.
+2026-02-26 18:47:02 UTC | CORE | INFO | (pkg/collector/python/datadog_agent.go:148 in LogMessage) | unknown | (base_check.py:124) | Couldn't connect to http://172.17.0.2:10252/metrics: HTTPConnectionPool(host='172.17.0.2', port=10252): Max retries exceeded with url: /metrics (Caused by NewConnectionError("HTTPConnection(host='172.17.0.2', port=10252): Failed to establish a new connection: [Errno 111] Connection refused")), trying next possible URL.
+2026-02-26 18:47:02 UTC | CORE | INFO | (pkg/collector/python/datadog_agent.go:148 in LogMessage) | unknown | (base_check.py:124) | Couldn't connect to http://localhost:10252/metrics: HTTPConnectionPool(host='localhost', port=10252): Max retries exceeded with url: /metrics (Caused by NewConnectionError("HTTPConnection(host='localhost', port=10252): Failed to establish a new connection: [Errno 111] Connection refused")), trying next possible URL.
+2026-02-26 18:47:02 UTC | CORE | WARN | (pkg/collector/python/check.go:334 in Configure) | could not get a 'kube_controller_manager' check instance with the new api: Traceback (most recent call last):
+  File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/kube_controller_manager/kube_controller_manager.py", line 114, in __init__
+    super(KubeControllerManagerCheck, self).__init__(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        name,
+        ^^^^^
+    ...<23 lines>...
+        default_namespace="kube_controller_manager",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/kube_controller_manager/sli_metrics.py", line 25, in __init__
+    super(SliMetricsScraperMixin, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 126, in __init__
+    raise CheckException(
+        "The agent could not connect to any of the following URLs: %s." % possible_urls
+    )
+datadog_checks.base.errors.CheckException: The agent could not connect to any of the following URLs: ['https://172.17.0.2:10257/metrics', 'https://localhost:10257/metrics', 'http://172.17.0.2:10252/metrics', 'http://localhost:10252/metrics'].
+2026-02-26 18:47:02 UTC | CORE | WARN | (pkg/collector/python/check.go:335 in Configure) | trying to instantiate the check with the old api, passing agentConfig to the constructor
+2026-02-26 18:47:03 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:coredns | Running check...
+2026-02-26 18:47:03 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:coredns | Done running check
+2026-02-26 18:47:03 UTC | CORE | ERROR | (pkg/collector/python/loader.go:290 in addExpvarConfigureError) | py.loader: could not configure check 'kube_controller_manager (8.2.0)': could not invoke 'kube_controller_manager' python check constructor. New constructor API returned:
+Traceback (most recent call last):
+  File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/kube_controller_manager/kube_controller_manager.py", line 114, in __init__
+    super(KubeControllerManagerCheck, self).__init__(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        name,
+        ^^^^^
+    ...<23 lines>...
+        default_namespace="kube_controller_manager",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/kube_controller_manager/sli_metrics.py", line 25, in __init__
+    super(SliMetricsScraperMixin, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 126, in __init__
+    raise CheckException(
+        "The agent could not connect to any of the following URLs: %s." % possible_urls
+    )
+datadog_checks.base.errors.CheckException: The agent could not connect to any of the following URLs: ['https://172.17.0.2:10257/metrics', 'https://localhost:10257/metrics', 'http://172.17.0.2:10252/metrics', 'http://localhost:10252/metrics'].
+Deprecated constructor API returned:
+KubeControllerManagerCheck.__init__() got an unexpected keyword argument 'agentConfig'
+2026-02-26 18:47:03 UTC | CORE | ERROR | (pkg/collector/scheduler.go:226 in getChecks) | Unable to load a check from instance of config 'kube_controller_manager': Core Check Loader: Check kube_controller_manager not found in Catalog; Python Check Loader: could not configure check instance for python check kube_controller_manager: could not invoke 'kube_controller_manager' python check constructor. New constructor API returned:
+Traceback (most recent call last):
+  File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/kube_controller_manager/kube_controller_manager.py", line 114, in __init__
+    super(KubeControllerManagerCheck, self).__init__(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        name,
+        ^^^^^
+    ...<23 lines>...
+        default_namespace="kube_controller_manager",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/kube_controller_manager/sli_metrics.py", line 25, in __init__
+    super(SliMetricsScraperMixin, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 126, in __init__
+    raise CheckException(
+        "The agent could not connect to any of the following URLs: %s." % possible_urls
+    )
+datadog_checks.base.errors.CheckException: The agent could not connect to any of the following URLs: ['https://172.17.0.2:10257/metrics', 'https://localhost:10257/metrics', 'http://172.17.0.2:10252/metrics', 'http://localhost:10252/metrics'].
+Deprecated constructor API returned:
+KubeControllerManagerCheck.__init__() got an unexpected keyword argument 'agentConfig'; 
+2026-02-26 18:47:03 UTC | CORE | INFO | (pkg/process/runner/runner.go:235 in logCheckDuration) | Finished process check #2 in 9.967458ms
+2026-02-26 18:47:03 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:82 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:03 UTC | CORE | INFO | (pkg/collector/python/datadog_agent.go:148 in LogMessage) | unknown | (base_check.py:124) | Couldn't connect to https://172.17.0.2:10259/metrics: HTTPSConnectionPool(host='172.17.0.2', port=10259): Max retries exceeded with url: /metrics (Caused by NewConnectionError("HTTPSConnection(host='172.17.0.2', port=10259): Failed to establish a new connection: [Errno 111] Connection refused")), trying next possible URL.
+2026-02-26 18:47:03 UTC | CORE | INFO | (pkg/collector/python/datadog_agent.go:148 in LogMessage) | unknown | (base_check.py:124) | Couldn't connect to https://localhost:10259/metrics: HTTPSConnectionPool(host='localhost', port=10259): Max retries exceeded with url: /metrics (Caused by NewConnectionError("HTTPSConnection(host='localhost', port=10259): Failed to establish a new connection: [Errno 111] Connection refused")), trying next possible URL.
+2026-02-26 18:47:03 UTC | CORE | INFO | (pkg/collector/python/datadog_agent.go:148 in LogMessage) | unknown | (base_check.py:124) | Couldn't connect to http://172.17.0.2:10251/metrics: HTTPConnectionPool(host='172.17.0.2', port=10251): Max retries exceeded with url: /metrics (Caused by NewConnectionError("HTTPConnection(host='172.17.0.2', port=10251): Failed to establish a new connection: [Errno 111] Connection refused")), trying next possible URL.
+2026-02-26 18:47:03 UTC | CORE | INFO | (pkg/collector/python/datadog_agent.go:148 in LogMessage) | unknown | (base_check.py:124) | Couldn't connect to http://localhost:10251/metrics: HTTPConnectionPool(host='localhost', port=10251): Max retries exceeded with url: /metrics (Caused by NewConnectionError("HTTPConnection(host='localhost', port=10251): Failed to establish a new connection: [Errno 111] Connection refused")), trying next possible URL.
+2026-02-26 18:47:03 UTC | CORE | WARN | (pkg/collector/python/check.go:334 in Configure) | could not get a 'kube_scheduler' check instance with the new api: Traceback (most recent call last):
+  File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/kube_scheduler/kube_scheduler.py", line 159, in __init__
+    super(KubeSchedulerCheck, self).__init__(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        name,
+        ^^^^^
+    ...<24 lines>...
+        default_namespace="kube_scheduler",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/kube_scheduler/sli_metrics.py", line 25, in __init__
+    super(SliMetricsScraperMixin, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 126, in __init__
+    raise CheckException(
+        "The agent could not connect to any of the following URLs: %s." % possible_urls
+    )
+datadog_checks.base.errors.CheckException: The agent could not connect to any of the following URLs: ['https://172.17.0.2:10259/metrics', 'https://localhost:10259/metrics', 'http://172.17.0.2:10251/metrics', 'http://localhost:10251/metrics'].
+2026-02-26 18:47:03 UTC | CORE | WARN | (pkg/collector/python/check.go:335 in Configure) | trying to instantiate the check with the old api, passing agentConfig to the constructor
+2026-02-26 18:47:03 UTC | CORE | INFO | (comp/core/agenttelemetry/impl/agenttelemetry.go:508 in run) | Starting agent telemetry run
+2026-02-26 18:47:03 UTC | CORE | ERROR | (pkg/collector/python/loader.go:290 in addExpvarConfigureError) | py.loader: could not configure check 'kube_scheduler (7.2.0)': could not invoke 'kube_scheduler' python check constructor. New constructor API returned:
+Traceback (most recent call last):
+  File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/kube_scheduler/kube_scheduler.py", line 159, in __init__
+    super(KubeSchedulerCheck, self).__init__(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        name,
+        ^^^^^
+    ...<24 lines>...
+        default_namespace="kube_scheduler",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/kube_scheduler/sli_metrics.py", line 25, in __init__
+    super(SliMetricsScraperMixin, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 126, in __init__
+    raise CheckException(
+        "The agent could not connect to any of the following URLs: %s." % possible_urls
+    )
+datadog_checks.base.errors.CheckException: The agent could not connect to any of the following URLs: ['https://172.17.0.2:10259/metrics', 'https://localhost:10259/metrics', 'http://172.17.0.2:10251/metrics', 'http://localhost:10251/metrics'].
+Deprecated constructor API returned:
+KubeSchedulerCheck.__init__() got an unexpected keyword argument 'agentConfig'
+2026-02-26 18:47:03 UTC | CORE | ERROR | (pkg/collector/scheduler.go:226 in getChecks) | Unable to load a check from instance of config 'kube_scheduler': Core Check Loader: Check kube_scheduler not found in Catalog; Python Check Loader: could not configure check instance for python check kube_scheduler: could not invoke 'kube_scheduler' python check constructor. New constructor API returned:
+Traceback (most recent call last):
+  File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/kube_scheduler/kube_scheduler.py", line 159, in __init__
+    super(KubeSchedulerCheck, self).__init__(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        name,
+        ^^^^^
+    ...<24 lines>...
+        default_namespace="kube_scheduler",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/kube_scheduler/sli_metrics.py", line 25, in __init__
+    super(SliMetricsScraperMixin, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 126, in __init__
+    raise CheckException(
+        "The agent could not connect to any of the following URLs: %s." % possible_urls
+    )
+datadog_checks.base.errors.CheckException: The agent could not connect to any of the following URLs: ['https://172.17.0.2:10259/metrics', 'https://localhost:10259/metrics', 'http://172.17.0.2:10251/metrics', 'http://localhost:10251/metrics'].
+Deprecated constructor API returned:
+KubeSchedulerCheck.__init__() got an unexpected keyword argument 'agentConfig'; 
+2026-02-26 18:47:03 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:82 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:03 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check redisdb:6549f812315df5f4 with an interval of 15s
+2026-02-26 18:47:03 UTC | CORE | ERROR | (pkg/jmxfetch/scheduler.go:68 in Schedule) | Could not schedule jmxfetch config: tomcat_521ea5648c827f91: exec: "java": executable file not found in $PATH
+2026-02-26 18:47:03 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check container with an interval of 15s
+2026-02-26 18:47:03 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check container_image with an interval of 15s
+2026-02-26 18:47:03 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check container_lifecycle with an interval of 15s
+2026-02-26 18:47:03 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check cpu with an interval of 15s
+2026-02-26 18:47:03 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check discovery with an interval of 1m0s
+2026-02-26 18:47:03 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check disk with an interval of 15s
+2026-02-26 18:47:03 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check docker with an interval of 15s
+2026-02-26 18:47:03 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check file_handle with an interval of 15s
+2026-02-26 18:47:03 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check io with an interval of 15s
+2026-02-26 18:47:03 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check kubelet with an interval of 20s
+2026-02-26 18:47:03 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check load with an interval of 15s
+2026-02-26 18:47:03 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check memory with an interval of 15s
+2026-02-26 18:47:03 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check network with an interval of 15s
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:memory | Running check...
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:memory | Done running check
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/collector/corechecks/net/ntp/ntp.go:146 in parse) | Using NTP servers: [ 0.datadog.pool.ntp.org, 1.datadog.pool.ntp.org, 2.datadog.pool.ntp.org, 3.datadog.pool.ntp.org ]
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check ntp:3c427a42a70bbf8 with an interval of 15m0s
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check orchestrator_kubelet_config:45ec97f32309a951 with an interval of 10m0s
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check orchestrator_pod:888ebc42a3817b00 with an interval of 15s
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check telemetry with an interval of 15s
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check uptime with an interval of 15s
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:74 in Schedule) | Received a new logs config: container_collect_all
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:74 in Schedule) | Received a new logs config: container_collect_all
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:74 in Schedule) | Received a new logs config: container_collect_all
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:74 in Schedule) | Received a new logs config: container_collect_all
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:74 in Schedule) | Received a new logs config: container_collect_all
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:74 in Schedule) | Received a new logs config: container_collect_all
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:74 in Schedule) | Received a new logs config: container_collect_all
+2026-02-26 18:47:04 UTC | CORE | WARN | (comp/logs/agent/config/integration_config.go:418 in AutoMultiLineEnabled) | config key "logs_config.experimental_auto_multi_line_detection" is unknown
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:74 in Schedule) | Received a new logs config: container_collect_all
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:461 in startNewTailer) | Starting a new tailer for: /var/log/pods/kube-system_kube-scheduler-pattykube_29a4db6f284853a1e9d61c9937943484/kube-scheduler/3.log (offset: 3295, whence: 0) for tailer key /var/log/pods/kube-system_kube-scheduler-pattykube_29a4db6f284853a1e9d61c9937943484/kube-scheduler/3.log/76d2e35e241b39b3e519cdf449bfef9c32859e6efbb627ad4425ab1ad89fbf9b
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/tailers/file/tailer_nix.go:29 in setup) | Opening /var/log/pods/kube-system_kube-scheduler-pattykube_29a4db6f284853a1e9d61c9937943484/kube-scheduler/3.log for tailer key /var/log/pods/kube-system_kube-scheduler-pattykube_29a4db6f284853a1e9d61c9937943484/kube-scheduler/3.log/76d2e35e241b39b3e519cdf449bfef9c32859e6efbb627ad4425ab1ad89fbf9b
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:461 in startNewTailer) | Starting a new tailer for: /var/log/pods/default_redis-deployment-56479df6fc-jv4z9_2d70b2fb-8270-4751-8176-e3852186231a/redis/0.log (offset: 9750, whence: 0) for tailer key /var/log/pods/default_redis-deployment-56479df6fc-jv4z9_2d70b2fb-8270-4751-8176-e3852186231a/redis/0.log/e742cbc43cf9a75ada6bf121167886e06c01ac0c8dfa1b654d44cdb5265eca9a
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/tailers/file/tailer_nix.go:29 in setup) | Opening /var/log/pods/default_redis-deployment-56479df6fc-jv4z9_2d70b2fb-8270-4751-8176-e3852186231a/redis/0.log for tailer key /var/log/pods/default_redis-deployment-56479df6fc-jv4z9_2d70b2fb-8270-4751-8176-e3852186231a/redis/0.log/e742cbc43cf9a75ada6bf121167886e06c01ac0c8dfa1b654d44cdb5265eca9a
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:74 in Schedule) | Received a new logs config: container_collect_all
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:461 in startNewTailer) | Starting a new tailer for: /var/log/pods/kube-system_coredns-7d764666f9-m99c8_2595af7c-adbe-4e87-984c-759876340e8a/coredns/3.log (offset: 402549, whence: 0) for tailer key /var/log/pods/kube-system_coredns-7d764666f9-m99c8_2595af7c-adbe-4e87-984c-759876340e8a/coredns/3.log/a5174fe929ef3485b415c04fefdda3b4aa5a83ba03fc780f7bdc87e4ed854a4e
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/tailers/file/tailer_nix.go:29 in setup) | Opening /var/log/pods/kube-system_coredns-7d764666f9-m99c8_2595af7c-adbe-4e87-984c-759876340e8a/coredns/3.log for tailer key /var/log/pods/kube-system_coredns-7d764666f9-m99c8_2595af7c-adbe-4e87-984c-759876340e8a/coredns/3.log/a5174fe929ef3485b415c04fefdda3b4aa5a83ba03fc780f7bdc87e4ed854a4e
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:553 in handleTailingModeChange) | Tailing mode changed for file:/var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/init-config/0.log. Was: end: Now: beginning
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:461 in startNewTailer) | Starting a new tailer for: /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/init-config/0.log (offset: 0, whence: 0) for tailer key /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/init-config/0.log/92b3356af012922cb509ef6e397f6ccee6550dea16b3c0867a11ea31316b1530
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/tailers/file/tailer_nix.go:29 in setup) | Opening /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/init-config/0.log for tailer key /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/init-config/0.log/92b3356af012922cb509ef6e397f6ccee6550dea16b3c0867a11ea31316b1530
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:553 in handleTailingModeChange) | Tailing mode changed for file:/var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/init-volume/0.log. Was: end: Now: beginning
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:461 in startNewTailer) | Starting a new tailer for: /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/init-volume/0.log (offset: 0, whence: 0) for tailer key /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/init-volume/0.log/167074306ee212e32d29c4f3bbeaa08daeaa05a3c446f0879244ba8a0e4a8412
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/tailers/file/tailer_nix.go:29 in setup) | Opening /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/init-volume/0.log for tailer key /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/init-volume/0.log/167074306ee212e32d29c4f3bbeaa08daeaa05a3c446f0879244ba8a0e4a8412
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:74 in Schedule) | Received a new logs config: container_collect_all
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:553 in handleTailingModeChange) | Tailing mode changed for file:/var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/seccomp-setup/0.log. Was: end: Now: beginning
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:461 in startNewTailer) | Starting a new tailer for: /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/seccomp-setup/0.log (offset: 0, whence: 0) for tailer key /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/seccomp-setup/0.log/6bd4a07cd10ab204a17f1ba6f804cc152e71be0aaa15c4c95ee1de110f37cf49
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/tailers/file/tailer_nix.go:29 in setup) | Opening /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/seccomp-setup/0.log for tailer key /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/seccomp-setup/0.log/6bd4a07cd10ab204a17f1ba6f804cc152e71be0aaa15c4c95ee1de110f37cf49
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:553 in handleTailingModeChange) | Tailing mode changed for file:/var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/agent/0.log. Was: end: Now: beginning
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:461 in startNewTailer) | Starting a new tailer for: /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/agent/0.log (offset: 0, whence: 0) for tailer key /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/agent/0.log/0be18888ad8e491cd0b2e9ca9aed8c80d39ca82fb115e8b334a95299a037bbd7
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/tailers/file/tailer_nix.go:29 in setup) | Opening /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/agent/0.log for tailer key /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/agent/0.log/0be18888ad8e491cd0b2e9ca9aed8c80d39ca82fb115e8b334a95299a037bbd7
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:553 in handleTailingModeChange) | Tailing mode changed for file:/var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/process-agent/0.log. Was: end: Now: beginning
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:461 in startNewTailer) | Starting a new tailer for: /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/process-agent/0.log (offset: 0, whence: 0) for tailer key /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/process-agent/0.log/ce8933cc7cbf0353f4c90881114da5bfed41620dd4f508f10727e6ed24b0088b
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/tailers/file/tailer_nix.go:29 in setup) | Opening /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/process-agent/0.log for tailer key /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/process-agent/0.log/ce8933cc7cbf0353f4c90881114da5bfed41620dd4f508f10727e6ed24b0088b
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:553 in handleTailingModeChange) | Tailing mode changed for file:/var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/system-probe/0.log. Was: end: Now: beginning
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:461 in startNewTailer) | Starting a new tailer for: /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/system-probe/0.log (offset: 0, whence: 0) for tailer key /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/system-probe/0.log/06bff94baba197cfb5095fdc57882a08921516ea1ff00f83739f30242c5089df
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/tailers/file/tailer_nix.go:29 in setup) | Opening /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/system-probe/0.log for tailer key /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/system-probe/0.log/06bff94baba197cfb5095fdc57882a08921516ea1ff00f83739f30242c5089df
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:74 in Schedule) | Received a new logs config: container_collect_all
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:553 in handleTailingModeChange) | Tailing mode changed for file:/var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/trace-agent/0.log. Was: end: Now: beginning
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:461 in startNewTailer) | Starting a new tailer for: /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/trace-agent/0.log (offset: 0, whence: 0) for tailer key /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/trace-agent/0.log/cba24559722b7c7c7e19a2eedf3d42984c99964bae5019468a51ac791c873cea
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/tailers/file/tailer_nix.go:29 in setup) | Opening /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/trace-agent/0.log for tailer key /var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/trace-agent/0.log/cba24559722b7c7c7e19a2eedf3d42984c99964bae5019468a51ac791c873cea
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:74 in Schedule) | Received a new logs config: container_collect_all
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:74 in Schedule) | Received a new logs config: container_collect_all
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:461 in startNewTailer) | Starting a new tailer for: /var/log/pods/kube-system_etcd-pattykube_54027e52158f0d328dd5b7459b430812/etcd/3.log (offset: 4361322, whence: 0) for tailer key /var/log/pods/kube-system_etcd-pattykube_54027e52158f0d328dd5b7459b430812/etcd/3.log/0bd7e1a6afb1f5bd193ee56f9762cc8d237d55a595392f3f439025a673ff237b
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/tailers/file/tailer_nix.go:29 in setup) | Opening /var/log/pods/kube-system_etcd-pattykube_54027e52158f0d328dd5b7459b430812/etcd/3.log for tailer key /var/log/pods/kube-system_etcd-pattykube_54027e52158f0d328dd5b7459b430812/etcd/3.log/0bd7e1a6afb1f5bd193ee56f9762cc8d237d55a595392f3f439025a673ff237b
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:74 in Schedule) | Received a new logs config: container_collect_all
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:461 in startNewTailer) | Starting a new tailer for: /var/log/pods/kube-system_kube-proxy-r4f7x_72150617-7154-43b9-b149-1890f64e1f1d/kube-proxy/3.log (offset: 4041, whence: 0) for tailer key /var/log/pods/kube-system_kube-proxy-r4f7x_72150617-7154-43b9-b149-1890f64e1f1d/kube-proxy/3.log/38c6f8ace85e9f4ac5eb7aeda57a927214daf0032ee005c12f8b7bddca16aaf3
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/tailers/file/tailer_nix.go:29 in setup) | Opening /var/log/pods/kube-system_kube-proxy-r4f7x_72150617-7154-43b9-b149-1890f64e1f1d/kube-proxy/3.log for tailer key /var/log/pods/kube-system_kube-proxy-r4f7x_72150617-7154-43b9-b149-1890f64e1f1d/kube-proxy/3.log/38c6f8ace85e9f4ac5eb7aeda57a927214daf0032ee005c12f8b7bddca16aaf3
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:461 in startNewTailer) | Starting a new tailer for: /var/log/pods/default_prometheus-567d6b54b4-4tmwm_44965510-7773-47df-879e-df5b4cded201/prometheus/0.log (offset: 4942, whence: 0) for tailer key /var/log/pods/default_prometheus-567d6b54b4-4tmwm_44965510-7773-47df-879e-df5b4cded201/prometheus/0.log/bfe490a19a9899c258ead6d159808472b2cd6e31ccfda6171e1f8a0fc61f0be3
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/tailers/file/tailer_nix.go:29 in setup) | Opening /var/log/pods/default_prometheus-567d6b54b4-4tmwm_44965510-7773-47df-879e-df5b4cded201/prometheus/0.log for tailer key /var/log/pods/default_prometheus-567d6b54b4-4tmwm_44965510-7773-47df-879e-df5b4cded201/prometheus/0.log/bfe490a19a9899c258ead6d159808472b2cd6e31ccfda6171e1f8a0fc61f0be3
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:461 in startNewTailer) | Starting a new tailer for: /var/log/pods/kube-system_storage-provisioner_4c1acc23-7cec-4b96-af4f-a8d4056e04b3/storage-provisioner/52.log (offset: 78944, whence: 0) for tailer key /var/log/pods/kube-system_storage-provisioner_4c1acc23-7cec-4b96-af4f-a8d4056e04b3/storage-provisioner/52.log/3ad202e411ec8c9a6bc9719a791f74de8a7ccee4b7a98e0fd4edf277ef8054b2
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/tailers/file/tailer_nix.go:29 in setup) | Opening /var/log/pods/kube-system_storage-provisioner_4c1acc23-7cec-4b96-af4f-a8d4056e04b3/storage-provisioner/52.log for tailer key /var/log/pods/kube-system_storage-provisioner_4c1acc23-7cec-4b96-af4f-a8d4056e04b3/storage-provisioner/52.log/3ad202e411ec8c9a6bc9719a791f74de8a7ccee4b7a98e0fd4edf277ef8054b2
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:74 in Schedule) | Received a new logs config: container_collect_all
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:461 in startNewTailer) | Starting a new tailer for: /var/log/pods/kube-system_kube-apiserver-pattykube_7418e5e3a827586a02748ea0e6ae94d9/kube-apiserver/3.log (offset: 316409, whence: 0) for tailer key /var/log/pods/kube-system_kube-apiserver-pattykube_7418e5e3a827586a02748ea0e6ae94d9/kube-apiserver/3.log/8e67107272384206fe3b447b3e87f74136ed39d71c93d7ab6d4afecef0fe6610
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/tailers/file/tailer_nix.go:29 in setup) | Opening /var/log/pods/kube-system_kube-apiserver-pattykube_7418e5e3a827586a02748ea0e6ae94d9/kube-apiserver/3.log for tailer key /var/log/pods/kube-system_kube-apiserver-pattykube_7418e5e3a827586a02748ea0e6ae94d9/kube-apiserver/3.log/8e67107272384206fe3b447b3e87f74136ed39d71c93d7ab6d4afecef0fe6610
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:74 in Schedule) | Received a new logs config: container_collect_all
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:74 in Schedule) | Received a new logs config: container_collect_all
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:74 in Schedule) | Received a new logs config: container_collect_all
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:461 in startNewTailer) | Starting a new tailer for: /var/log/pods/default_datadog-cluster-agent-78b48ffdfb-9tmtm_7f6fc6e1-6cd1-4540-8ae7-30b5a16d679f/cluster-agent/0.log (offset: 34488, whence: 0) for tailer key /var/log/pods/default_datadog-cluster-agent-78b48ffdfb-9tmtm_7f6fc6e1-6cd1-4540-8ae7-30b5a16d679f/cluster-agent/0.log/ce91c4996a466471c977ac3240140415fd4703809f69db925fff26cbeb5beb6b
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/tailers/file/tailer_nix.go:29 in setup) | Opening /var/log/pods/default_datadog-cluster-agent-78b48ffdfb-9tmtm_7f6fc6e1-6cd1-4540-8ae7-30b5a16d679f/cluster-agent/0.log for tailer key /var/log/pods/default_datadog-cluster-agent-78b48ffdfb-9tmtm_7f6fc6e1-6cd1-4540-8ae7-30b5a16d679f/cluster-agent/0.log/ce91c4996a466471c977ac3240140415fd4703809f69db925fff26cbeb5beb6b
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:461 in startNewTailer) | Starting a new tailer for: /var/log/pods/kube-system_kube-controller-manager-pattykube_9bd1c70cf7e25111cd9189ce6a29e306/kube-controller-manager/3.log (offset: 529163, whence: 0) for tailer key /var/log/pods/kube-system_kube-controller-manager-pattykube_9bd1c70cf7e25111cd9189ce6a29e306/kube-controller-manager/3.log/090527ec762d391fe1fe3c6bfd6cb8063f641ce8abd74a34ad1f12bb6405b49e
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/tailers/file/tailer_nix.go:29 in setup) | Opening /var/log/pods/kube-system_kube-controller-manager-pattykube_9bd1c70cf7e25111cd9189ce6a29e306/kube-controller-manager/3.log for tailer key /var/log/pods/kube-system_kube-controller-manager-pattykube_9bd1c70cf7e25111cd9189ce6a29e306/kube-controller-manager/3.log/090527ec762d391fe1fe3c6bfd6cb8063f641ce8abd74a34ad1f12bb6405b49e
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:553 in handleTailingModeChange) | Tailing mode changed for file:/var/log/pods/default_datadog-cluster-agent-78b48ffdfb-9tmtm_7f6fc6e1-6cd1-4540-8ae7-30b5a16d679f/init-volume/0.log. Was: end: Now: beginning
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:461 in startNewTailer) | Starting a new tailer for: /var/log/pods/default_datadog-cluster-agent-78b48ffdfb-9tmtm_7f6fc6e1-6cd1-4540-8ae7-30b5a16d679f/init-volume/0.log (offset: 0, whence: 0) for tailer key /var/log/pods/default_datadog-cluster-agent-78b48ffdfb-9tmtm_7f6fc6e1-6cd1-4540-8ae7-30b5a16d679f/init-volume/0.log/2a906df4c415547458104955fbc8548140126ddd44ab3a19fb26bfde4eb9de18
+2026-02-26 18:47:04 UTC | CORE | ERROR | (pkg/jmxfetch/scheduler.go:68 in Schedule) | Could not schedule jmxfetch config: jmx_7e28342d897a2ede: exec: "java": executable file not found in $PATH
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:74 in Schedule) | Received a new logs config: container_collect_all
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:74 in Schedule) | Received a new logs config: container_collect_all
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/tailers/file/tailer_nix.go:29 in setup) | Opening /var/log/pods/default_datadog-cluster-agent-78b48ffdfb-9tmtm_7f6fc6e1-6cd1-4540-8ae7-30b5a16d679f/init-volume/0.log for tailer key /var/log/pods/default_datadog-cluster-agent-78b48ffdfb-9tmtm_7f6fc6e1-6cd1-4540-8ae7-30b5a16d679f/init-volume/0.log/2a906df4c415547458104955fbc8548140126ddd44ab3a19fb26bfde4eb9de18
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:553 in handleTailingModeChange) | Tailing mode changed for file:/var/log/pods/default_datadog-cluster-agent-6445697f5b-287lr_ef4cb795-56e7-45c1-a8cd-a98809edd5d9/init-volume/0.log. Was: end: Now: beginning
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:461 in startNewTailer) | Starting a new tailer for: /var/log/pods/default_datadog-cluster-agent-6445697f5b-287lr_ef4cb795-56e7-45c1-a8cd-a98809edd5d9/init-volume/0.log (offset: 0, whence: 0) for tailer key /var/log/pods/default_datadog-cluster-agent-6445697f5b-287lr_ef4cb795-56e7-45c1-a8cd-a98809edd5d9/init-volume/0.log/5684eab595ecf8c3e9f1baedbba4b4f17adaf7fff7e5582e1aa44ae413ffc211
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/tailers/file/tailer_nix.go:29 in setup) | Opening /var/log/pods/default_datadog-cluster-agent-6445697f5b-287lr_ef4cb795-56e7-45c1-a8cd-a98809edd5d9/init-volume/0.log for tailer key /var/log/pods/default_datadog-cluster-agent-6445697f5b-287lr_ef4cb795-56e7-45c1-a8cd-a98809edd5d9/init-volume/0.log/5684eab595ecf8c3e9f1baedbba4b4f17adaf7fff7e5582e1aa44ae413ffc211
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:74 in Schedule) | Received a new logs config: container_collect_all
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:461 in startNewTailer) | Starting a new tailer for: /var/log/pods/default_tomcat_eedac68d-ae54-4193-82d3-5845a2f59356/tomcat/0.log (offset: 9035, whence: 0) for tailer key /var/log/pods/default_tomcat_eedac68d-ae54-4193-82d3-5845a2f59356/tomcat/0.log/76d178d18d134e93cc02837fc4dd8bc1c869c8d125f69f588289e863e4b05dac
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/tailers/file/tailer_nix.go:29 in setup) | Opening /var/log/pods/default_tomcat_eedac68d-ae54-4193-82d3-5845a2f59356/tomcat/0.log for tailer key /var/log/pods/default_tomcat_eedac68d-ae54-4193-82d3-5845a2f59356/tomcat/0.log/76d178d18d134e93cc02837fc4dd8bc1c869c8d125f69f588289e863e4b05dac
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:553 in handleTailingModeChange) | Tailing mode changed for file:/var/log/pods/default_datadog-cluster-agent-6445697f5b-287lr_ef4cb795-56e7-45c1-a8cd-a98809edd5d9/cluster-agent/0.log. Was: end: Now: beginning
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/launchers/file/launcher.go:461 in startNewTailer) | Starting a new tailer for: /var/log/pods/default_datadog-cluster-agent-6445697f5b-287lr_ef4cb795-56e7-45c1-a8cd-a98809edd5d9/cluster-agent/0.log (offset: 0, whence: 0) for tailer key /var/log/pods/default_datadog-cluster-agent-6445697f5b-287lr_ef4cb795-56e7-45c1-a8cd-a98809edd5d9/cluster-agent/0.log/4840c015c792563e3a0f53ce0f9924ccef5db4ad4b6c4075e9ab2d478113c4a6
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/logs/tailers/file/tailer_nix.go:29 in setup) | Opening /var/log/pods/default_datadog-cluster-agent-6445697f5b-287lr_ef4cb795-56e7-45c1-a8cd-a98809edd5d9/cluster-agent/0.log for tailer key /var/log/pods/default_datadog-cluster-agent-6445697f5b-287lr_ef4cb795-56e7-45c1-a8cd-a98809edd5d9/cluster-agent/0.log/4840c015c792563e3a0f53ce0f9924ccef5db4ad4b6c4075e9ab2d478113c4a6
+2026-02-26 18:47:04 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:82 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:04 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:82 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:discovery | Running check...
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:discovery | Done running check
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:kubelet | Running check...
+2026-02-26 18:47:04 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:kubelet | Done running check
+2026-02-26 18:47:05 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:io | Running check...
+2026-02-26 18:47:05 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:io | Done running check
+2026-02-26 18:47:05 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:ntp | Running check...
+2026-02-26 18:47:05 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:orchestrator_kubelet_config | Running check...
+2026-02-26 18:47:05 UTC | CORE | ERROR | (pkg/collector/worker/check_logger.go:71 in Error) | check:orchestrator_kubelet_config | Error running check: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:05 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:orchestrator_kubelet_config | Done running check
+2026-02-26 18:47:05 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:82 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:05 UTC | CORE | INFO | (pkg/api/security/security.go:178 in getClusterAgentAuthToken) | Using configured cluster_agent.auth_token
+2026-02-26 18:47:05 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:82 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:06 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:82 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:06 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:docker | Running check...
+2026-02-26 18:47:06 UTC | CORE | ERROR | (comp/core/workloadmeta/collectors/internal/kubemetadata/kubemetadata.go:90 in Start) | Could not initialise the communication with the cluster agent: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:07 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:82 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:07 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:cpu | Running check...
+2026-02-26 18:47:07 UTC | CORE | INFO | (comp/core/remoteagentregistry/impl/registry.go:200 in RegisterRemoteAgent) | Remote agent 'System Probe' (flavor: system_probe, session_id: e7ffae2e-d432-4576-8fc8-f457d39c77f3) registered. (exposed services: [datadog.remoteagent.telemetry.v1.TelemetryProvider])
+2026-02-26 18:47:07 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:cpu | Done running check
+2026-02-26 18:47:07 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:docker | Done running check
+2026-02-26 18:47:07 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:82 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:08 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:82 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:08 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container_image | Running check...
+2026-02-26 18:47:08 UTC | CORE | INFO | (pkg/collector/corechecks/containerimage/check.go:136 in Run) | Starting long-running check "container_image"
+2026-02-26 18:47:08 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container_image | Done running check
+2026-02-26 18:47:08 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:82 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:08 UTC | CORE | INFO | (comp/core/tagger/server/server.go:165 in TaggerStreamEntities) | tagger server has just finished initialization for subscription "streaming-client-system_probe:9c32618b-f656-44d8-b5d0-b129cf383037" at time 1772131628
+2026-02-26 18:47:09 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:82 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:09 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:redisdb | Running check...
+2026-02-26 18:47:09 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:redisdb | Done running check
+2026-02-26 18:47:09 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:82 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:10 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:telemetry | Running check...
+2026-02-26 18:47:10 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:datadog_cluster_agent | Running check...
+2026-02-26 18:47:10 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:telemetry | Done running check
+2026-02-26 18:47:10 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:82 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:10 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:datadog_cluster_agent | Done running check
+2026-02-26 18:47:10 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:82 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:10 UTC | CORE | INFO | (comp/metadata/host/hostimpl/hosttags/tags.go:178 in Get) | Unable to get host tags from source: kubernetes - using cached host tags
+2026-02-26 18:47:10 UTC | CORE | INFO | (comp/metadata/host/hostimpl/hosttags/tags.go:178 in Get) | Unable to get host tags from source: kubernetes_cluster_agent_tags - using cached host tags
+2026-02-26 18:47:10 UTC | CORE | INFO | (pkg/config/remote/service/service.go:909 in refresh) | [Remote Config] Overriding agent's base refresh interval to 50s due to backend recommendation
+2026-02-26 18:47:11 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:network | Running check...
+2026-02-26 18:47:11 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:network | Done running check
+2026-02-26 18:47:11 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:82 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:11 UTC | CORE | INFO | (comp/metadata/host/hostimpl/hosttags/tags.go:178 in Get) | Unable to get host tags from source: kubernetes - using cached host tags
+2026-02-26 18:47:11 UTC | CORE | INFO | (comp/metadata/host/hostimpl/hosttags/tags.go:178 in Get) | Unable to get host tags from source: kubernetes_cluster_agent_tags - using cached host tags
+2026-02-26 18:47:11 UTC | CORE | INFO | (comp/metadata/host/hostimpl/utils/host.go:108 in getNetworkMeta) | could not get network metadata: could not detect network ID: EC2: GetNetworkID failed to get mac addresses: could not fetch token from IMDSv2: Put "http://169.254.169.254/latest/api/token": dial tcp 169.254.169.254:80: connect: connection refused
+2026-02-26 18:47:11 UTC | CORE | ERROR | (comp/core/autodiscovery/autodiscoveryimpl/config_poller.go:216 in collect) | Unable to collect configurations from provider endpoints-checks: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:11 UTC | CORE | ERROR | (comp/core/autodiscovery/autodiscoveryimpl/config_poller.go:152 in poll) | Cache processing of cluster-checks configuration provider failed: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2026-02-26 18:47:11 UTC | CORE | INFO | (pkg/config/remote/client/client.go:489 in pollLoop) | first update successful after 1 attempts
+2026-02-26 18:47:12 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:load | Running check...
+2026-02-26 18:47:12 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:load | Done running check
+2026-02-26 18:47:12 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:147 in Unschedule) | New source to remove: entity: docker://4840c015c792563e3a0f53ce0f9924ccef5db4ad4b6c4075e9ab2d478113c4a6
+2026-02-26 18:47:12 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:74 in Schedule) | Received a new logs config: container_collect_all
+2026-02-26 18:47:12 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check datadog_cluster_agent:f798dc9d30748920 with an interval of 15s
+2026-02-26 18:47:12 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:132 in Cancel) | Unscheduling check datadog_cluster_agent:e194f0fb2aae1489
+2026-02-26 18:47:13 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:file_handle | Running check...
+2026-02-26 18:47:13 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:file_handle | Done running check
+2026-02-26 18:47:13 UTC | CORE | INFO | (pkg/process/runner/runner.go:235 in logCheckDuration) | Finished process check #3 in 20.87525ms
+2026-02-26 18:47:14 UTC | CORE | INFO | (pkg/api/security/security.go:178 in getClusterAgentAuthToken) | Using configured cluster_agent.auth_token
+2026-02-26 18:47:14 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:disk | Running check...
+2026-02-26 18:47:14 UTC | CORE | INFO | (pkg/util/clusteragent/clusteragent.go:147 in init) | Successfully connected to the Datadog Cluster Agent 7.75.4+commit.0093026b48
+2026-02-26 18:47:14 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:664 in startCandidates) | workloadmeta collector "kube_metadata" started successfully
+2026-02-26 18:47:14 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:disk | Done running check
+2026-02-26 18:47:15 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container_lifecycle | Running check...
+2026-02-26 18:47:15 UTC | CORE | INFO | (pkg/collector/corechecks/containerlifecycle/check.go:92 in Run) | Starting long-running check "container_lifecycle"
+2026-02-26 18:47:15 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container_lifecycle | Done running check
+2026-02-26 18:47:15 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:ntp | Done running check
+2026-02-26 18:47:16 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container | Running check...
+2026-02-26 18:47:16 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container | Done running check
+2026-02-26 18:47:17 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:uptime | Running check...
+2026-02-26 18:47:17 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:kube_apiserver_metrics | Running check...
+2026-02-26 18:47:17 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:uptime | Done running check
+2026-02-26 18:47:17 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:132 in Cancel) | Unscheduling check datadog_cluster_agent:f798dc9d30748920
+2026-02-26 18:47:17 UTC | CORE | WARN | (pkg/collector/runner/expvars/expvars.go:151 in RemoveCheckStats) | Stats for check datadog_cluster_agent:f798dc9d30748920 not found
+2026-02-26 18:47:18 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check datadog_cluster_agent:4721a7f1f2b8b38f with an interval of 15s
+2026-02-26 18:47:18 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:132 in Cancel) | Unscheduling check coredns:ed54ae8994d722a
+2026-02-26 18:47:18 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:orchestrator_pod | Running check...
+2026-02-26 18:47:18 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:orchestrator_pod | Done running check
+2026-02-26 18:47:18 UTC | CORE | INFO | (pkg/logs/tailers/file/tailer.go:343 in func1) | Closed /var/log/pods/default_datadog-cluster-agent-78b48ffdfb-9tmtm_7f6fc6e1-6cd1-4540-8ae7-30b5a16d679f/init-volume/0.log for tailer key /var/log/pods/default_datadog-cluster-agent-78b48ffdfb-9tmtm_7f6fc6e1-6cd1-4540-8ae7-30b5a16d679f/init-volume/0.log/2a906df4c415547458104955fbc8548140126ddd44ab3a19fb26bfde4eb9de18 read 0 bytes and 0 lines
+2026-02-26 18:47:18 UTC | CORE | INFO | (pkg/logs/tailers/file/tailer.go:343 in func1) | Closed /var/log/pods/default_datadog-cluster-agent-78b48ffdfb-9tmtm_7f6fc6e1-6cd1-4540-8ae7-30b5a16d679f/cluster-agent/0.log for tailer key /var/log/pods/default_datadog-cluster-agent-78b48ffdfb-9tmtm_7f6fc6e1-6cd1-4540-8ae7-30b5a16d679f/cluster-agent/0.log/ce91c4996a466471c977ac3240140415fd4703809f69db925fff26cbeb5beb6b read 20891 bytes and 68 lines
+2026-02-26 18:47:19 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check coredns:261a1c6bd37a42d5 with an interval of 15s
+2026-02-26 18:47:19 UTC | CORE | ERROR | (pkg/jmxfetch/scheduler.go:68 in Schedule) | Could not schedule jmxfetch config: jmx_5d0368f940d53027: exec: "java": executable file not found in $PATH
+2026-02-26 18:47:19 UTC | CORE | ERROR | (pkg/jmxfetch/scheduler.go:68 in Schedule) | Could not schedule jmxfetch config: tomcat_71e01ea6ecf173c1: exec: "java": executable file not found in $PATH
+2026-02-26 18:47:19 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:memory | Running check...
+2026-02-26 18:47:19 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:memory | Done running check
+2026-02-26 18:47:20 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:io | Running check...
+2026-02-26 18:47:20 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:io | Done running check
+2026-02-26 18:47:21 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:docker | Running check...
+2026-02-26 18:47:21 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:docker | Done running check
+2026-02-26 18:47:21 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:kube_apiserver_metrics | Done running check
+2026-02-26 18:47:22 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:cpu | Running check...
+2026-02-26 18:47:22 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:cpu | Done running check
+2026-02-26 18:47:23 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:coredns | Running check...
+2026-02-26 18:47:23 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container_image | Running check...
+2026-02-26 18:47:23 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container_image | Done running check
+2026-02-26 18:47:23 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:coredns | Done running check
+2026-02-26 18:47:23 UTC | CORE | INFO | (pkg/process/runner/runner.go:235 in logCheckDuration) | Finished process check #4 in 15.8885ms
+2026-02-26 18:47:24 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:redisdb | Running check...
+2026-02-26 18:47:24 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:redisdb | Done running check
+2026-02-26 18:47:24 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:kubelet | Running check...
+2026-02-26 18:47:24 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:kubelet | Done running check
+2026-02-26 18:47:25 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:telemetry | Running check...
+2026-02-26 18:47:25 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:telemetry | Done running check
+2026-02-26 18:47:26 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:network | Running check...
+2026-02-26 18:47:26 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:network | Done running check
+2026-02-26 18:47:27 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:load | Running check...
+2026-02-26 18:47:28 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:load | Done running check
+2026-02-26 18:47:28 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:file_handle | Running check...
+2026-02-26 18:47:28 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:file_handle | Done running check
+2026-02-26 18:47:29 UTC | CORE | INFO | (comp/core/agenttelemetry/impl/agenttelemetry.go:508 in run) | Starting agent telemetry run
+2026-02-26 18:47:29 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:disk | Running check...
+2026-02-26 18:47:29 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:147 in Unschedule) | New source to remove: entity: docker://2a906df4c415547458104955fbc8548140126ddd44ab3a19fb26bfde4eb9de18
+2026-02-26 18:47:29 UTC | CORE | INFO | (comp/core/autodiscovery/autodiscoveryimpl/config_poller.go:108 in stream) | kubernetes-container-allinone provider: collected 0 new configurations, removed 2
+2026-02-26 18:47:29 UTC | CORE | INFO | (pkg/logs/schedulers/ad/scheduler.go:147 in Unschedule) | New source to remove: entity: docker://ce91c4996a466471c977ac3240140415fd4703809f69db925fff26cbeb5beb6b
+2026-02-26 18:47:29 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:disk | Done running check
+2026-02-26 18:47:30 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container_lifecycle | Running check...
+2026-02-26 18:47:30 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container_lifecycle | Done running check
+2026-02-26 18:47:31 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:datadog_cluster_agent | Running check...
+2026-02-26 18:47:31 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container | Running check...
+2026-02-26 18:47:31 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container | Done running check
+2026-02-26 18:47:31 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:datadog_cluster_agent | Done running check
+2026-02-26 18:47:32 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:kube_apiserver_metrics | Running check...
+2026-02-26 18:47:32 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:uptime | Running check...
+2026-02-26 18:47:32 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:uptime | Done running check
+2026-02-26 18:47:33 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:orchestrator_pod | Running check...
+2026-02-26 18:47:33 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:orchestrator_pod | Done running check
+2026-02-26 18:47:33 UTC | CORE | INFO | (pkg/process/runner/runner.go:237 in logCheckDuration) | Finished process check #5 in 9.199542ms. First 5 check runs finished, next runs will be logged every 20 runs.
+2026-02-26 18:47:33 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:kube_apiserver_metrics | Done running check
+2026-02-26 18:47:34 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:memory | Running check...
+2026-02-26 18:47:34 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:memory | Done running check
+2026-02-26 18:47:35 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:io | Running check...
+2026-02-26 18:47:35 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:io | Done running check
+2026-02-26 18:47:36 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:docker | Running check...
+2026-02-26 18:47:36 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:docker | Done running check
+2026-02-26 18:47:37 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:cpu | Running check...
+2026-02-26 18:47:37 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:cpu | Done running check
+2026-02-26 18:47:38 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:coredns | Running check...
+2026-02-26 18:47:38 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container_image | Running check...
+2026-02-26 18:47:38 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container_image | Done running check
+2026-02-26 18:47:38 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:coredns | Done running check
+2026-02-26 18:47:39 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:redisdb | Running check...
+2026-02-26 18:47:39 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:redisdb | Done running check
+2026-02-26 18:47:40 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:telemetry | Running check...
+2026-02-26 18:47:40 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:telemetry | Done running check
+2026-02-26 18:47:41 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:network | Running check...
+2026-02-26 18:47:41 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:network | Done running check
+2026-02-26 18:47:42 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:load | Running check...
+2026-02-26 18:47:42 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:load | Done running check
+2026-02-26 18:47:43 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:file_handle | Running check...
+2026-02-26 18:47:43 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:file_handle | Done running check
+2026-02-26 18:47:44 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:disk | Running check...
+2026-02-26 18:47:44 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:disk | Done running check
+2026-02-26 18:47:44 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:kubelet | Running check...
+2026-02-26 18:47:44 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:kubelet | Done running check
+2026-02-26 18:47:45 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container_lifecycle | Running check...
+2026-02-26 18:47:45 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container_lifecycle | Done running check
+2026-02-26 18:47:46 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:datadog_cluster_agent | Running check...
+2026-02-26 18:47:46 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container | Running check...
+2026-02-26 18:47:46 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container | Done running check
+2026-02-26 18:47:46 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:datadog_cluster_agent | Done running check
+2026-02-26 18:47:47 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:uptime | Running check...
+2026-02-26 18:47:47 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:kube_apiserver_metrics | Running check...
+2026-02-26 18:47:47 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:uptime | Done running check
+2026-02-26 18:47:48 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:orchestrator_pod | Running check...
+2026-02-26 18:47:48 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:orchestrator_pod | Done running check
+2026-02-26 18:47:49 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:memory | Running check...
+2026-02-26 18:47:49 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:memory | Done running check
+2026-02-26 18:47:50 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:io | Running check...
+2026-02-26 18:47:50 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:io | Done running check
+2026-02-26 18:47:51 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:docker | Running check...
+2026-02-26 18:47:51 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:docker | Done running check
+2026-02-26 18:47:51 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:kube_apiserver_metrics | Done running check
+2026-02-26 18:47:52 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:cpu | Running check...
+2026-02-26 18:47:52 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:cpu | Done running check
+2026-02-26 18:47:53 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:coredns | Running check...
+2026-02-26 18:47:53 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container_image | Running check...
+2026-02-26 18:47:53 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container_image | Done running check
+2026-02-26 18:47:53 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:coredns | Done running check
+2026-02-26 18:47:54 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:redisdb | Running check...
+2026-02-26 18:47:54 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:redisdb | Done running check
+2026-02-26 18:47:55 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:telemetry | Running check...
+2026-02-26 18:47:55 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:telemetry | Done running check
+2026-02-26 18:47:56 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:network | Running check...
+2026-02-26 18:47:56 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:network | Done running check
+2026-02-26 18:47:57 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:load | Running check...
+2026-02-26 18:47:57 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:load | Done running check
+2026-02-26 18:47:57 UTC | CORE | INFO | (comp/metadata/inventoryhost/inventoryhostimpl/inventoryhost.go:170 in func1) | gohai: could not read /sys/devices/system/node: open /sys/devices/system/node: no such file or directory
+2026-02-26 18:47:57 UTC | CORE | INFO | (comp/metadata/inventoryotel/inventoryotelimpl/inventoryotel.go:173 in fetchOtelAgentMetadata) | OTel Metadata unavailable as OTel collector is disabled
+2026-02-26 18:47:58 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:file_handle | Running check...
+2026-02-26 18:47:58 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:file_handle | Done running check
+2026-02-26 18:47:59 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:disk | Running check...
+2026-02-26 18:47:59 UTC | CORE | INFO | (comp/core/agenttelemetry/impl/agenttelemetry.go:508 in run) | Starting agent telemetry run
+2026-02-26 18:47:59 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:disk | Done running check
+2026-02-26 18:48:00 UTC | CORE | INFO | (comp/core/status/statusimpl/status_api_endpoints.go:29 in getStatus) | Got a request for the status. Making status.
+2026-02-26 18:48:00 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container_lifecycle | Running check...
+2026-02-26 18:48:00 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container_lifecycle | Done running check
+2026-02-26 18:48:01 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:datadog_cluster_agent | Running check...
+2026-02-26 18:48:01 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container | Running check...
+2026-02-26 18:48:01 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container | Done running check
+2026-02-26 18:48:01 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:datadog_cluster_agent | Done running check
+2026-02-26 18:48:02 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:uptime | Running check...
+2026-02-26 18:48:02 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:kube_apiserver_metrics | Running check...
+2026-02-26 18:48:02 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:uptime | Done running check
+2026-02-26 18:48:03 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:orchestrator_pod | Running check...
+2026-02-26 18:48:03 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:orchestrator_pod | Done running check
+2026-02-26 18:48:03 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:kube_apiserver_metrics | Done running check
+2026-02-26 18:48:04 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:memory | Running check...
+2026-02-26 18:48:04 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:memory | Done running check, next runs will be logged every 500 runs
+2026-02-26 18:48:04 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:kubelet | Running check...
+2026-02-26 18:48:04 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:discovery | Running check...
+2026-02-26 18:48:04 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:discovery | Done running check
+2026-02-26 18:48:04 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:kubelet | Done running check
+2026-02-26 18:48:05 UTC | CORE | INFO | (pkg/util/cloudproviders/cloudproviders.go:68 in DetectCloudProvider) | No cloud provider detected
+2026-02-26 18:48:05 UTC | CORE | INFO | (pkg/util/cloudproviders/cloudproviders.go:184 in GetHostCCRID) | No Host CCRID, no cloudprovider detected
+2026-02-26 18:48:05 UTC | CORE | INFO | (pkg/util/cloudproviders/cloudproviders.go:238 in GetInstanceType) | No instance type detected, no cloud provider detected
+2026-02-26 18:48:05 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:io | Running check...
+2026-02-26 18:48:05 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:io | Done running check, next runs will be logged every 500 runs
+2026-02-26 18:48:06 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:docker | Running check...
+2026-02-26 18:48:06 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:docker | Done running check, next runs will be logged every 500 runs
+2026-02-26 18:48:07 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:cpu | Running check...
+2026-02-26 18:48:07 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:cpu | Done running check, next runs will be logged every 500 runs
+2026-02-26 18:48:08 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:coredns | Running check...
+2026-02-26 18:48:08 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container_image | Running check...
+2026-02-26 18:48:08 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container_image | Done running check, next runs will be logged every 500 runs
+2026-02-26 18:48:08 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:coredns | Done running check
+2026-02-26 18:48:09 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:redisdb | Running check...
+2026-02-26 18:48:09 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:redisdb | Done running check, next runs will be logged every 500 runs
+2026-02-26 18:48:09 UTC | CORE | INFO | (comp/core/status/statusimpl/status_api_endpoints.go:29 in getStatus) | Got a request for the status. Making status.
+2026-02-26 18:48:10 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:telemetry | Running check...
+2026-02-26 18:48:10 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:telemetry | Done running check, next runs will be logged every 500 runs
+2026-02-26 18:48:11 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:network | Running check...
+2026-02-26 18:48:11 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:network | Done running check, next runs will be logged every 500 runs
+2026-02-26 18:48:12 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:load | Running check...
+2026-02-26 18:48:12 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:load | Done running check, next runs will be logged every 500 runs
+2026-02-26 18:48:13 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:file_handle | Running check...
+2026-02-26 18:48:13 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:file_handle | Done running check, next runs will be logged every 500 runs
+2026-02-26 18:48:14 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:disk | Running check...
+2026-02-26 18:48:14 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:disk | Done running check, next runs will be logged every 500 runs
+2026-02-26 18:48:15 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container_lifecycle | Running check...
+2026-02-26 18:48:15 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container_lifecycle | Done running check, next runs will be logged every 500 runs
+2026-02-26 18:48:16 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:datadog_cluster_agent | Running check...
+2026-02-26 18:48:16 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container | Running check...
+2026-02-26 18:48:16 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container | Done running check, next runs will be logged every 500 runs
+2026-02-26 18:48:16 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:datadog_cluster_agent | Done running check
+2026-02-26 18:48:17 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:uptime | Running check...
+2026-02-26 18:48:17 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:kube_apiserver_metrics | Running check...
+2026-02-26 18:48:17 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:uptime | Done running check, next runs will be logged every 500 runs
+2026-02-26 18:48:18 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:orchestrator_pod | Running check...
+2026-02-26 18:48:18 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:orchestrator_pod | Done running check, next runs will be logged every 500 runs
+2026-02-26 18:48:21 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:kube_apiserver_metrics | Done running check, next runs will be logged every 500 runs
+2026-02-26 18:48:23 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:coredns | Running check...
+2026-02-26 18:48:23 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:coredns | Done running check, next runs will be logged every 500 runs
+2026-02-26 18:48:24 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:kubelet | Running check...
+2026-02-26 18:48:24 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:kubelet | Done running check, next runs will be logged every 500 runs
+2026-02-26 18:48:31 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:datadog_cluster_agent | Running check...
+2026-02-26 18:48:31 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:datadog_cluster_agent | Done running check, next runs will be logged every 500 runs
+2026-02-26 18:48:53 UTC | CORE | INFO | (comp/core/flare/flare.go:179 in createAndReturnFlarePath) | Making a flare
+2026-02-26 18:48:53 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/metadata/systemprobe/impl.NewComponent.(*InventoryPayload).FlareProvider.func1 with timeout 10s
+2026-02-26 18:48:53 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/process/agent.(*FlareHelper).FillFlare-fm with timeout 10s
+2026-02-26 18:48:53 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/host-profiler/flare/impl.(*flareImpl).fillFlare-fm with timeout 10s
+2026-02-26 18:48:53 UTC | CORE | ERROR | (comp/host-profiler/flare/impl/flare.go:50 in fillFlare) | did not get host-profiler configuration: Get "https://localhost:7778": dial tcp [::1]:7778: connect: connection refused
+2026-02-26 18:48:53 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/metadata/host/hostimpl.(*host).fillFlare-fm with timeout 10s
+2026-02-26 18:48:53 UTC | CORE | INFO | (pkg/util/cloudproviders/cloudproviders.go:184 in GetHostCCRID) | No Host CCRID, no cloudprovider detected
+2026-02-26 18:48:53 UTC | CORE | INFO | (comp/metadata/host/hostimpl/hosttags/tags.go:145 in Get) | Adding both tags cluster_name and kube_cluster_name. You can use 'disable_cluster_name_tag_key' in the Agent config to keep the kube_cluster_name tag only
+2026-02-26 18:48:53 UTC | CORE | INFO | (comp/metadata/host/hostimpl/hosttags/tags.go:178 in Get) | Unable to get host tags from source: gce - using cached host tags
+2026-02-26 18:48:53 UTC | CORE | INFO | (comp/metadata/host/hostimpl/utils/host.go:108 in getNetworkMeta) | could not get network metadata: could not detect network ID: EC2: GetNetworkID failed to get mac addresses: could not fetch token from IMDSv2: Put "http://169.254.169.254/latest/api/token": dial tcp 169.254.169.254:80: connect: connection refused
+2026-02-26 18:48:53 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/metadata/securityagent/impl.NewComponent.(*InventoryPayload).FlareProvider.func1 with timeout 10s
+2026-02-26 18:48:53 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/core/lsof/impl.fillFlare with timeout 10s
+2026-02-26 18:48:53 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/logs/streamlogs/impl.(*streamlogsimpl).fillFlare-fm with timeout 10s
+2026-02-26 18:48:53 UTC | CORE | ERROR | (comp/core/flare/flare.go:268 in func1) | flare provider 'github.com/DataDog/datadog-agent/comp/logs/streamlogs/impl.(*streamlogsimpl).fillFlare-fm' failed after 18.916µs: remote streamlogs has been disabled via an unset duration, exiting streamlogs flare filler
+2026-02-26 18:48:53 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/metadata/inventoryotel/inventoryotelimpl.newInventoryOtelProvider.(*InventoryPayload).FlareProvider.func2 with timeout 10s
+2026-02-26 18:48:53 UTC | CORE | INFO | (comp/metadata/inventoryotel/inventoryotelimpl/inventoryotel.go:173 in fetchOtelAgentMetadata) | OTel Metadata unavailable as OTel collector is disabled
+2026-02-26 18:48:53 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/metadata/inventoryagent/inventoryagentimpl.newInventoryAgentProvider.(*InventoryPayload).FlareProvider.func2 with timeout 10s
+2026-02-26 18:48:53 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/core/remoteagentregistry/impl.(*remoteAgentRegistry).fillFlare-fm with timeout 10s
+2026-02-26 18:48:53 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/snmpscanmanager/impl.(*snmpScanManagerImpl).fillFlare-fm with timeout 10s
+2026-02-26 18:48:53 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/metadata/hostgpu/impl.NewGPUHostProvider.(*InventoryPayload).FlareProvider.func1 with timeout 10s
+2026-02-26 18:48:53 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/core/profiler/impl.profiler.fillFlare-fm with timeout 10s
+2026-02-26 18:48:53 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/metadata/inventorychecks/inventorychecksimpl.newInventoryChecksProvider.(*InventoryPayload).FlareProvider.func3 with timeout 10s
+2026-02-26 18:48:53 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/metadata/inventoryhost/inventoryhostimpl.newInventoryHostProvider.(*InventoryPayload).FlareProvider.func1 with timeout 10s
+2026-02-26 18:48:53 UTC | CORE | INFO | (comp/metadata/inventoryhost/inventoryhostimpl/inventoryhost.go:170 in func1) | gohai: could not read /sys/devices/system/node: open /sys/devices/system/node: no such file or directory
+2026-02-26 18:48:54 UTC | CORE | INFO | (pkg/util/cloudproviders/cloudproviders.go:68 in DetectCloudProvider) | No cloud provider detected
+2026-02-26 18:48:54 UTC | CORE | INFO | (pkg/util/cloudproviders/cloudproviders.go:184 in GetHostCCRID) | No Host CCRID, no cloudprovider detected
+2026-02-26 18:48:54 UTC | CORE | INFO | (pkg/util/cloudproviders/cloudproviders.go:238 in GetInstanceType) | No instance type detected, no cloud provider detected
+2026-02-26 18:48:54 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/core/workloadmeta/impl.(*workloadmeta).sbomFlareProvider-fm with timeout 10s
+2026-02-26 18:48:54 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/metadata/haagent/impl.NewComponent.(*InventoryPayload).FlareProvider.func1 with timeout 10s
+2026-02-26 18:48:54 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/otelcol/collector/impl-pipeline.(*collectorImpl).fillFlare-fm with timeout 1m0s
+2026-02-26 18:48:54 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/metadata/packagesigning/packagesigningimpl.newPackageSigningProvider.(*InventoryPayload).FlareProvider.func1 with timeout 10s
+2026-02-26 18:48:54 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/core/diagnose/impl.(*diagnoseRegistry).fillFlare-fm with timeout 10s
+2026-02-26 18:48:54 UTC | CORE | INFO | (pkg/util/containerd/containerd_util.go:102 in NewContainerdUtil) | No socket path was specified, defaulting to /var/run/containerd/containerd.sock
+2026-02-26 18:48:55 UTC | CORE | ERROR | (pkg/util/containerd/containerd_util.go:115 in NewContainerdUtil) | Containerd init error: temporary failure in containerdutil, will retry later: failed to dial "/var/run/containerd/containerd.sock": context deadline exceeded: connection error: desc = "transport: error while dialing: dial unix:///var/run/containerd/containerd.sock: timeout"
+2026-02-26 18:48:55 UTC | CORE | INFO | (pkg/util/docker/diagnosis.go:28 in diagnose) | successfully connected to docker
+2026-02-26 18:48:55 UTC | CORE | INFO | (pkg/util/docker/diagnosis.go:34 in diagnose) | successfully got hostname "pattykube" from docker
+2026-02-26 18:48:57 UTC | CORE | INFO | (pkg/util/kubernetes/apiserver/diagnosis.go:32 in diagnose) | Detecting OpenShift APIs: no API available
+2026-02-26 18:48:57 UTC | CORE | INFO | (pkg/util/kubernetes/apiserver/diagnosis.go:51 in printRBAC) | RulesReview result for namespace default:
+2026-02-26 18:48:57 UTC | CORE | INFO | (pkg/util/kubernetes/apiserver/diagnosis.go:52 in printRBAC) | &SubjectRulesReviewStatus{ResourceRules:[]ResourceRule{ResourceRule{Verbs:[get],APIGroups:[],Resources:[nodes/metrics nodes/spec nodes/proxy nodes/stats],ResourceNames:[],},ResourceRule{Verbs:[get],APIGroups:[],Resources:[endpoints],ResourceNames:[],},ResourceRule{Verbs:[use],APIGroups:[security.openshift.io],Resources:[securitycontextconstraints],ResourceNames:[datadog hostaccess privileged],},ResourceRule{Verbs:[get],APIGroups:[coordination.k8s.io],Resources:[leases],ResourceNames:[],},ResourceRule{Verbs:[get],APIGroups:[metrics.eks.amazonaws.com],Resources:[kcm/metrics ksh/metrics],ResourceNames:[],},ResourceRule{Verbs:[create],APIGroups:[authorization.k8s.io],Resources:[selfsubjectaccessreviews selfsubjectrulesreviews],ResourceNames:[],},ResourceRule{Verbs:[create],APIGroups:[authentication.k8s.io],Resources:[selfsubjectreviews],ResourceNames:[],},},NonResourceRules:[]NonResourceRule{NonResourceRule{Verbs:[get],NonResourceURLs:[/metrics /metrics/slis],},NonResourceRule{Verbs:[get],NonResourceURLs:[/healthz /livez /readyz /version /version/],},NonResourceRule{Verbs:[get],NonResourceURLs:[/api /api/* /apis /apis/* /healthz /livez /openapi /openapi/* /readyz /version /version/],},NonResourceRule{Verbs:[get],NonResourceURLs:[/.well-known/openid-configuration /.well-known/openid-configuration/ /openid/v1/jwks /openid/v1/jwks/],},},Incomplete:false,EvaluationError:,}
+2026-02-26 18:49:01 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/core/autodiscovery/autodiscoveryimpl.(*AutoConfig).fillFlare-fm with timeout 10s
+2026-02-26 18:49:01 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/core/status/statusimpl.(*statusImplementation).fillFlare-fm with timeout 10s
+2026-02-26 18:49:01 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/pkg/sbom/collectors/host.(*FlareProvider).ProvideFlare-fm with timeout 10s
+2026-02-26 18:49:01 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/logs/agent/flare.(*FlareController).FillFlare-fm with timeout 10s
+2026-02-26 18:49:01 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/core/config.(*cfg).fillFlare-fm with timeout 10s
+2026-02-26 18:49:01 UTC | CORE | ERROR | (comp/core/flare/helpers/builder.go:230 in logError) | error reading file '/etc/datadog-agent/security-agent.yaml' to be copy to 'etc/security-agent.yaml': open /etc/datadog-agent/security-agent.yaml: no such file or directory
+2026-02-26 18:49:01 UTC | CORE | ERROR | (comp/core/flare/helpers/builder.go:230 in logError) | error reading file '/etc/datadog-agent/application_monitoring.yaml' to be copy to 'etc/application_monitoring.yaml': open /etc/datadog-agent/application_monitoring.yaml: no such file or directory
+2026-02-26 18:49:01 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/core/workloadfilter/baseimpl.(*BaseFilterStore).FlareCallback-fm with timeout 10s
+2026-02-26 18:49:01 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/core/secrets/impl.(*secretResolver).fillFlare-fm with timeout 10s
+2026-02-26 18:49:01 UTC | CORE | ERROR | (comp/core/flare/helpers/builder.go:230 in logError) | error reading file '/opt/datadog-agent/run/secret-audit-file.json' to be copy to 'secret-audit-file.json': open /opt/datadog-agent/run/secret-audit-file.json: no such file or directory
+2026-02-26 18:49:01 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/pkg/flare.(*RemoteFlareProvider).provideExtraFiles-fm with timeout 10s
+2026-02-26 18:49:01 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/pkg/flare.provideSystemProbe with timeout 10s
+2026-02-26 18:49:01 UTC | CORE | ERROR | (comp/core/flare/helpers/builder.go:230 in logError) | error collecting data for 'system-probe/dmesg.log': non-ok status code: url: http://sysprobe/debug/dmesg, status_code: 500, response: `failed to read dmesg: failed to query size of log buffer [operation not permitted]`
+2026-02-26 18:49:01 UTC | CORE | ERROR | (comp/core/flare/helpers/builder.go:230 in logError) | error collecting data for 'system-probe/vpc_subnets.log': could not detect VPC subnets: EC2: GetVPCSubnetsForHost failed to get mac addresses: could not fetch token from IMDSv2: Put "http://169.254.169.254/latest/api/token": dial tcp 169.254.169.254:80: connect: connection refused
+2026-02-26 18:49:01 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/pkg/flare.(*RemoteFlareProvider).provideConfigDump-fm with timeout 10s
+2026-02-26 18:49:01 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/pkg/flare.(*RemoteFlareProvider).provideRemoteConfig-fm with timeout 10s
+2026-02-26 18:49:01 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/pkg/flare.getRegistryJSON with timeout 10s
+2026-02-26 18:49:01 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/pkg/flare.getVersionHistory with timeout 10s
+2026-02-26 18:49:01 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/pkg/flare.getWindowsData with timeout 10s
+2026-02-26 18:49:01 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/pkg/flare/common.GetExpVar with timeout 10s
+2026-02-26 18:49:01 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/pkg/flare.provideInstallInfo with timeout 10s
+2026-02-26 18:49:01 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/pkg/flare.provideAuthTokenPerm with timeout 10s
+2026-02-26 18:49:01 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/pkg/flare.ExtraFlareProviders.provideContainers.func14 with timeout 10s
+2026-02-26 18:49:01 UTC | CORE | ERROR | (comp/core/flare/helpers/builder.go:230 in logError) | error collecting data for 'ecs_metadata.json': temporary failure in ecsutil-meta-v1, will retry later: could not detect ECS agent, tried URLs: [http://10.244.0.1:51678/ http://169.254.172.1:51678/ http://localhost:51678/]
+2026-02-26 18:49:01 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/pkg/flare.ExtraFlareProviders.func3 with timeout 10s
+2026-02-26 18:49:01 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/pkg/flare.ExtraFlareProviders.func3 with timeout 10s
+2026-02-26 18:49:01 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/pkg/flare.ExtraFlareProviders.func3 with timeout 10s
+2026-02-26 18:49:01 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/pkg/flare.ExtraFlareProviders.func3 with timeout 10s
+2026-02-26 18:49:01 UTC | CORE | INFO | (comp/core/flare/flare.go:256 in runProviders) | Running flare provider github.com/DataDog/datadog-agent/comp/core/flare.(*flare).collectLogsFiles-fm with timeout 10s

@@ -1,0 +1,27 @@
+healthy:
+  - ad-config-provider-cluster-checks
+  - ad-config-provider-dsm-live-messages
+  - ad-config-provider-dsm-live-messages
+  - ad-config-provider-endpoints-checks
+  - ad-config-provider-kubernetes-container-allinone
+  - ad-kubeletlistener
+  - ad-scheduler-controller
+  - ad-servicelistening
+  - aggregator
+  - collector-queue-15s
+  - collector-queue-20s
+  - collector-queue-600s
+  - collector-queue-60s
+  - collector-queue-900s
+  - dogstatsd-main
+  - forwarder
+  - healthcheck
+  - healthcheck
+  - logs-agent
+  - tagger-store
+  - tagger-workloadmeta
+  - workloadmeta-docker
+  - workloadmeta-process
+  - workloadmeta-puller
+  - workloadmeta-store
+unhealthy: []

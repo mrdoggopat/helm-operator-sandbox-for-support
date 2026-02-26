@@ -1,0 +1,29 @@
+datadog:
+  apiKeyExistingSecret: datadog-agent
+  clusterName: very-good-startup-cluster
+  site: us3.datadoghq.com
+  operator:
+    enabled: false
+  kubelet:
+    tlsVerify: false
+  processAgent:
+    processCollection: true
+  checksCardinality: "orchestrator"
+  confd:
+    openmetrics.yaml: |-
+      cluster_check: true
+      instances:
+        - openmetrics_endpoint: "http://prometheus-example-service.default.svc.cluster.local:9090/metrics"
+          metrics:
+            - ".*"
+  networkMonitoring:
+    enabled: true
+  logs:
+    enabled: true
+    containerCollectAll: true
+agents:
+  image:
+    tag: 7.75.4
+clusterAgent:
+  image:
+    tag: 7.75.4

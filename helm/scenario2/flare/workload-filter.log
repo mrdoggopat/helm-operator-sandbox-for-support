@@ -1,0 +1,46 @@
+=== Workload Filter Status ===
+
+-------- Container Autodiscovery Filters --------
+v   Global:          Loaded successfully
+v   Metrics:         Loaded successfully
+v   Logs:            Loaded successfully
+
+-------- Kube Service Autodiscovery Filters --------
+v   Global:          Loaded successfully
+v   Metrics:         Loaded successfully
+
+-------- Kube Endpoint Autodiscovery Filters --------
+v   Global:          Loaded successfully
+v   Metrics:         Loaded successfully
+
+-------- Pod Shared Metrics Filters --------
+v   SharedMetrics:   Loaded successfully
+
+-------- Container Shared Metrics Filters --------
+v   SharedMetrics:   Loaded successfully
+
+-------- Container Paused Filters --------
+v   PausedContainers: Loaded successfully
+
+-------- Container SBOM Filters --------
+v   SBOM:            Loaded successfully
+
+-------- Raw Filter Configuration --------
+      ContainerComplianceExclude:  not configured
+      ContainerComplianceInclude:  not configured
+      ContainerRuntimeSecurityExclude: not configured
+      ContainerRuntimeSecurityInclude: not configured
+      ac_exclude:                  not configured
+      ac_include:                  not configured
+      cel_product_rules:           not configured
+      container_exclude:           not configured
+      container_exclude_logs:      not configured
+      container_exclude_metrics:   not configured
+      container_include:           not configured
+      container_include_logs:      not configured
+      container_include_metrics:   not configured
+      exclude_pause_container:     true
+      process_blacklist_patterns:  not configured
+      sbom_container_exclude:      not configured
+      sbom_container_include:      not configured
+      sbom_exclude_pause_container: true

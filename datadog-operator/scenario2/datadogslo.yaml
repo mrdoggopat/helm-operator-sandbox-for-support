@@ -1,0 +1,17 @@
+   apiVersion: datadoghq.com/v1alpha1
+   kind: DatadogSLO
+   metadata:
+     name: example-slo
+   spec:
+     name: example-slo
+     description: "This is an example metric SLO from datadog-operator"
+     query:
+       denominator: "sum:system.cpu.user{*}.as_count()"
+       numerator: "sum:system.cpu.user.total{*}.as_count()"
+     tags:
+       - "service:example"
+       - "env:prod"
+     targetThreshold: "99.9"
+     timeframe: "7d"
+     type: "metric"
+   

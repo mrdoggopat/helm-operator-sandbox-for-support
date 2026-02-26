@@ -1,0 +1,43 @@
+datadog:
+  apiKeyExistingSecret: datadog-agent
+  appKeyExistingSecret: datadog-agent
+  clusterName: dev-cluster
+  site: datadoghq.eu
+  kubelet:
+    tlsVerify: false
+  processAgent:
+    processCollection: true
+  checksCardinality: "orchestrator"
+  confd:
+    openmetrics.yaml: |-
+      ad_identifiers:
+        - prometheus
+      instances:
+        - openmetrics_endpoint: "http://%%host%%:9090/metrics"
+          metrics:
+            - ".*"
+  env:
+    - name: DD_EXPECTED_TAGS_DURATION
+      value: "10m"
+  podLabelsAsTags:
+    env: dev
+  logs:
+    enabled: true
+    containerCollectAll: true
+    autoMultiLineDetection: true
+  kubeStateMetricsCore:
+    useClusterCheckRunners: true
+agents:
+  image:
+    repository: someprivateregistry/datadog
+    tag: 7.74.2-v2
+clusterChecksRunner:
+  enabled: true
+  image:
+    repository: someprivateregistry/datadog
+    tag: 7.74.2-v2
+clusterAgent:
+  image:
+    repository: someprivateregistry/datadog
+    tag: 7.74.2-v2
+  replicas: 2

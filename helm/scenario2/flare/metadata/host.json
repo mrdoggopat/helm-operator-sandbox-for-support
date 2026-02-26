@@ -1,0 +1,279 @@
+{
+    "apiKey": "***************************d065d",
+    "agentVersion": "7.75.4",
+    "uuid": "9fa8865e-3751-4433-92c2-24835d1b1250",
+    "internalHostname": "pattykube",
+    "os": "linux",
+    "agent-flavor": "agent",
+    "python": "3.13.11 (main, Feb 16 2026, 09:34:23) [GCC 12.3.0]",
+    "systemStats": {
+        "cpuCores": 1,
+        "machine": "arm64",
+        "platform": "linux",
+        "pythonV": "3.13.11",
+        "processor": "",
+        "macV": [
+            "",
+            "",
+            ""
+        ],
+        "nixV": [
+            "debian",
+            "12",
+            ""
+        ],
+        "fbsdV": [
+            "",
+            "",
+            ""
+        ],
+        "winV": [
+            "",
+            "",
+            ""
+        ]
+    },
+    "meta": {
+        "socket-hostname": "datadog-gkwbc",
+        "timezones": [
+            "UTC"
+        ],
+        "socket-fqdn": "datadog-gkwbc",
+        "ec2-hostname": "",
+        "hostname": "pattykube",
+        "host_aliases": [
+            "pattykube-very-good-startup-cluster"
+        ],
+        "instance-id": "",
+        "cluster-name": "very-good-startup-cluster",
+        "hostname-resolution-version": 1
+    },
+    "host-tags": {
+        "system": [
+            "cluster_name:very-good-startup-cluster",
+            "kube_cluster_name:very-good-startup-cluster",
+            "kube_node:pattykube",
+            "kube_node_role:control-plane",
+            "orch_cluster_id:fe716ee9-0735-437f-9cf8-117c979f40dd"
+        ]
+    },
+    "container-meta": {
+        "docker_swarm": "inactive",
+        "docker_version": "29.2.0",
+        "kubelet_version": "v1.35.0"
+    },
+    "network": null,
+    "logs": {
+        "transport": "HTTP",
+        "auto_multi_line_detection_enabled": false
+    },
+    "install-method": {
+        "tool": "helm",
+        "tool_version": "Helm",
+        "installer_version": "datadog-3.175.2"
+    },
+    "proxy-info": {
+        "no-proxy-nonexact-match": false,
+        "proxy-behavior-changed": false,
+        "no-proxy-nonexact-match-explicitly-set": false
+    },
+    "otlp": {
+        "enabled": false
+    },
+    "fips_mode": false,
+    "resources": {
+        "meta": {
+            "host": "pattykube"
+        },
+        "processes": {
+            "snaps": [
+                [
+                    1772131733,
+                    [
+                        [
+                            "root",
+                            0,
+                            5.935830030855096,
+                            1967575040,
+                            743694336,
+                            "kube-apiserver",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            2.84564540374145,
+                            34101489664,
+                            356528128,
+                            "containerd-shim-runc-v2",
+                            27
+                        ],
+                        [
+                            "root",
+                            0,
+                            2.8168433909351798,
+                            4019752960,
+                            352919552,
+                            "agent",
+                            2
+                        ],
+                        [
+                            "root",
+                            0,
+                            1.9605311078084513,
+                            11681849344,
+                            245633024,
+                            "java",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            1.1587170713877992,
+                            12089856000,
+                            145174528,
+                            "etcd",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            1.127888129189941,
+                            2486878208,
+                            141312000,
+                            "datadog-cluster-agent",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            1.0445224848585106,
+                            2173124608,
+                            130867200,
+                            "system-probe",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            1.0349763012723232,
+                            1395482624,
+                            129671168,
+                            "kube-controller-manager",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            0.9451702522611705,
+                            3317788672,
+                            118419456,
+                            "dockerd",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            0.8929931666325576,
+                            3198976000,
+                            111882240,
+                            "kubelet",
+                            1
+                        ],
+                        [
+                            "nobody",
+                            0,
+                            0.7898486145283761,
+                            1497604096,
+                            98959360,
+                            "prometheus",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            0.5204958523140014,
+                            1823604736,
+                            65212416,
+                            "process-agent",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            0.518567000151039,
+                            2516930560,
+                            64970752,
+                            "containerd",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            0.512453519566734,
+                            1304240128,
+                            64204800,
+                            "kube-scheduler",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            0.4723072406494805,
+                            1309048832,
+                            59174912,
+                            "cri-dockerd",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            0.4225493933269561,
+                            1811542016,
+                            52940800,
+                            "trace-agent",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            0.4178743787624877,
+                            1299750912,
+                            52355072,
+                            "kube-proxy",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            0.2850778112039503,
+                            752406528,
+                            35717120,
+                            "storage-provisioner",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            0.09251951900311689,
+                            21168128,
+                            11591680,
+                            "systemd",
+                            1
+                        ],
+                        [
+                            "root",
+                            0,
+                            0.08840027540085799,
+                            25722880,
+                            11075584,
+                            "systemd-journald",
+                            1
+                        ]
+                    ]
+                ]
+            ]
+        }
+    },
+    "gohai": "{\"cpu\":{\"cache_size\":\"0 KB\",\"cache_size_l1\":\"0\",\"cache_size_l2\":\"0\",\"cache_size_l3\":\"0\",\"cpu_cores\":\"10\",\"cpu_logical_processors\":\"10\",\"cpu_pkgs\":\"1\",\"family\":\"none\",\"model\":\"0x000\",\"model_name\":\"0x000\",\"stepping\":\"r0p0\",\"vendor_id\":\"Apple\"},\"filesystem\":[{\"kb_size\":\"6117628\",\"mounted_on\":\"/host/var/run\",\"name\":\"tmpfs\"},{\"kb_size\":\"5120\",\"mounted_on\":\"/host/var/run/lock\",\"name\":\"tmpfs\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/var/lib/docker/containers/bf78898eb444069933d4327294ae2387b1aabd30f54e1b53d3662b839ed52c5b/mounts/shm\",\"name\":\"shm\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/var/lib/docker/containers/7c0c21f25d738729f113df60171e73422dc065a5a379a651c7f093c7132794c7/mounts/shm\",\"name\":\"shm\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/var/lib/docker/containers/fcee1b4ce0a52fe863d2fd64d2118f6c658a49ca6dafd5efd4f1aff21593dc55/mounts/shm\",\"name\":\"shm\"},{\"kb_size\":\"12235256\",\"mounted_on\":\"/var/run/secrets/kubernetes.io/serviceaccount\",\"name\":\"tmpfs\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/dev\",\"name\":\"tmpfs\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/var/lib/docker/containers/6beff1a14e2ec73b20b1557bac387c03a8609364d9526719d1254149061f82e1/mounts/shm\",\"name\":\"shm\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/var/lib/docker/containers/76513e941b61452bb5b58d12897290bc081e2c0578f1f667cbe6bc2a7cd47675/mounts/shm\",\"name\":\"shm\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/var/lib/docker/containers/9754b9dce9309e659c9a1abbd8fa1140263238ab91ddf65ad01e8c9ab34c30db/mounts/shm\",\"name\":\"shm\"},{\"kb_size\":\"6117628\",\"mounted_on\":\"/proc/scsi\",\"name\":\"tmpfs\"},{\"kb_size\":\"544626040\",\"mounted_on\":\"/tmp\",\"name\":\"/dev/vda1\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/dev/shm\",\"name\":\"shm\"},{\"kb_size\":\"544626040\",\"mounted_on\":\"/etc/passwd\",\"name\":\"overlay\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/var/lib/docker/containers/8265369f7ba65a4053d6f0e5598ae785c2e2dd7f0f81b6f1c2bbfef0301b49df/mounts/shm\",\"name\":\"shm\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/var/lib/docker/containers/06bca2fba630225687ba7905407269e28340cac7dc32d31d82310d47cb945c2a/mounts/shm\",\"name\":\"shm\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/var/lib/docker/containers/9fb146ba53d939282f53479d5ab11cc11e877e7c3b308146a5ef0bf1eccf7597/mounts/shm\",\"name\":\"shm\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/var/lib/docker/containers/16957fd6eb840735e2a67afead357773b1c7d7551179361626574ee8ba372f8f/mounts/shm\",\"name\":\"shm\"},{\"kb_size\":\"6117628\",\"mounted_on\":\"/sys/firmware\",\"name\":\"tmpfs\"},{\"kb_size\":\"544626040\",\"mounted_on\":\"/\",\"name\":\"overlay\"},{\"kb_size\":\"65536\",\"mounted_on\":\"/var/lib/docker/containers/296a804c2276b657cda61d962119ab86149a718a2ee26f0a9d59e6f5ad669ff8/mounts/shm\",\"name\":\"shm\"}],\"memory\":{\"swap_total\":\"1048572kB\",\"total\":\"12528902144\"},\"network\":null,\"platform\":{\"GOOARCH\":\"arm64\",\"GOOS\":\"linux\",\"goV\":\"1.25.7\",\"hardware_platform\":\"aarch64\",\"hostname\":\"datadog-gkwbc\",\"kernel_name\":\"Linux\",\"kernel_release\":\"6.12.65-linuxkit\",\"kernel_version\":\"#1 SMP Thu Jan 15 14:58:53 UTC 2026\",\"machine\":\"aarch64\",\"os\":\"GNU/Linux\",\"processor\":\"aarch64\"}}"
+}

@@ -1,0 +1,40 @@
+apiVersion: "datadoghq.com/v2alpha1"
+kind: "DatadogAgent"
+metadata:
+  name: "datadog"
+  finalizers: []
+spec:
+  global:
+    clusterName: "mystartup-stg"
+    logLevel: debug
+    credentials:
+      apiSecret:
+        secretName: datadog-secret
+        keyName: api-key
+    kubelet:
+      tlsVerify: false
+  features:
+    logCollection:
+      enabled: true
+      containerCollectAll: true
+    admissionController:
+      agentCommunicationMode: "hostip"
+    dogstatsd:
+      hostPortConfig:
+        enabled: true
+  override:
+    nodeAgent:
+      image:
+        tag: 7.74.0
+      extraConfd:
+        configDataMap:
+          openmetrics.yaml: |-
+            ad_identifiers:
+              - prometheus
+            instances:
+              - openmetrics_endpoint: "http://%%host%%:9090/metrics"
+                metrics:
+                - ".*"
+    clusterAgent:
+      image:
+        tag: 7.74.0

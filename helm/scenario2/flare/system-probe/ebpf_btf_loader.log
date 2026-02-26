@@ -1,0 +1,4 @@
+btfLoader result: 2
+numLoadAttempts: 1
+loaderUsed: kernel
+filepathUsed: <unknown, internal to cilium ebpf>

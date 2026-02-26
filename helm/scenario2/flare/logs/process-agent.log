@@ -1,0 +1,61 @@
+2026-02-26 18:46:55 UTC | PROCESS | INFO | (pkg/util/log/setup/log.go:60 in SetupLogger) | PROCESS: using slog logger
+2026-02-26 18:46:55 UTC | PROCESS | INFO | (pkg/util/log/log.go:743 in func1) | running on platform: ubuntu
+2026-02-26 18:46:55 UTC | PROCESS | INFO | (pkg/util/log/log.go:743 in func1) | running version: 7.75.4
+2026-02-26 18:46:55 UTC | PROCESS | INFO | (pkg/util/log/log.go:738 in func1) | Starting to load the configuration
+2026-02-26 18:46:55 UTC | PROCESS | INFO | (pkg/util/log/log.go:738 in func1) | Loading proxy settings
+2026-02-26 18:46:55 UTC | PROCESS | INFO | (pkg/util/log/log.go:738 in func1) | Starting to resolve secrets
+2026-02-26 18:46:55 UTC | PROCESS | INFO | (pkg/util/log/log.go:738 in func1) | Finished resolving secrets
+2026-02-26 18:46:55 UTC | PROCESS | INFO | (pkg/util/log/log.go:743 in func1) | Agent did not find PodResources socket at /var/lib/kubelet/pod-resources/kubelet.sock
+2026-02-26 18:46:55 UTC | PROCESS | INFO | (pkg/util/log/log.go:743 in func1) | 4 Features detected from environment: kubernetes,kube_orchestratorexplorer,kubelet_config_orchestrator_check,docker
+2026-02-26 18:46:55 UTC | PROCESS | INFO | (comp/core/ipc/impl/ipc.go:73 in NewReadWriteComponent) | starting to load the IPC auth primitives (timeout: 30s)
+2026-02-26 18:46:55 UTC | PROCESS | WARN | (pkg/api/security/cert/cert_getter.go:37 in getCertFilepath) | IPC cert/key created or retrieved next to auth_token_file_path location: /etc/datadog-agent/auth/ipc_cert.pem
+2026-02-26 18:46:55 UTC | PROCESS | INFO | (comp/core/ipc/impl/ipc.go:194 in printAuthSignature) | successfully loaded the IPC auth primitives (fingerprint: e9d2ecf9f12bc612)
+2026-02-26 18:46:55 UTC | PROCESS | INFO | (comp/core/configsync/configsyncimpl/module.go:70 in newComponent) | configsync disabled (agent_ipc.port: 0 | agent_ipc.config_refresh_interval: 0)
+2026-02-26 18:46:55 UTC | PROCESS | INFO | (pkg/config/setup/config.go:2431 in loadCustom) | Starting to load the configuration
+2026-02-26 18:46:55 UTC | PROCESS | WARN | (pkg/config/setup/config.go:2254 in findUnexpectedUnicode) | config key "event_monitoring_config.socket" is unknown
+2026-02-26 18:46:55 UTC | PROCESS | WARN | (pkg/config/setup/config.go:2254 in findUnexpectedUnicode) | config key "runtime_security_config.activity_dump.cgroup_wait_list_size" is unknown
+2026-02-26 18:46:55 UTC | PROCESS | WARN | (pkg/config/setup/config.go:2254 in findUnexpectedUnicode) | config key "runtime_security_config.activity_dump.path_merge.enabled" is unknown
+2026-02-26 18:46:55 UTC | PROCESS | WARN | (pkg/config/setup/config.go:2254 in findUnexpectedUnicode) | config key "runtime_security_config.network.enabled" is unknown
+2026-02-26 18:46:55 UTC | PROCESS | WARN | (pkg/config/setup/config.go:2254 in findUnexpectedUnicode) | config key "runtime_security_config.syscall_monitor.enabled" is unknown
+2026-02-26 18:46:55 UTC | PROCESS | WARN | (pkg/system-probe/config/adjust.go:157 in deprecateCustom) | configuration key `runtime_security_config.activity_dump.cgroup_dump_timeout` is deprecated, use `runtime_security_config.activity_dump.dump_duration` instead
+2026-02-26 18:46:55 UTC | PROCESS | WARN | (pkg/system-probe/config/config.go:138 in load) | config key "event_monitoring_config.process.enabled" is unknown
+2026-02-26 18:46:55 UTC | PROCESS | INFO | (comp/rdnsquerier/impl/rdnsquerier.go:83 in NewComponent) | Reverse DNS Enrichment config: (enabled=false workers=0 chan_size=0 cache.enabled=true cache.entry_ttl=0 cache.clean_interval=0 cache.persist_interval=0 cache.max_retries=-1 cache.max_size=0 rate_limiter.enabled=true rate_limiter.limit_per_sec=0 rate_limiter.limit_throttled_per_sec=0 rate_limiter.throttle_error_threshold=0 rate_limiter.recovery_intervals=0 rate_limiter.recovery_interval=0)
+2026-02-26 18:47:02 UTC | PROCESS | WARN | (comp/core/workloadfilter/baseimpl/filter_utils.go:239 in computeContainerComplianceFilters) | config key "compliance_config.exclude_pause_containers" is unknown
+2026-02-26 18:47:02 UTC | PROCESS | WARN | (comp/core/workloadfilter/baseimpl/filter_utils.go:248 in computeContainerRuntimeSecurityFilters) | config key "runtime_security_config.exclude_pause_containers" is unknown
+2026-02-26 18:47:02 UTC | PROCESS | INFO | (pkg/util/kubernetes/kubelet/kubelet_client.go:337 in checkKubeletConnection) | Successful configuration found for Kubelet, using URL: https://172.17.0.2:10250
+2026-02-26 18:47:02 UTC | PROCESS | WARN | (pkg/util/cgroups/pid_mapper.go:110 in getPidMapper) | Usage of cgroupv2 detected but the Agent does not seem to run in host cgroup namespace. Make sure to run with --cgroupns=host, some feature may not work otherwise
+2026-02-26 18:47:02 UTC | PROCESS | INFO | (pkg/process/metadata/workloadmeta/extractor.go:85 in NewWorkloadMetaExtractor) | Instantiating a new WorkloadMetaExtractor
+2026-02-26 18:47:02 UTC | PROCESS | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:325 in NewDefaultForwarder) | Retry queue storage on disk is disabled
+2026-02-26 18:47:02 UTC | PROCESS | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:325 in NewDefaultForwarder) | Retry queue storage on disk is disabled
+2026-02-26 18:47:02 UTC | PROCESS | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:325 in NewDefaultForwarder) | Retry queue storage on disk is disabled
+2026-02-26 18:47:02 UTC | PROCESS | INFO | (comp/process/agent/agent_linux.go:59 in enabledHelper) | Network Performance Monitoring is not supported in the core agent. The process-agent will be enabled as a standalone agent
+2026-02-26 18:47:02 UTC | PROCESS | INFO | (comp/process/agent/agent_linux.go:65 in enabledHelper) | The process checks will run in the core agent via the process-component
+2026-02-26 18:47:02 UTC | PROCESS | INFO | (comp/process/apiserver/apiserver.go:53 in newApiServer) | API server listening on localhost:6162
+2026-02-26 18:47:02 UTC | PROCESS | INFO | (comp/core/workloadmeta/impl/store.go:104 in start) | workloadmeta store initialized successfully
+2026-02-26 18:47:02 UTC | PROCESS | INFO | (comp/core/tagger/impl-remote/remote.go:258 in start) | remote tagger initialized successfully
+2026-02-26 18:47:02 UTC | PROCESS | INFO | (comp/core/workloadfilter/remoteimpl/remote.go:172 in start) | remote workloadfilter initialized successfully
+2026-02-26 18:47:02 UTC | PROCESS | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:458 in Start) | Forwarder started, sending to 1 endpoint(s) with 1 worker(s) each: "https://process.datadoghq.com." (1 api key(s))
+2026-02-26 18:47:02 UTC | PROCESS | INFO | (comp/core/workloadmeta/collectors/internal/remote/generic.go:122 in Start) | remote workloadmeta initialized successfully
+2026-02-26 18:47:02 UTC | PROCESS | INFO | (comp/core/workloadmeta/impl/store.go:664 in startCandidates) | workloadmeta collector "remote-workloadmeta" started successfully
+2026-02-26 18:47:02 UTC | PROCESS | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:458 in Start) | Forwarder started, sending to 1 endpoint(s) with 1 worker(s) each: "https://process.datadoghq.com." (1 api key(s))
+2026-02-26 18:47:02 UTC | PROCESS | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:458 in Start) | Forwarder started, sending to 1 endpoint(s) with 1 worker(s) each: "https://process.datadoghq.com." (1 api key(s))
+2026-02-26 18:47:02 UTC | PROCESS | INFO | (pkg/process/runner/submitter.go:194 in printStartMessage) | Starting CheckSubmitter for host=pattykube, endpoints=[https://process.datadoghq.com.]
+2026-02-26 18:47:02 UTC | PROCESS | INFO | (pkg/process/runner/runner.go:283 in Run) | Starting process-agent with enabled checks=[connections]
+2026-02-26 18:47:02 UTC | PROCESS | INFO | (comp/core/workloadmeta/collectors/internal/remote/generic.go:165 in func1) | workloadmeta stream established successfully
+2026-02-26 18:47:02 UTC | PROCESS | INFO | (comp/core/tagger/impl-remote/remote.go:529 in run) | tagger stream successfully initialized
+2026-02-26 18:47:02 UTC | PROCESS | INFO | (comp/core/remoteagent/helper/serverhelper.go:268 in registerWithAgent) | Registered with Core Agent. Recommended refresh interval of 10 seconds.
+2026-02-26 18:47:04 UTC | PROCESS | INFO | (pkg/process/checks/net.go:106 in Init) | no network ID detected: failed to get network ID after 4 attempts: failed to get network ID from system-probe: network ID request failed: url: http://sysprobe/network_tracer/network_id, status code: 500
+2026-02-26 18:47:04 UTC | PROCESS | INFO | (pkg/util/kubernetes/clustername/clustername.go:80 in getClusterName) | Got cluster name very-good-startup-cluster from config
+2026-02-26 18:47:04 UTC | PROCESS | INFO | (pkg/api/security/security.go:178 in getClusterAgentAuthToken) | Using configured cluster_agent.auth_token
+2026-02-26 18:47:04 UTC | PROCESS | INFO | (comp/metadata/host/hostimpl/hosttags/tags.go:145 in Get) | Adding both tags cluster_name and kube_cluster_name. You can use 'disable_cluster_name_tag_key' in the Agent config to keep the kube_cluster_name tag only
+2026-02-26 18:47:04 UTC | PROCESS | INFO | (comp/metadata/host/hostimpl/hosttags/tags.go:178 in Get) | Unable to get host tags from source: gce - using cached host tags
+2026-02-26 18:47:04 UTC | PROCESS | INFO | (pkg/util/containers/metrics/provider/registry.go:102 in collectorDiscovery) | Container metrics provider discovery process finished
+2026-02-26 18:47:05 UTC | PROCESS | INFO | (pkg/api/security/security.go:178 in getClusterAgentAuthToken) | Using configured cluster_agent.auth_token
+2026-02-26 18:47:07 UTC | PROCESS | INFO | (pkg/api/security/security.go:178 in getClusterAgentAuthToken) | Using configured cluster_agent.auth_token
+2026-02-26 18:47:11 UTC | PROCESS | INFO | (pkg/api/security/security.go:178 in getClusterAgentAuthToken) | Using configured cluster_agent.auth_token
+2026-02-26 18:47:14 UTC | PROCESS | INFO | (comp/metadata/host/hostimpl/hosttags/tags.go:178 in Get) | Unable to get host tags from source: kubernetes_cluster_agent_tags - using cached host tags
+2026-02-26 18:47:14 UTC | PROCESS | INFO | (pkg/process/runner/runner.go:235 in logCheckDuration) | Finished connections check #1 in 14.503791ms
+2026-02-26 18:47:14 UTC | PROCESS | INFO | (comp/forwarder/defaultforwarder/transaction/transaction.go:462 in internalProcess) | Successfully posted payload to "https://process.datadoghq.com./api/v1/connections" (202 Accepted), the agent will only log transaction success every 500 transactions
+2026-02-26 18:47:44 UTC | PROCESS | INFO | (pkg/process/runner/runner.go:235 in logCheckDuration) | Finished connections check #2 in 19.941208ms
+2026-02-26 18:48:14 UTC | PROCESS | INFO | (pkg/process/runner/runner.go:235 in logCheckDuration) | Finished connections check #3 in 18.419584ms
+2026-02-26 18:48:44 UTC | PROCESS | INFO | (pkg/process/runner/runner.go:235 in logCheckDuration) | Finished connections check #4 in 19.028667ms

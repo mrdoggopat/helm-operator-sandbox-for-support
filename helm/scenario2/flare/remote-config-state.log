@@ -1,0 +1,29 @@
+
+=== Remote config DB state ===
+
+Configuration repository
+-------------------------
+root.json           - Version:        17 - Hash: b01b5f6fc17ffd0afcd029b44c8426eab9f2e10434b3151b291e33e1e7c09b9d
+|- timestamp.json   - Version:   1198624 - Hash: 6d3caa55bb7ff3045e6799383f10160e2fbdff829af79bc218cab2efdf80fb9d
+|- snapshot.json    - Version:   1198624 - Hash: fbf1bdd5788a49eb2ce582afdf5ac59059a940cedb08b1b48c187bebde48d45f
+|- targets.json     - Version:        45 - Hash: 9688cbdf9447ccb9097f52e7205c53980b8fa9ee4fb2e91699cfe26138d38ae2
+
+Director repository
+--------------------
+root.json           - Version:        16 - Hash: 8bee63bdf39f89da47e1bb6e8a754006b82f50ead550d90462d5a8ec07e4e6b8
+|- timestamp.json   - Version: 139998971 - Hash: a7fa45b28c57615789198d9cd962d614b64b348530dd0bf2bc658ec0874a58cf
+|- snapshot.json    - Version: 139998971 - Hash: 59941ba42cff559a08c2f0894873aeb31ae2f23f7c8f8a4cf50ed03bb7bcaa9d
+|- targets.json     - Version: 139998971 - Hash: 673ce6ebe0d2209f7dcaf519ba921d2f748bb4c821741e0146202497e03f6a76
+
+Remote config active clients
+-----------------------------
+
+- Client yJA7a4ccP2mDu0oZ-AI0j
+state:{root_version:16  targets_version:139998920  backend_client_state:"{\"version\":2,\"state\":{\"file_hashes\":{},\"i_31933\":true}}"}  id:"yJA7a4ccP2mDu0oZ-AI0j"  products:"AGENT_CONFIG"  products:"METRIC_CONTROL"  products:"AGENT_TASK"  is_agent:true  client_agent:{name:"core-agent"  version:"7.75.4"}  last_seen:1772131737007
+    - Capabilities: 
+- Client ucq_T5bD38c5yBZ6gntHd
+state:{root_version:16  targets_version:139998971  backend_client_state:"{\"version\":2,\"state\":{\"file_hashes\":{},\"i_31933\":true}}"}  id:"ucq_T5bD38c5yBZ6gntHd"  products:"AGENT_CONFIG"  is_agent:true  client_agent:{name:"system-probe"  version:"7.75.4"}  last_seen:1772131739889
+    - Capabilities: 
+- Client 6eyJwOUNfDJPgzyLFHY4_
+state:{root_version:16  targets_version:139998971  backend_client_state:"{\"version\":2,\"state\":{\"file_hashes\":{},\"i_31933\":true}}"}  id:"6eyJwOUNfDJPgzyLFHY4_"  products:"APM_SAMPLING"  products:"AGENT_CONFIG"  is_agent:true  client_agent:{name:"trace-agent"  version:"7.75.4"}  last_seen:1772131738567
+    - Capabilities: 

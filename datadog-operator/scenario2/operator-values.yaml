@@ -1,0 +1,5 @@
+datadogSLO:
+  enabled: true
+datadogCRDs:
+  crds:
+    datadogSLOs: true

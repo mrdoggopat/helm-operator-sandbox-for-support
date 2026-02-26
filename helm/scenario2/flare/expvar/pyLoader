@@ -1,0 +1,71 @@
+ConfigureErrors:
+  etcd (9.2.0):
+  - |-
+    could not invoke 'etcd' python check constructor. New constructor API returned:
+    Traceback (most recent call last):
+      File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/etcd/etcd.py", line 73, in __init__
+        super(Etcd, self).__init__(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+            name,
+            ^^^^^
+        ...<12 lines>...
+            default_namespace='etcd',
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+      File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 126, in __init__
+        raise CheckException(
+            "The agent could not connect to any of the following URLs: %s." % possible_urls
+        )
+    datadog_checks.base.errors.CheckException: The agent could not connect to any of the following URLs: ['https://172.17.0.2:2379/metrics', 'http://172.17.0.2:2379/metrics'].
+    Deprecated constructor API returned:
+    Etcd.__init__() got an unexpected keyword argument 'agentConfig'
+  kube_controller_manager (8.2.0):
+  - |-
+    could not invoke 'kube_controller_manager' python check constructor. New constructor API returned:
+    Traceback (most recent call last):
+      File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/kube_controller_manager/kube_controller_manager.py", line 114, in __init__
+        super(KubeControllerManagerCheck, self).__init__(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+            name,
+            ^^^^^
+        ...<23 lines>...
+            default_namespace="kube_controller_manager",
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+      File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/kube_controller_manager/sli_metrics.py", line 25, in __init__
+        super(SliMetricsScraperMixin, self).__init__(*args, **kwargs)
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+      File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 126, in __init__
+        raise CheckException(
+            "The agent could not connect to any of the following URLs: %s." % possible_urls
+        )
+    datadog_checks.base.errors.CheckException: The agent could not connect to any of the following URLs: ['https://172.17.0.2:10257/metrics', 'https://localhost:10257/metrics', 'http://172.17.0.2:10252/metrics', 'http://localhost:10252/metrics'].
+    Deprecated constructor API returned:
+    KubeControllerManagerCheck.__init__() got an unexpected keyword argument 'agentConfig'
+  kube_scheduler (7.2.0):
+  - |-
+    could not invoke 'kube_scheduler' python check constructor. New constructor API returned:
+    Traceback (most recent call last):
+      File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/kube_scheduler/kube_scheduler.py", line 159, in __init__
+        super(KubeSchedulerCheck, self).__init__(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+            name,
+            ^^^^^
+        ...<24 lines>...
+            default_namespace="kube_scheduler",
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+      File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/kube_scheduler/sli_metrics.py", line 25, in __init__
+        super(SliMetricsScraperMixin, self).__init__(*args, **kwargs)
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+      File "/opt/datadog-agent/embedded/lib/python3.13/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 126, in __init__
+        raise CheckException(
+            "The agent could not connect to any of the following URLs: %s." % possible_urls
+        )
+    datadog_checks.base.errors.CheckException: The agent could not connect to any of the following URLs: ['https://172.17.0.2:10259/metrics', 'https://localhost:10259/metrics', 'http://172.17.0.2:10251/metrics', 'http://localhost:10251/metrics'].
+    Deprecated constructor API returned:
+    KubeSchedulerCheck.__init__() got an unexpected keyword argument 'agentConfig'
+Py3Warnings: {}

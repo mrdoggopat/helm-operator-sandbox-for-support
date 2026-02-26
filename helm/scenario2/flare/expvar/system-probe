@@ -1,0 +1,14 @@
+delta_seconds: 15.000000292
+discovery: null
+event_monitor:
+  probe:
+    start_time: 2026-02-26 18:47:01.775912503 +0000 UTC m=+6.633956087
+network_tracer:
+  tracer:
+    last_check: 1.772131724e+09
+  universal_service_monitoring:
+    blocked_processes: []
+    state: Disabled
+    traced_programs: null
+updated_at: 1.772131727e+09
+uptime: 1m45.000004208s

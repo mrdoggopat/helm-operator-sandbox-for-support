@@ -1,0 +1,3871 @@
+[
+  {
+    "hostName": "pattykube",
+    "processes": [
+      {
+        "pid": 55103,
+        "nsPid": 55103,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "fcee1b4ce0a52fe863d2fd64d2118f6c658a49ca6dafd5efd4f1aff21593dc55",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 12849152,
+          "vms": 1263095808,
+          "shared": 7258112,
+          "text": 3457024,
+          "data": 42164224
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 10,
+          "nice": 20
+        },
+        "createTime": 1772131601000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 8,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 1338,
+        "nsPid": 1338,
+        "command": {
+          "args": [
+            "/var/lib/minikube/binaries/v1.35.0/kubelet",
+            "--bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf",
+            "--config=/var/lib/kubelet/config.yaml",
+            "--hostname-override=pattykube",
+            "--kubeconfig=/etc/kubernetes/kubelet.conf",
+            "--node-ip=172.17.0.2"
+          ],
+          "ppid": 1,
+          "comm": "kubelet"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 107057152,
+          "vms": 3198976000,
+          "shared": 48832512,
+          "text": 24072192,
+          "data": 321380352
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "totalPct": 10.992786,
+          "userPct": 7.214016,
+          "systemPct": 3.7787702,
+          "numThreads": 25,
+          "nice": 20,
+          "userTime": 765,
+          "systemTime": 568
+        },
+        "createTime": 1772120393000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 619,
+        "involuntaryCtxSwitches": 8,
+        "processContext": [
+          "process_context:kubelet"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 55939,
+        "nsPid": 55939,
+        "command": {
+          "args": [
+            "agent",
+            "run"
+          ],
+          "cwd": "/",
+          "ppid": 55916,
+          "exe": "/opt/datadog-agent/bin/agent/agent",
+          "comm": "agent"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 255250432,
+          "vms": 2194116608,
+          "shared": 98238464,
+          "text": 105316352,
+          "data": 284422144
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "totalPct": 15.000572,
+          "userPct": 12.595901,
+          "systemPct": 2.404672,
+          "numThreads": 10,
+          "nice": 20,
+          "userTime": 26,
+          "systemTime": 2
+        },
+        "createTime": 1772131614000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 393,
+        "involuntaryCtxSwitches": 38,
+        "processContext": [
+          "process_context:agent"
+        ],
+        "language": 6,
+        "portInfo": {
+          "tcp": [
+            5555,
+            5001,
+            6000
+          ],
+          "udp": [
+            8125
+          ]
+        },
+        "serviceDiscovery": {
+          "generatedServiceName": {
+            "name": "agent",
+            "source": 2
+          },
+          "resources": [
+            {
+              "Resource": {
+                "logs": {
+                  "path": "/var/log/datadog/agent.log"
+                }
+              }
+            },
+            {
+              "Resource": {
+                "logs": {
+                  "path": "/var/log/datadog/dogstatsd_info/dogstatsd-stats.log"
+                }
+              }
+            }
+          ]
+        },
+        "injectionState": 2
+      },
+      {
+        "pid": 1900,
+        "nsPid": 1900,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "76d2e35e241b39b3e519cdf449bfef9c32859e6efbb627ad4425ab1ad89fbf9b",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 13266944,
+          "vms": 1263095808,
+          "shared": 7254016,
+          "text": 3457024,
+          "data": 46358528
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 11,
+          "nice": 20,
+          "userTime": 8,
+          "systemTime": 4
+        },
+        "createTime": 1772120394000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 7,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 17048,
+        "nsPid": 1,
+        "command": {
+          "args": [
+            "/pause"
+          ],
+          "ppid": 17025,
+          "comm": "pause"
+        },
+        "user": {
+          "uid": 65535,
+          "gid": 65535
+        },
+        "memory": {
+          "rss": 507904,
+          "vms": 815104,
+          "shared": 466944,
+          "text": 491520,
+          "data": 290816
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 1,
+          "nice": 20
+        },
+        "createTime": 1772122453000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 16,
+        "involuntaryCtxSwitches": 2,
+        "processContext": [
+          "process_context:pause"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 17185,
+        "nsPid": 17185,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "e742cbc43cf9a75ada6bf121167886e06c01ac0c8dfa1b654d44cdb5265eca9a",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 13078528,
+          "vms": 1263095808,
+          "shared": 7319552,
+          "text": 3457024,
+          "data": 46358528
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 12,
+          "nice": 20,
+          "userTime": 9,
+          "systemTime": 6
+        },
+        "createTime": 1772122463000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 7,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 1827,
+        "nsPid": 1827,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "bf78898eb444069933d4327294ae2387b1aabd30f54e1b53d3662b839ed52c5b",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 13049856,
+          "vms": 1262833664,
+          "shared": 7155712,
+          "text": 3457024,
+          "data": 41902080
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 11,
+          "nice": 20,
+          "userTime": 6,
+          "systemTime": 1
+        },
+        "createTime": 1772120394000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 5,
+        "involuntaryCtxSwitches": 3,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 1764,
+        "nsPid": 1,
+        "command": {
+          "args": [
+            "/pause"
+          ],
+          "ppid": 1712,
+          "comm": "pause"
+        },
+        "user": {
+          "uid": 65535,
+          "gid": 65535
+        },
+        "memory": {
+          "rss": 479232,
+          "vms": 815104,
+          "shared": 442368,
+          "text": 491520,
+          "data": 290816
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 1,
+          "nice": 20
+        },
+        "createTime": 1772120394000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 24,
+        "involuntaryCtxSwitches": 9,
+        "processContext": [
+          "process_context:pause"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 55300,
+        "nsPid": 55300,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "4840c015c792563e3a0f53ce0f9924ccef5db4ad4b6c4075e9ab2d478113c4a6",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 12017664,
+          "vms": 1263095808,
+          "shared": 7258112,
+          "text": 3457024,
+          "data": 42164224
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 11,
+          "nice": 20
+        },
+        "createTime": 1772131602000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 8,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 2583,
+        "nsPid": 2583,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "38c6f8ace85e9f4ac5eb7aeda57a927214daf0032ee005c12f8b7bddca16aaf3",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 13762560,
+          "vms": 1263357952,
+          "shared": 7254016,
+          "text": 3457024,
+          "data": 46620672
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 11,
+          "nice": 20,
+          "userTime": 6,
+          "systemTime": 4
+        },
+        "createTime": 1772120400000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 7,
+        "involuntaryCtxSwitches": 1,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 46999,
+        "nsPid": 1,
+        "command": {
+          "args": [
+            "/pause"
+          ],
+          "ppid": 46974,
+          "comm": "pause"
+        },
+        "user": {
+          "uid": 65535,
+          "gid": 65535
+        },
+        "memory": {
+          "rss": 507904,
+          "vms": 815104,
+          "shared": 466944,
+          "text": 491520,
+          "data": 290816
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 1,
+          "nice": 20
+        },
+        "createTime": 1772131302000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 17,
+        "involuntaryCtxSwitches": 4,
+        "processContext": [
+          "process_context:pause"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 1101,
+        "nsPid": 1101,
+        "command": {
+          "args": [
+            "/usr/bin/cri-dockerd",
+            "--container-runtime-endpoint",
+            "fd://",
+            "--pod-infra-container-image=registry.k8s.io/pause:3.10.1",
+            "--network-plugin=cni",
+            "--hairpin-mode=hairpin-veth"
+          ],
+          "ppid": 1,
+          "comm": "cri-dockerd"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 57253888,
+          "vms": 1309048832,
+          "shared": 35209216,
+          "text": 22614016,
+          "data": 67989504
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "totalPct": 3.549754,
+          "userPct": 2.8627048,
+          "systemPct": 0.68704915,
+          "numThreads": 18,
+          "nice": 20,
+          "userTime": 308,
+          "systemTime": 136
+        },
+        "createTime": 1772120392000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 534,
+        "involuntaryCtxSwitches": 2,
+        "processContext": [
+          "process_context:cri-dockerd"
+        ],
+        "language": 6,
+        "portInfo": {
+          "tcp": [
+            36193
+          ]
+        },
+        "serviceDiscovery": {
+          "generatedServiceName": {
+            "name": "cri-dockerd",
+            "source": 2
+          }
+        },
+        "injectionState": 2
+      },
+      {
+        "pid": 33902,
+        "nsPid": 33902,
+        "command": {
+          "args": [
+            "/lib/systemd/systemd-journald"
+          ],
+          "ppid": 1,
+          "comm": "systemd-journal"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 11075584,
+          "vms": 25722880,
+          "shared": 10059776,
+          "text": 151552,
+          "data": 733184
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 1,
+          "nice": 20,
+          "userTime": 1,
+          "systemTime": 1
+        },
+        "createTime": 1772127887000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 2070,
+        "involuntaryCtxSwitches": 183,
+        "processContext": [
+          "process_context:systemd-journald"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 55550,
+        "nsPid": 55550,
+        "command": {
+          "args": [
+            "/pause"
+          ],
+          "cwd": "/",
+          "ppid": 55528,
+          "exe": "/pause",
+          "comm": "pause"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 503808,
+          "vms": 815104,
+          "shared": 466944,
+          "text": 491520,
+          "data": 290816
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 1,
+          "nice": 20
+        },
+        "createTime": 1772131611000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 17,
+        "involuntaryCtxSwitches": 2,
+        "processContext": [
+          "process_context:pause"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 56086,
+        "nsPid": 56086,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "06bff94baba197cfb5095fdc57882a08921516ea1ff00f83739f30242c5089df",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 13193216,
+          "vms": 1263095808,
+          "shared": 7258112,
+          "text": 3457024,
+          "data": 46358528
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 10,
+          "nice": 20
+        },
+        "createTime": 1772131614000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 7,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 2347,
+        "nsPid": 2347,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "06bca2fba630225687ba7905407269e28340cac7dc32d31d82310d47cb945c2a",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 13041664,
+          "vms": 1262571520,
+          "shared": 7168000,
+          "text": 3457024,
+          "data": 41639936
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 11,
+          "nice": 20,
+          "userTime": 12,
+          "systemTime": 3
+        },
+        "createTime": 1772120400000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 7,
+        "involuntaryCtxSwitches": 1,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 2646,
+        "nsPid": 2646,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "a5174fe929ef3485b415c04fefdda3b4aa5a83ba03fc780f7bdc87e4ed854a4e",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 12111872,
+          "vms": 1263095808,
+          "shared": 7188480,
+          "text": 3457024,
+          "data": 46358528
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "totalPct": 0.11450819,
+          "systemPct": 0.11450819,
+          "numThreads": 11,
+          "nice": 20,
+          "userTime": 6,
+          "systemTime": 4
+        },
+        "createTime": 1772120400000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 7,
+        "involuntaryCtxSwitches": 4,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 771,
+        "nsPid": 771,
+        "command": {
+          "args": [
+            "/usr/bin/containerd"
+          ],
+          "ppid": 1,
+          "comm": "containerd"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 64921600,
+          "vms": 2516930560,
+          "shared": 33628160,
+          "text": 26083328,
+          "data": 208449536
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "totalPct": 0.8015573,
+          "userPct": 0.34352458,
+          "systemPct": 0.45803276,
+          "numThreads": 17,
+          "nice": 20,
+          "userTime": 47,
+          "systemTime": 45
+        },
+        "createTime": 1772120392000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 30,
+        "processContext": [
+          "process_context:containerd"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 1787,
+        "nsPid": 1,
+        "command": {
+          "args": [
+            "/pause"
+          ],
+          "ppid": 1739,
+          "comm": "pause"
+        },
+        "user": {
+          "uid": 65535,
+          "gid": 65535
+        },
+        "memory": {
+          "rss": 503808,
+          "vms": 815104,
+          "shared": 466944,
+          "text": 491520,
+          "data": 290816
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 1,
+          "nice": 20
+        },
+        "createTime": 1772120394000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 14,
+        "involuntaryCtxSwitches": 15,
+        "processContext": [
+          "process_context:pause"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 55970,
+        "nsPid": 55970,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "cba24559722b7c7c7e19a2eedf3d42984c99964bae5019468a51ac791c873cea",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 11886592,
+          "vms": 1263095808,
+          "shared": 7258112,
+          "text": 3457024,
+          "data": 42164224
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 10,
+          "nice": 20
+        },
+        "createTime": 1772131614000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 7,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 39109,
+        "nsPid": 39109,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "76d178d18d134e93cc02837fc4dd8bc1c869c8d125f69f588289e863e4b05dac",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 13905920,
+          "vms": 1263095808,
+          "shared": 7258112,
+          "text": 3457024,
+          "data": 46358528
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 11,
+          "nice": 20,
+          "userTime": 1
+        },
+        "createTime": 1772129460000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 8,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 1931,
+        "nsPid": 1931,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "090527ec762d391fe1fe3c6bfd6cb8063f641ce8abd74a34ad1f12bb6405b49e",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 13692928,
+          "vms": 1263095808,
+          "shared": 7315456,
+          "text": 3457024,
+          "data": 46358528
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 11,
+          "nice": 20,
+          "userTime": 10,
+          "systemTime": 5
+        },
+        "createTime": 1772120394000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 7,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 1859,
+        "nsPid": 1,
+        "command": {
+          "args": [
+            "/pause"
+          ],
+          "ppid": 1827,
+          "comm": "pause"
+        },
+        "user": {
+          "uid": 65535,
+          "gid": 65535
+        },
+        "memory": {
+          "rss": 503808,
+          "vms": 815104,
+          "shared": 466944,
+          "text": 491520,
+          "data": 290816
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 1,
+          "nice": 20
+        },
+        "createTime": 1772120394000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 15,
+        "processContext": [
+          "process_context:pause"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 1812,
+        "nsPid": 1,
+        "command": {
+          "args": [
+            "/pause"
+          ],
+          "ppid": 1782,
+          "comm": "pause"
+        },
+        "user": {
+          "uid": 65535,
+          "gid": 65535
+        },
+        "memory": {
+          "rss": 507904,
+          "vms": 815104,
+          "shared": 466944,
+          "text": 491520,
+          "data": 290816
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 1,
+          "nice": 20
+        },
+        "createTime": 1772120394000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 16,
+        "involuntaryCtxSwitches": 3,
+        "processContext": [
+          "process_context:pause"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 48017,
+        "nsPid": 48017,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "bfe490a19a9899c258ead6d159808472b2cd6e31ccfda6171e1f8a0fc61f0be3",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 12353536,
+          "vms": 1263095808,
+          "shared": 7258112,
+          "text": 3457024,
+          "data": 46358528
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 10,
+          "nice": 20
+        },
+        "createTime": 1772131371000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 7,
+        "involuntaryCtxSwitches": 3,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 2358,
+        "nsPid": 1,
+        "command": {
+          "args": [
+            "/pause"
+          ],
+          "ppid": 2287,
+          "comm": "pause"
+        },
+        "user": {
+          "uid": 65535,
+          "gid": 65535
+        },
+        "memory": {
+          "rss": 503808,
+          "vms": 815104,
+          "shared": 466944,
+          "text": 491520,
+          "data": 290816
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 1,
+          "nice": 20
+        },
+        "createTime": 1772120400000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 13,
+        "involuntaryCtxSwitches": 14,
+        "processContext": [
+          "process_context:pause"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 2287,
+        "nsPid": 2287,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "8265369f7ba65a4053d6f0e5598ae785c2e2dd7f0f81b6f1c2bbfef0301b49df",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 13082624,
+          "vms": 1262833664,
+          "shared": 7168000,
+          "text": 3457024,
+          "data": 41902080
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 11,
+          "nice": 20,
+          "userTime": 9,
+          "systemTime": 2
+        },
+        "createTime": 1772120400000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 8,
+        "involuntaryCtxSwitches": 3,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 147,
+        "nsPid": 147,
+        "command": {
+          "args": [
+            "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups"
+          ],
+          "ppid": 1,
+          "comm": "sshd"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 8998912,
+          "vms": 16736256,
+          "shared": 7663616,
+          "text": 1269760,
+          "data": 958464
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 1,
+          "nice": 20
+        },
+        "createTime": 1772120382000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 74,
+        "involuntaryCtxSwitches": 1,
+        "processContext": [
+          "process_context:sshd"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 2277,
+        "nsPid": 2277,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "9754b9dce9309e659c9a1abbd8fa1140263238ab91ddf65ad01e8c9ab34c30db",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 13099008,
+          "vms": 1262833664,
+          "shared": 7168000,
+          "text": 3457024,
+          "data": 41902080
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 11,
+          "nice": 20,
+          "userTime": 7,
+          "systemTime": 2
+        },
+        "createTime": 1772120400000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 7,
+        "involuntaryCtxSwitches": 2,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 2351,
+        "nsPid": 1,
+        "command": {
+          "args": [
+            "/pause"
+          ],
+          "ppid": 2277,
+          "comm": "pause"
+        },
+        "user": {
+          "uid": 65535,
+          "gid": 65535
+        },
+        "memory": {
+          "rss": 507904,
+          "vms": 815104,
+          "shared": 466944,
+          "text": 491520,
+          "data": 290816
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 1,
+          "nice": 20
+        },
+        "createTime": 1772120400000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 17,
+        "involuntaryCtxSwitches": 5,
+        "processContext": [
+          "process_context:pause"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 794,
+        "nsPid": 794,
+        "command": {
+          "args": [
+            "/usr/bin/dockerd",
+            "-H",
+            "tcp://0.0.0.0:2376",
+            "-H",
+            "fd://",
+            "--containerd=/run/containerd/containerd.sock",
+            "-H",
+            "unix:///var/run/docker.sock",
+            "--default-ulimit=nofile=1048576:1048576",
+            "--tlsverify",
+            "--tlscacert",
+            "/etc/docker/ca.pem",
+            "--tlscert",
+            "/etc/docker/server.pem",
+            "--tlskey",
+            "/etc/docker/server-key.pem",
+            "--label",
+            "provider=docker",
+            "--insecure-registry",
+            "10.96.0.0/12"
+          ],
+          "ppid": 1,
+          "comm": "dockerd"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 118362112,
+          "vms": 3317788672,
+          "shared": 60506112,
+          "text": 47886336,
+          "data": 254832640
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "totalPct": 7.099508,
+          "userPct": 5.2673764,
+          "systemPct": 1.832131,
+          "numThreads": 19,
+          "nice": 20,
+          "userTime": 409,
+          "systemTime": 201
+        },
+        "createTime": 1772120392000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 534,
+        "involuntaryCtxSwitches": 2,
+        "processContext": [
+          "process_context:dockerd"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 46974,
+        "nsPid": 46974,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "7c0c21f25d738729f113df60171e73422dc065a5a379a651c7f093c7132794c7",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 13053952,
+          "vms": 1263095808,
+          "shared": 7258112,
+          "text": 3457024,
+          "data": 42164224
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 11,
+          "nice": 20
+        },
+        "createTime": 1772131302000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 7,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 45871,
+        "nsPid": 45871,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "3ad202e411ec8c9a6bc9719a791f74de8a7ccee4b7a98e0fd4edf277ef8054b2",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 12558336,
+          "vms": 1263095808,
+          "shared": 7258112,
+          "text": 3457024,
+          "data": 42164224
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "totalPct": 0.45803276,
+          "userPct": 0.11450819,
+          "systemPct": 0.34352458,
+          "numThreads": 11,
+          "nice": 20
+        },
+        "createTime": 1772131130000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 7,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 55126,
+        "nsPid": 1,
+        "command": {
+          "args": [
+            "/pause"
+          ],
+          "ppid": 55103,
+          "comm": "pause"
+        },
+        "user": {
+          "uid": 65535,
+          "gid": 65535
+        },
+        "memory": {
+          "rss": 503808,
+          "vms": 815104,
+          "shared": 466944,
+          "text": 491520,
+          "data": 290816
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 1,
+          "nice": 20
+        },
+        "createTime": 1772131601000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 17,
+        "involuntaryCtxSwitches": 2,
+        "processContext": [
+          "process_context:pause"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 1782,
+        "nsPid": 1782,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "76513e941b61452bb5b58d12897290bc081e2c0578f1f667cbe6bc2a7cd47675",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 12980224,
+          "vms": 1263095808,
+          "shared": 7147520,
+          "text": 3457024,
+          "data": 42164224
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 11,
+          "nice": 20,
+          "userTime": 10,
+          "systemTime": 3
+        },
+        "createTime": 1772120394000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 7,
+        "involuntaryCtxSwitches": 1,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 246,
+        "nsPid": 246,
+        "command": {
+          "args": [
+            "/usr/bin/dbus-daemon",
+            "--system",
+            "--address=systemd:",
+            "--nofork",
+            "--nopidfile",
+            "--systemd-activation",
+            "--syslog-only"
+          ],
+          "ppid": 1,
+          "comm": "dbus-daemon"
+        },
+        "user": {
+          "name": "messagebus",
+          "uid": 100,
+          "gid": 101
+        },
+        "memory": {
+          "rss": 3936256,
+          "vms": 8572928,
+          "shared": 3407872,
+          "text": 233472,
+          "data": 675840
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 1,
+          "nice": 20
+        },
+        "createTime": 1772120383000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 663,
+        "involuntaryCtxSwitches": 9,
+        "processContext": [
+          "process_context:dbus-daemon"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 1986,
+        "nsPid": 1986,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "8e67107272384206fe3b447b3e87f74136ed39d71c93d7ab6d4afecef0fe6610",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 12398592,
+          "vms": 1262833664,
+          "shared": 7188480,
+          "text": 3457024,
+          "data": 46096384
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 12,
+          "nice": 20,
+          "userTime": 8,
+          "systemTime": 4
+        },
+        "createTime": 1772120394000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 8,
+        "involuntaryCtxSwitches": 2,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 55916,
+        "nsPid": 55916,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "0be18888ad8e491cd0b2e9ca9aed8c80d39ca82fb115e8b334a95299a037bbd7",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 13082624,
+          "vms": 1263095808,
+          "shared": 7258112,
+          "text": 3457024,
+          "data": 46358528
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 11,
+          "nice": 20
+        },
+        "createTime": 1772131614000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 9,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 1712,
+        "nsPid": 1712,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "296a804c2276b657cda61d962119ab86149a718a2ee26f0a9d59e6f5ad669ff8",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 12992512,
+          "vms": 1262833664,
+          "shared": 7131136,
+          "text": 3457024,
+          "data": 41902080
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 11,
+          "nice": 20,
+          "userTime": 14,
+          "systemTime": 4
+        },
+        "createTime": 1772120394000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 7,
+        "involuntaryCtxSwitches": 1,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 38915,
+        "nsPid": 1,
+        "command": {
+          "args": [
+            "/pause"
+          ],
+          "ppid": 38892,
+          "comm": "pause"
+        },
+        "user": {
+          "uid": 65535,
+          "gid": 65535
+        },
+        "memory": {
+          "rss": 503808,
+          "vms": 815104,
+          "shared": 466944,
+          "text": 491520,
+          "data": 290816
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 1,
+          "nice": 20
+        },
+        "createTime": 1772129438000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 17,
+        "involuntaryCtxSwitches": 1,
+        "processContext": [
+          "process_context:pause"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 1,
+        "nsPid": 1,
+        "command": {
+          "args": [
+            "/sbin/init"
+          ],
+          "comm": "systemd"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 11591680,
+          "vms": 21168128,
+          "shared": 8577024,
+          "text": 86016,
+          "data": 2347008
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 1,
+          "nice": 20,
+          "userTime": 1
+        },
+        "createTime": 1772120382000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 1621,
+        "involuntaryCtxSwitches": 255,
+        "processContext": [
+          "process_context:init"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 1739,
+        "nsPid": 1739,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "6beff1a14e2ec73b20b1557bac387c03a8609364d9526719d1254149061f82e1",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 13049856,
+          "vms": 1263095808,
+          "shared": 7143424,
+          "text": 3457024,
+          "data": 42164224
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 11,
+          "nice": 20,
+          "userTime": 8,
+          "systemTime": 2
+        },
+        "createTime": 1772120394000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 5,
+        "involuntaryCtxSwitches": 6,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 17025,
+        "nsPid": 17025,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "9fb146ba53d939282f53479d5ab11cc11e877e7c3b308146a5ef0bf1eccf7597",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 15970304,
+          "vms": 1263095808,
+          "shared": 7208960,
+          "text": 3457024,
+          "data": 46358528
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 11,
+          "nice": 20,
+          "userTime": 7,
+          "systemTime": 1
+        },
+        "createTime": 1772122453000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 7,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 1958,
+        "nsPid": 1958,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "0bd7e1a6afb1f5bd193ee56f9762cc8d237d55a595392f3f439025a673ff237b",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 12455936,
+          "vms": 1263095808,
+          "shared": 7188480,
+          "text": 3457024,
+          "data": 46358528
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 11,
+          "nice": 20,
+          "userTime": 15,
+          "systemTime": 9
+        },
+        "createTime": 1772120394000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 7,
+        "involuntaryCtxSwitches": 1,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 55528,
+        "nsPid": 55528,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "c48b1a8eea26b1d97a1a0196ce3aec82a716154635e5774c3a2c25b5e85828c1",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 13082624,
+          "vms": 1263095808,
+          "shared": 7258112,
+          "text": 3457024,
+          "data": 42164224
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 10,
+          "nice": 20
+        },
+        "createTime": 1772131611000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 8,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 38892,
+        "nsPid": 38892,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "16957fd6eb840735e2a67afead357773b1c7d7551179361626574ee8ba372f8f",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 13713408,
+          "vms": 1262833664,
+          "shared": 7258112,
+          "text": 3457024,
+          "data": 41902080
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 11,
+          "nice": 20,
+          "userTime": 1
+        },
+        "createTime": 1772129438000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 7,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 56030,
+        "nsPid": 56030,
+        "command": {
+          "args": [
+            "/usr/bin/containerd-shim-runc-v2",
+            "-namespace",
+            "moby",
+            "-id",
+            "ce8933cc7cbf0353f4c90881114da5bfed41620dd4f508f10727e6ed24b0088b",
+            "-address",
+            "/run/containerd/containerd.sock"
+          ],
+          "ppid": 1,
+          "comm": "containerd-shim"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 12279808,
+          "vms": 1262833664,
+          "shared": 7258112,
+          "text": 3457024,
+          "data": 46096384
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 10,
+          "nice": 20
+        },
+        "createTime": 1772131614000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 7,
+        "involuntaryCtxSwitches": 1,
+        "processContext": [
+          "process_context:containerd-shim-runc-v2"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 2403,
+        "nsPid": 1,
+        "command": {
+          "args": [
+            "/pause"
+          ],
+          "ppid": 2347,
+          "comm": "pause"
+        },
+        "user": {
+          "uid": 65535,
+          "gid": 65535
+        },
+        "memory": {
+          "rss": 503808,
+          "vms": 815104,
+          "shared": 466944,
+          "text": 491520,
+          "data": 290816
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 1,
+          "nice": 20
+        },
+        "createTime": 1772120400000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "voluntaryCtxSwitches": 16,
+        "involuntaryCtxSwitches": 11,
+        "processContext": [
+          "process_context:pause"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 48057,
+        "nsPid": 1,
+        "command": {
+          "args": [
+            "/bin/prometheus",
+            "--config.file=/etc/prometheus/prometheus.yml",
+            "--storage.tsdb.path=/prometheus"
+          ],
+          "ppid": 48017,
+          "comm": "prometheus"
+        },
+        "user": {
+          "name": "nobody",
+          "uid": 65534,
+          "gid": 65534
+        },
+        "memory": {
+          "rss": 98959360,
+          "vms": 1497604096,
+          "shared": 61693952,
+          "text": 61517824,
+          "data": 115605504
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 12,
+          "nice": 20,
+          "userTime": 1
+        },
+        "createTime": 1772131371000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "containerId": "bfe490a19a9899c258ead6d159808472b2cd6e31ccfda6171e1f8a0fc61f0be3",
+        "voluntaryCtxSwitches": 380,
+        "involuntaryCtxSwitches": 74,
+        "processContext": [
+          "process_context:prometheus"
+        ],
+        "language": 6,
+        "portInfo": {
+          "tcp": [
+            9090
+          ]
+        },
+        "serviceDiscovery": {
+          "generatedServiceName": {
+            "name": "prometheus",
+            "source": 2
+          }
+        },
+        "injectionState": 2
+      },
+      {
+        "pid": 45896,
+        "nsPid": 1,
+        "command": {
+          "args": [
+            "/storage-provisioner"
+          ],
+          "cwd": "/",
+          "ppid": 45871,
+          "exe": "/storage-provisioner",
+          "comm": "storage-provisi"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 35635200,
+          "vms": 752406528,
+          "shared": 19972096,
+          "text": 14446592,
+          "data": 110555136
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "totalPct": 1.1450819,
+          "userPct": 0.68704915,
+          "systemPct": 0.45803276,
+          "numThreads": 11,
+          "nice": 20,
+          "userTime": 4,
+          "systemTime": 4
+        },
+        "createTime": 1772131130000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "containerId": "3ad202e411ec8c9a6bc9719a791f74de8a7ccee4b7a98e0fd4edf277ef8054b2",
+        "voluntaryCtxSwitches": 745,
+        "involuntaryCtxSwitches": 101,
+        "processContext": [
+          "process_context:storage-provisioner"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 2039,
+        "nsPid": 1,
+        "command": {
+          "args": [
+            "kube-apiserver",
+            "--advertise-address=172.17.0.2",
+            "--allow-privileged=true",
+            "--authorization-mode=Node,RBAC",
+            "--client-ca-file=/var/lib/minikube/certs/ca.crt",
+            "--enable-admission-plugins=NamespaceLifecycle,LimitRanger,ServiceAccount,DefaultStorageClass,DefaultTolerationSeconds,NodeRestriction,MutatingAdmissionWebhook,ValidatingAdmissionWebhook,ResourceQuota",
+            "--enable-bootstrap-token-auth=true",
+            "--etcd-cafile=/var/lib/minikube/certs/etcd/ca.crt",
+            "--etcd-certfile=/var/lib/minikube/certs/apiserver-etcd-client.crt",
+            "--etcd-keyfile=/var/lib/minikube/certs/apiserver-etcd-client.key",
+            "--etcd-servers=https://127.0.0.1:2379",
+            "--kubelet-client-certificate=/var/lib/minikube/certs/apiserver-kubelet-client.crt",
+            "--kubelet-client-key=/var/lib/minikube/certs/apiserver-kubelet-client.key",
+            "--kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname",
+            "--proxy-client-cert-file=/var/lib/minikube/certs/front-proxy-client.crt",
+            "--proxy-client-key-file=/var/lib/minikube/certs/front-proxy-client.key",
+            "--requestheader-allowed-names=front-proxy-client",
+            "--requestheader-client-ca-file=/var/lib/minikube/certs/front-proxy-ca.crt",
+            "--requestheader-extra-headers-prefix=X-Remote-Extra-",
+            "--requestheader-group-headers=X-Remote-Group",
+            "--requestheader-username-headers=X-Remote-User",
+            "--secure-port=8443",
+            "--service-account-issuer=https://kubernetes.default.svc.cluster.local",
+            "--service-account-key-file=/var/lib/minikube/certs/sa.pub",
+            "--service-account-signing-key-file=/var/lib/minikube/certs/sa.key",
+            "--service-cluster-ip-range=10.96.0.0/12",
+            "--tls-cert-file=/var/lib/minikube/certs/apiserver.crt",
+            "--tls-private-key-file=/var/lib/minikube/certs/apiserver.key"
+          ],
+          "cwd": "/",
+          "ppid": 1986,
+          "exe": "/usr/local/bin/kube-apiserver",
+          "comm": "kube-apiserver"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 743677952,
+          "vms": 1967575040,
+          "shared": 69816320,
+          "text": 35688448,
+          "data": 738406400
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "totalPct": 14.886065,
+          "userPct": 9.50418,
+          "systemPct": 5.3818846,
+          "numThreads": 17,
+          "nice": 20,
+          "userTime": 1132,
+          "systemTime": 640
+        },
+        "createTime": 1772120394000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "containerId": "8e67107272384206fe3b447b3e87f74136ed39d71c93d7ab6d4afecef0fe6610",
+        "voluntaryCtxSwitches": 693,
+        "involuntaryCtxSwitches": 24,
+        "processContext": [
+          "process_context:kube-apiserver"
+        ],
+        "language": 6,
+        "portInfo": {
+          "tcp": [
+            8443
+          ]
+        },
+        "serviceDiscovery": {
+          "generatedServiceName": {
+            "name": "kube-apiserver",
+            "source": 2
+          }
+        },
+        "injectionState": 2
+      },
+      {
+        "pid": 56054,
+        "nsPid": 56054,
+        "command": {
+          "args": [
+            "process-agent",
+            "--cfgpath=/etc/datadog-agent/datadog.yaml"
+          ],
+          "cwd": "/",
+          "ppid": 56030,
+          "exe": "/opt/datadog-agent/embedded/bin/process-agent",
+          "comm": "process-agent"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 65146880,
+          "vms": 1823604736,
+          "shared": 29790208,
+          "text": 31862784,
+          "data": 141176832
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "totalPct": 1.7176228,
+          "userPct": 0.34352458,
+          "systemPct": 1.3740983,
+          "numThreads": 8,
+          "nice": 20
+        },
+        "createTime": 1772131614000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "containerId": "ce8933cc7cbf0353f4c90881114da5bfed41620dd4f508f10727e6ed24b0088b",
+        "voluntaryCtxSwitches": 2864,
+        "involuntaryCtxSwitches": 45,
+        "processContext": [
+          "process_context:process-agent"
+        ],
+        "language": 6,
+        "portInfo": {
+          "tcp": [
+            46875,
+            6062,
+            6162
+          ]
+        },
+        "serviceDiscovery": {
+          "generatedServiceName": {
+            "name": "process-agent",
+            "source": 2
+          },
+          "resources": [
+            {
+              "Resource": {
+                "logs": {
+                  "path": "/var/log/datadog/process-agent.log"
+                }
+              }
+            }
+          ]
+        },
+        "injectionState": 2
+      },
+      {
+        "pid": 39131,
+        "nsPid": 1,
+        "command": {
+          "args": [
+            "/opt/java/openjdk/bin/java",
+            "-Djava.util.logging.config.file=/usr/local/tomcat/conf/logging.properties",
+            "-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager",
+            "-Xms256m",
+            "-Xmx6144m",
+            "-Dcom.sun.management.jmxremote",
+            "-Dcom.sun.management.jmxremote.authenticate=false",
+            "-Dcom.sun.management.jmxremote.ssl=false",
+            "-Dcom.sun.management.jmxremote.local.only=false",
+            "-Dcom.sun.management.jmxremote.port=9012",
+            "-Dcom.sun.management.jmxremote.rmi.port=9012",
+            "-Djava.rmi.server.hostname=10.244.0.42",
+            "-Djdk.tls.ephemeralDHKeySize=2048",
+            "-Dorg.apache.catalina.security.SecurityListener.UMASK=0027",
+            "--add-opens=java.base/java.lang=ALL-UNNAMED",
+            "--add-opens=java.base/java.lang.reflect=ALL-UNNAMED",
+            "--add-opens=java.base/java.io=ALL-UNNAMED",
+            "--add-opens=java.base/java.util=ALL-UNNAMED",
+            "--add-opens=java.base/java.util.concurrent=ALL-UNNAMED",
+            "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED",
+            "--enable-native-access=ALL-UNNAMED",
+            "-classpath",
+            "/usr/local/tomcat/bin/bootstrap.jar:/usr/local/tomcat/bin/tomcat-juli.jar",
+            "-Dcatalina.base=/usr/local/tomcat",
+            "-Dcatalina.home=/usr/local/tomcat",
+            "-Djava.io.tmpdir=/usr/local/tomcat/temp",
+            "org.apache.catalina.startup.Bootstrap",
+            "start"
+          ],
+          "cwd": "/usr/local/tomcat",
+          "ppid": 39109,
+          "exe": "/opt/java/openjdk/bin/java",
+          "comm": "java"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 245633024,
+          "vms": 11681849344,
+          "shared": 28430336,
+          "text": 4096,
+          "data": 522846208
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "totalPct": 0.57254094,
+          "userPct": 0.22901638,
+          "systemPct": 0.34352458,
+          "numThreads": 45,
+          "nice": 20,
+          "userTime": 23,
+          "systemTime": 7
+        },
+        "createTime": 1772129460000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "containerId": "76d178d18d134e93cc02837fc4dd8bc1c869c8d125f69f588289e863e4b05dac",
+        "voluntaryCtxSwitches": 21,
+        "processContext": [
+          "process_context:catalina"
+        ],
+        "language": 1,
+        "portInfo": {
+          "tcp": [
+            9012,
+            36135,
+            8080,
+            8005
+          ]
+        },
+        "serviceDiscovery": {
+          "generatedServiceName": {
+            "name": "catalina",
+            "source": 2
+          },
+          "resources": [
+            {
+              "Resource": {
+                "logs": {
+                  "path": "/usr/local/tomcat/logs/catalina.2026-02-26.log"
+                }
+              }
+            }
+          ]
+        },
+        "injectionState": 2
+      },
+      {
+        "pid": 17208,
+        "nsPid": 1,
+        "command": {
+          "args": [
+            "redis-server *:6379"
+          ],
+          "ppid": 17185,
+          "comm": "redis-server"
+        },
+        "user": {
+          "uid": 999,
+          "gid": 999
+        },
+        "memory": {
+          "rss": 28889088,
+          "vms": 175779840,
+          "shared": 18608128,
+          "text": 3923968,
+          "data": 71913472
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "totalPct": 1.25959,
+          "userPct": 0.45803276,
+          "systemPct": 0.8015573,
+          "numThreads": 7,
+          "nice": 20,
+          "userTime": 71,
+          "systemTime": 59
+        },
+        "createTime": 1772122463000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "containerId": "e742cbc43cf9a75ada6bf121167886e06c01ac0c8dfa1b654d44cdb5265eca9a",
+        "voluntaryCtxSwitches": 65027,
+        "involuntaryCtxSwitches": 3825,
+        "processContext": [
+          "process_context:redis-server"
+        ],
+        "portInfo": {
+          "tcp": [
+            6379
+          ]
+        },
+        "serviceDiscovery": {
+          "generatedServiceName": {
+            "name": "redis-server",
+            "source": 2
+          }
+        },
+        "injectionState": 2
+      },
+      {
+        "pid": 2672,
+        "nsPid": 1,
+        "command": {
+          "args": [
+            "/coredns",
+            "-conf",
+            "/etc/coredns/Corefile"
+          ],
+          "ppid": 2646,
+          "comm": "coredns"
+        },
+        "user": {
+          "uid": 65532,
+          "gid": 65532
+        },
+        "memory": {
+          "rss": 68657152,
+          "vms": 1330167808,
+          "shared": 46346240,
+          "text": 31535104,
+          "data": 64086016
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "totalPct": 1.4886065,
+          "userPct": 0.8015573,
+          "systemPct": 0.68704915,
+          "numThreads": 15,
+          "nice": 20,
+          "userTime": 113,
+          "systemTime": 145
+        },
+        "createTime": 1772120400000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "containerId": "a5174fe929ef3485b415c04fefdda3b4aa5a83ba03fc780f7bdc87e4ed854a4e",
+        "voluntaryCtxSwitches": 5551,
+        "involuntaryCtxSwitches": 332,
+        "processContext": [
+          "process_context:coredns"
+        ],
+        "language": 6,
+        "portInfo": {
+          "tcp": [
+            8181,
+            8080,
+            9153,
+            53
+          ],
+          "udp": [
+            53
+          ]
+        },
+        "serviceDiscovery": {
+          "generatedServiceName": {
+            "name": "coredns",
+            "source": 2
+          }
+        },
+        "injectionState": 2
+      },
+      {
+        "pid": 2626,
+        "nsPid": 1,
+        "command": {
+          "args": [
+            "/usr/local/bin/kube-proxy",
+            "--config=/var/lib/kube-proxy/config.conf",
+            "--hostname-override=pattykube"
+          ],
+          "ppid": 2583,
+          "comm": "kube-proxy"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 54177792,
+          "vms": 1299750912,
+          "shared": 32727040,
+          "text": 18407424,
+          "data": 59318272
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "numThreads": 12,
+          "nice": 20,
+          "userTime": 32,
+          "systemTime": 38
+        },
+        "createTime": 1772120400000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "containerId": "38c6f8ace85e9f4ac5eb7aeda57a927214daf0032ee005c12f8b7bddca16aaf3",
+        "voluntaryCtxSwitches": 3023,
+        "involuntaryCtxSwitches": 154,
+        "processContext": [
+          "process_context:kube-proxy"
+        ],
+        "language": 6,
+        "portInfo": {
+          "tcp": [
+            10256,
+            10249
+          ]
+        },
+        "serviceDiscovery": {
+          "generatedServiceName": {
+            "name": "kube-proxy",
+            "source": 2
+          }
+        },
+        "injectionState": 2
+      },
+      {
+        "pid": 1989,
+        "nsPid": 1,
+        "command": {
+          "args": [
+            "kube-controller-manager",
+            "--allocate-node-cidrs=true",
+            "--authentication-kubeconfig=/etc/kubernetes/controller-manager.conf",
+            "--authorization-kubeconfig=/etc/kubernetes/controller-manager.conf",
+            "--bind-address=127.0.0.1",
+            "--client-ca-file=/var/lib/minikube/certs/ca.crt",
+            "--cluster-cidr=10.244.0.0/16",
+            "--cluster-name=mk",
+            "--cluster-signing-cert-file=/var/lib/minikube/certs/ca.crt",
+            "--cluster-signing-key-file=/var/lib/minikube/certs/ca.key",
+            "--controllers=*,bootstrapsigner,tokencleaner",
+            "--kubeconfig=/etc/kubernetes/controller-manager.conf",
+            "--leader-elect=false",
+            "--requestheader-client-ca-file=/var/lib/minikube/certs/front-proxy-ca.crt",
+            "--root-ca-file=/var/lib/minikube/certs/ca.crt",
+            "--service-account-private-key-file=/var/lib/minikube/certs/sa.key",
+            "--service-cluster-ip-range=10.96.0.0/12",
+            "--use-service-account-credentials=********"
+          ],
+          "cwd": "/",
+          "ppid": 1931,
+          "exe": "/usr/local/bin/kube-controller-manager",
+          "comm": "kube-controller"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 135528448,
+          "vms": 1395482624,
+          "shared": 55377920,
+          "text": 29601792,
+          "data": 132968448
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "totalPct": 4.6948357,
+          "userPct": 1.832131,
+          "systemPct": 2.8627048,
+          "numThreads": 13,
+          "nice": 20,
+          "userTime": 389,
+          "systemTime": 508
+        },
+        "createTime": 1772120394000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "containerId": "090527ec762d391fe1fe3c6bfd6cb8063f641ce8abd74a34ad1f12bb6405b49e",
+        "voluntaryCtxSwitches": 243452,
+        "involuntaryCtxSwitches": 5249,
+        "processContext": [
+          "process_context:kube-controller-manager"
+        ],
+        "language": 6,
+        "portInfo": {
+          "tcp": [
+            10257
+          ]
+        },
+        "serviceDiscovery": {
+          "generatedServiceName": {
+            "name": "kube-controller-manager",
+            "source": 2
+          }
+        },
+        "injectionState": 2
+      },
+      {
+        "pid": 1943,
+        "nsPid": 1,
+        "command": {
+          "args": [
+            "kube-scheduler",
+            "--authentication-kubeconfig=/etc/kubernetes/scheduler.conf",
+            "--authorization-kubeconfig=/etc/kubernetes/scheduler.conf",
+            "--bind-address=127.0.0.1",
+            "--kubeconfig=/etc/kubernetes/scheduler.conf",
+            "--leader-elect=false"
+          ],
+          "cwd": "/",
+          "ppid": 1900,
+          "exe": "/usr/local/bin/kube-scheduler",
+          "comm": "kube-scheduler"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 64204800,
+          "vms": 1304240128,
+          "shared": 36552704,
+          "text": 20008960,
+          "data": 68247552
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "totalPct": 4.809344,
+          "userPct": 2.8627048,
+          "systemPct": 1.9466392,
+          "numThreads": 15,
+          "nice": 20,
+          "userTime": 280,
+          "systemTime": 143
+        },
+        "createTime": 1772120394000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "containerId": "76d2e35e241b39b3e519cdf449bfef9c32859e6efbb627ad4425ab1ad89fbf9b",
+        "voluntaryCtxSwitches": 39550,
+        "involuntaryCtxSwitches": 2602,
+        "processContext": [
+          "process_context:kube-scheduler"
+        ],
+        "language": 6,
+        "portInfo": {
+          "tcp": [
+            10259
+          ]
+        },
+        "serviceDiscovery": {
+          "generatedServiceName": {
+            "name": "kube-scheduler",
+            "source": 2
+          }
+        },
+        "injectionState": 2
+      },
+      {
+        "pid": 55992,
+        "nsPid": 55992,
+        "command": {
+          "args": [
+            "trace-agent",
+            "-config=/etc/datadog-agent/datadog.yaml"
+          ],
+          "cwd": "/",
+          "ppid": 55970,
+          "exe": "/opt/datadog-agent/embedded/bin/trace-agent",
+          "comm": "trace-agent"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 52932608,
+          "vms": 1811542016,
+          "shared": 20914176,
+          "text": 20967424,
+          "data": 130605056
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "totalPct": 1.3740983,
+          "userPct": 0.68704915,
+          "systemPct": 0.68704915,
+          "numThreads": 8,
+          "nice": 20
+        },
+        "createTime": 1772131614000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "containerId": "cba24559722b7c7c7e19a2eedf3d42984c99964bae5019468a51ac791c873cea",
+        "voluntaryCtxSwitches": 67,
+        "involuntaryCtxSwitches": 2,
+        "processContext": [
+          "process_context:trace-agent"
+        ],
+        "language": 6,
+        "portInfo": {
+          "tcp": [
+            38263,
+            8126,
+            5012
+          ]
+        },
+        "serviceDiscovery": {
+          "generatedServiceName": {
+            "name": "trace-agent",
+            "source": 2
+          },
+          "resources": [
+            {
+              "Resource": {
+                "logs": {
+                  "path": "/var/log/datadog/trace-agent.log"
+                }
+              }
+            }
+          ]
+        },
+        "injectionState": 2
+      },
+      {
+        "pid": 55322,
+        "nsPid": 1,
+        "command": {
+          "args": [
+            "datadog-cluster-agent",
+            "start"
+          ],
+          "cwd": "/",
+          "ppid": 55300,
+          "exe": "/opt/datadog-agent/bin/datadog-cluster-agent",
+          "comm": "datadog-cluster"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 140697600,
+          "vms": 2486878208,
+          "shared": 72454144,
+          "text": 88543232,
+          "data": 245927936
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "totalPct": 1.9466392,
+          "userPct": 1.25959,
+          "systemPct": 0.68704915,
+          "numThreads": 16,
+          "nice": 20,
+          "userTime": 1
+        },
+        "createTime": 1772131602000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "containerId": "4840c015c792563e3a0f53ce0f9924ccef5db4ad4b6c4075e9ab2d478113c4a6",
+        "voluntaryCtxSwitches": 516,
+        "involuntaryCtxSwitches": 5,
+        "processContext": [
+          "process_context:datadog-cluster-agent"
+        ],
+        "injectionState": 2
+      },
+      {
+        "pid": 2027,
+        "nsPid": 1,
+        "command": {
+          "args": [
+            "etcd",
+            "--advertise-client-urls=https://172.17.0.2:2379",
+            "--cert-file=/var/lib/minikube/certs/etcd/server.crt",
+            "--client-cert-auth=true",
+            "--data-dir=/var/lib/minikube/etcd",
+            "--feature-gates=InitialCorruptCheck=true",
+            "--initial-advertise-peer-urls=https://172.17.0.2:2380",
+            "--initial-cluster=pattykube=https://172.17.0.2:2380",
+            "--key-file=/var/lib/minikube/certs/etcd/server.key",
+            "--listen-client-urls=https://127.0.0.1:2379,https://172.17.0.2:2379",
+            "--listen-metrics-urls=http://127.0.0.1:2381",
+            "--listen-peer-urls=https://172.17.0.2:2380",
+            "--name=pattykube",
+            "--peer-cert-file=/var/lib/minikube/certs/etcd/peer.crt",
+            "--peer-client-cert-auth=true",
+            "--peer-key-file=/var/lib/minikube/certs/etcd/peer.key",
+            "--peer-trusted-ca-file=/var/lib/minikube/certs/etcd/ca.crt",
+            "--snapshot-count=10000",
+            "--trusted-ca-file=/var/lib/minikube/certs/etcd/ca.crt",
+            "--watch-progress-notify-interval=5s"
+          ],
+          "cwd": "/var/lib/etcd",
+          "ppid": 1958,
+          "exe": "/usr/local/bin/etcd",
+          "comm": "etcd"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 145141760,
+          "vms": 12089856000,
+          "shared": 45408256,
+          "text": 10964992,
+          "data": 140304384
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "totalPct": 8.473606,
+          "userPct": 3.7787702,
+          "systemPct": 4.6948357,
+          "numThreads": 19,
+          "nice": 20,
+          "userTime": 475,
+          "systemTime": 559
+        },
+        "createTime": 1772120394000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "containerId": "0bd7e1a6afb1f5bd193ee56f9762cc8d237d55a595392f3f439025a673ff237b",
+        "voluntaryCtxSwitches": 504,
+        "involuntaryCtxSwitches": 35,
+        "processContext": [
+          "process_context:etcd"
+        ],
+        "language": 6,
+        "portInfo": {
+          "tcp": [
+            2380,
+            2379,
+            2381
+          ]
+        },
+        "serviceDiscovery": {
+          "generatedServiceName": {
+            "name": "etcd",
+            "source": 2
+          }
+        },
+        "injectionState": 2
+      },
+      {
+        "pid": 56110,
+        "nsPid": 56110,
+        "command": {
+          "args": [
+            "system-probe",
+            "--config=/etc/datadog-agent/system-probe.yaml"
+          ],
+          "ppid": 56086,
+          "comm": "system-probe"
+        },
+        "user": {
+          "name": "root"
+        },
+        "memory": {
+          "rss": 157495296,
+          "vms": 2173124608,
+          "shared": 66887680,
+          "text": 57577472,
+          "data": 232898560
+        },
+        "cpu": {
+          "lastCpu": "cpu",
+          "totalPct": 3.664262,
+          "userPct": 1.7176228,
+          "systemPct": 1.9466392,
+          "numThreads": 11,
+          "nice": 20,
+          "userTime": 1,
+          "systemTime": 1
+        },
+        "createTime": 1772131614000,
+        "state": 3,
+        "ioStat": {
+          "readRate": -1,
+          "writeRate": -1,
+          "readBytesRate": -1,
+          "writeBytesRate": -1
+        },
+        "containerId": "06bff94baba197cfb5095fdc57882a08921516ea1ff00f83739f30242c5089df",
+        "voluntaryCtxSwitches": 1346,
+        "involuntaryCtxSwitches": 67,
+        "processContext": [
+          "process_context:system-probe"
+        ],
+        "language": 6,
+        "portInfo": {
+          "tcp": [
+            36811
+          ]
+        },
+        "serviceDiscovery": {
+          "generatedServiceName": {
+            "name": "system-probe",
+            "source": 2
+          },
+          "resources": [
+            {
+              "Resource": {
+                "logs": {
+                  "path": "/var/log/datadog/system-probe.log"
+                }
+              }
+            }
+          ]
+        },
+        "injectionState": 2
+      }
+    ],
+    "info": {
+      "uuid": "9fa8865e-3751-4433-92c2-24835d1b1250",
+      "os": {
+        "name": "linux",
+        "platform": "debian",
+        "family": "debian",
+        "version": "12",
+        "kernelVersion": "6.12.65-linuxkit"
+      },
+      "cpus": [
+        {
+          "cores": 1
+        },
+        {
+          "cores": 1
+        },
+        {
+          "cores": 1
+        },
+        {
+          "cores": 1
+        },
+        {
+          "cores": 1
+        },
+        {
+          "cores": 1
+        },
+        {
+          "cores": 1
+        },
+        {
+          "cores": 1
+        },
+        {
+          "cores": 1
+        },
+        {
+          "cores": 1
+        }
+      ],
+      "totalMemory": 12528902144
+    },
+    "groupId": 724148335,
+    "groupSize": 1,
+    "containers": [
+      {
+        "type": "docker",
+        "id": "bfe490a19a9899c258ead6d159808472b2cd6e31ccfda6171e1f8a0fc61f0be3",
+        "state": 3,
+        "health": 2,
+        "created": 1772131371,
+        "userPct": 0.04016281,
+        "systemPct": 0.0041802926,
+        "totalPct": 0.044333104,
+        "memRss": 37265408,
+        "memCache": 135168,
+        "started": 1772131371,
+        "tags": [
+          "pod_phase:running",
+          "kube_container_name:prometheus",
+          "image_name:prom/prometheus",
+          "short_image:prometheus",
+          "image_tag:latest",
+          "image_id:********@sha256:4a61322ac1103a0e3aea2a61ef1718422a48fa046441f299d71e660a3bc71ae9",
+          "kube_qos:BestEffort",
+          "kube_service:prometheus-example-service",
+          "kube_deployment:prometheus",
+          "kube_namespace:default",
+          "kube_ownerref_kind:replicaset",
+          "kube_replica_set:prometheus-567d6b54b4",
+          "docker_image:prom/prometheus:latest",
+          "git.repository_url:https://github.com/prometheus/prometheus",
+          "kube_ownerref_name:prometheus-567d6b54b4",
+          "pod_name:prometheus-567d6b54b4-4tmwm",
+          "container_id:bfe490a19a9899c258ead6d159808472b2cd6e31ccfda6171e1f8a0fc61f0be3",
+          "display_container_name:prometheus_prometheus-567d6b54b4-4tmwm",
+          "container_name:prometheus"
+        ],
+        "threadCount": 12,
+        "memUsage": 39870464,
+        "cpuUsageNs": 443331.03,
+        "memAccounted": 39755776,
+        "repoDigest": "sha256:4a61322ac1103a0e3aea2a61ef1718422a48fa046441f299d71e660a3bc71ae9"
+      },
+      {
+        "type": "docker",
+        "id": "0be18888ad8e491cd0b2e9ca9aed8c80d39ca82fb115e8b334a95299a037bbd7",
+        "state": 3,
+        "health": 2,
+        "created": 1772131614,
+        "wbps": 24576.787,
+        "userPct": 11.337274,
+        "systemPct": 1.7005944,
+        "totalPct": 13.037868,
+        "memRss": 157011968,
+        "memCache": 3629056,
+        "started": 1772131614,
+        "tags": [
+          "short_image:agent",
+          "image_id:********@sha256:367cd0746dd9feb9b997e87a72d063d0c1a20a7bd784b81b1b3602b98856516a",
+          "kube_app_component:agent",
+          "kube_daemon_set:datadog",
+          "kube_container_name:agent",
+          "kube_service:datadog",
+          "kube_app_managed_by:Helm",
+          "kube_app_name:datadog",
+          "kube_app_part_of:default-datadog",
+          "kube_qos:BestEffort",
+          "kube_ownerref_kind:daemonset",
+          "pod_phase:running",
+          "image_name:gcr.io/datadoghq/agent",
+          "image_tag:7.75.4",
+          "kube_namespace:default",
+          "kube_app_instance:datadog-agent",
+          "git.repository_url:https://github.com/DataDog/datadog-agent",
+          "docker_image:datadoghq.azurecr.io/agent:7.75.4",
+          "git.commit.sha:"***********************************75d38"",
+          "pod_name:datadog-gkwbc",
+          "kube_ownerref_name:datadog",
+          "container_id:0be18888ad8e491cd0b2e9ca9aed8c80d39ca82fb115e8b334a95299a037bbd7",
+          "display_container_name:agent_datadog-gkwbc",
+          "container_name:agent"
+        ],
+        "threadCount": 10,
+        "memUsage": 172236800,
+        "cpuUsageNs": 130378680,
+        "memAccounted": 169652224
+      },
+      {
+        "type": "docker",
+        "id": "3ad202e411ec8c9a6bc9719a791f74de8a7ccee4b7a98e0fd4edf277ef8054b2",
+        "state": 3,
+        "health": 2,
+        "created": 1772131131,
+        "netRcvdPs": 63.30219,
+        "netSentPs": 77.10267,
+        "netRcvdBps": 114997.375,
+        "netSentBps": 117918.98,
+        "userPct": 0.6232006,
+        "systemPct": 0.47368568,
+        "totalPct": 1.0968863,
+        "memRss": 15663104,
+        "memCache": 24576,
+        "started": 1772131131,
+        "tags": [
+          "image_id:********@sha256:18eb69d1418e854ad5a19e399310e52808a8321e4c441c1dddad8977a0d7a944",
+          "kube_namespace:kube-system",
+          "pod_phase:running",
+          "kube_qos:BestEffort",
+          "kube_container_name:storage-provisioner",
+          "image_name:gcr.io/k8s-minikube/storage-provisioner",
+          "short_image:storage-provisioner",
+          "image_tag:v5",
+          "docker_image:gcr.io/k8s-minikube/storage-provisioner:v5",
+          "pod_name:storage-provisioner",
+          "container_id:3ad202e411ec8c9a6bc9719a791f74de8a7ccee4b7a98e0fd4edf277ef8054b2",
+          "display_container_name:storage-provisioner_storage-provisioner",
+          "container_name:storage-provisioner"
+        ],
+        "threadCount": 11,
+        "memUsage": 16179200,
+        "cpuUsageNs": 10968863,
+        "memAccounted": 16154624,
+        "repoDigest": "sha256:18eb69d1418e854ad5a19e399310e52808a8321e4c441c1dddad8977a0d7a944"
+      },
+      {
+        "type": "docker",
+        "id": "8e67107272384206fe3b447b3e87f74136ed39d71c93d7ab6d4afecef0fe6610",
+        "state": 3,
+        "health": 2,
+        "created": 1772119701,
+        "netRcvdPs": 63.302128,
+        "netSentPs": 77.10259,
+        "netRcvdBps": 114997.266,
+        "netSentBps": 117918.86,
+        "userPct": 8.239593,
+        "systemPct": 4.721876,
+        "totalPct": 12.961478,
+        "memRss": 673861632,
+        "memCache": 74899456,
+        "started": 1772119701,
+        "tags": [
+          "kube_namespace:kube-system",
+          "kube_priority_class:system-node-critical",
+          "kube_qos:Burstable",
+          "kube_container_name:kube-apiserver",
+          "image_tag:v1.35.0",
+          "pod_phase:running",
+          "image_name:registry.k8s.io/kube-apiserver",
+          "short_image:kube-apiserver",
+          "image_id:********@sha256:32f98b308862e1cf98c900927d84630fb86a836a480f02752a779eb85c1489f3",
+          "docker_image:registry.k8s.io/kube-apiserver:v1.35.0",
+          "pod_name:kube-apiserver-pattykube",
+          "container_id:8e67107272384206fe3b447b3e87f74136ed39d71c93d7ab6d4afecef0fe6610",
+          "display_container_name:kube-apiserver_kube-apiserver-pattykube",
+          "container_name:kube-apiserver"
+        ],
+        "threadCount": 17,
+        "memUsage": 809730048,
+        "cpuUsageNs": 129614780,
+        "memAccounted": 809541632,
+        "cpuRequest": 25,
+        "repoDigest": "sha256:32f98b308862e1cf98c900927d84630fb86a836a480f02752a779eb85c1489f3"
+      },
+      {
+        "type": "docker",
+        "id": "ce8933cc7cbf0353f4c90881114da5bfed41620dd4f508f10727e6ed24b0088b",
+        "state": 3,
+        "health": 2,
+        "created": 1772131615,
+        "netRcvdPs": 26.30074,
+        "netSentPs": 13.800388,
+        "netRcvdBps": 30384.555,
+        "netSentBps": 53533.805,
+        "userPct": 0.2786183,
+        "systemPct": 1.207296,
+        "totalPct": 1.4859244,
+        "memRss": 35356672,
+        "memCache": 57344,
+        "started": 1772131615,
+        "tags": [
+          "pod_phase:running",
+          "kube_daemon_set:datadog",
+          "short_image:agent",
+          "kube_app_part_of:default-datadog",
+          "kube_namespace:default",
+          "image_tag:7.75.4",
+          "image_id:********@sha256:367cd0746dd9feb9b997e87a72d063d0c1a20a7bd784b81b1b3602b98856516a",
+          "kube_app_instance:datadog-agent",
+          "kube_app_component:agent",
+          "kube_container_name:process-agent",
+          "kube_service:datadog",
+          "kube_ownerref_kind:daemonset",
+          "kube_app_managed_by:Helm",
+          "kube_app_name:datadog",
+          "kube_qos:BestEffort",
+          "image_name:gcr.io/datadoghq/agent",
+          "git.repository_url:https://github.com/DataDog/datadog-agent",
+          "docker_image:datadoghq.azurecr.io/agent:7.75.4",
+          "git.commit.sha:"***********************************75d38"",
+          "pod_name:datadog-gkwbc",
+          "kube_ownerref_name:datadog",
+          "container_id:ce8933cc7cbf0353f4c90881114da5bfed41620dd4f508f10727e6ed24b0088b",
+          "display_container_name:process-agent_datadog-gkwbc",
+          "container_name:process-agent"
+        ],
+        "threadCount": 8,
+        "memUsage": 36159488,
+        "cpuUsageNs": 14859243,
+        "memAccounted": 36147200
+      },
+      {
+        "type": "docker",
+        "id": "76d178d18d134e93cc02837fc4dd8bc1c869c8d125f69f588289e863e4b05dac",
+        "state": 3,
+        "health": 2,
+        "created": 1772129460,
+        "userPct": 0.19846496,
+        "systemPct": 0.36110902,
+        "totalPct": 0.559564,
+        "memRss": 217202688,
+        "memCache": 909312,
+        "started": 1772129460,
+        "tags": [
+          "kube_namespace:default",
+          "pod_phase:running",
+          "kube_qos:BestEffort",
+          "kube_container_name:tomcat",
+          "short_image:tomcat",
+          "image_tag:11.0",
+          "kube_service:tomcat-service",
+          "image_name:tomcat",
+          "image_id:********@sha256:4874e87440a9c2c69f783d73a39a7d11a561256144d23fe78aa6e243382b1a28",
+          "docker_image:tomcat:11.0",
+          "pod_name:tomcat",
+          "container_id:76d178d18d134e93cc02837fc4dd8bc1c869c8d125f69f588289e863e4b05dac",
+          "display_container_name:tomcat_tomcat",
+          "container_name:tomcat"
+        ],
+        "threadCount": 45,
+        "memUsage": 220631040,
+        "cpuUsageNs": 5595639.5,
+        "memAccounted": 219967488,
+        "repoDigest": "sha256:4874e87440a9c2c69f783d73a39a7d11a561256144d23fe78aa6e243382b1a28"
+      },
+      {
+        "type": "docker",
+        "id": "e742cbc43cf9a75ada6bf121167886e06c01ac0c8dfa1b654d44cdb5265eca9a",
+        "cpuLimit": 10,
+        "memoryLimit": 104857600,
+        "state": 3,
+        "health": 2,
+        "created": 1772121770,
+        "netRcvdPs": 1.2000365,
+        "netSentPs": 0.9000274,
+        "netRcvdBps": 96.70294,
+        "netSentBps": 847.9258,
+        "userPct": 0.4525937,
+        "systemPct": 0.7688733,
+        "totalPct": 1.221457,
+        "memRss": 10280960,
+        "memCache": 65536,
+        "started": 1772121770,
+        "tags": [
+          "kube_qos:Burstable",
+          "image_name:redis",
+          "kube_deployment:redis-deployment",
+          "kube_replica_set:redis-deployment-56479df6fc",
+          "kube_ownerref_kind:replicaset",
+          "kube_container_name:redis",
+          "short_image:redis",
+          "image_tag:latest",
+          "image_id:********@sha256:5cb00b0f236e286254ce9f3eea989b00bb69d04fb9b6c9a9d0b07e588e49f44e",
+          "kube_namespace:default",
+          "pod_phase:running",
+          "docker_image:redis:latest",
+          "kube_ownerref_name:redis-deployment-56479df6fc",
+          "pod_name:redis-deployment-56479df6fc-jv4z9",
+          "container_id:e742cbc43cf9a75ada6bf121167886e06c01ac0c8dfa1b654d44cdb5265eca9a",
+          "display_container_name:redis_redis-deployment-56479df6fc-jv4z9",
+          "container_name:redis"
+        ],
+        "threadCount": 7,
+        "memUsage": 11632640,
+        "cpuUsageNs": 12214570,
+        "memAccounted": 11632640,
+        "cpuRequest": 2,
+        "memoryRequest": 52428800,
+        "repoDigest": "sha256:5cb00b0f236e286254ce9f3eea989b00bb69d04fb9b6c9a9d0b07e588e49f44e"
+      },
+      {
+        "type": "docker",
+        "id": "a5174fe929ef3485b415c04fefdda3b4aa5a83ba03fc780f7bdc87e4ed854a4e",
+        "memoryLimit": 178257920,
+        "state": 3,
+        "health": 2,
+        "created": 1772119708,
+        "netRcvdPs": 1.8000479,
+        "netSentPs": 1.6000426,
+        "netRcvdBps": 166.00441,
+        "netSentBps": 574.9153,
+        "userPct": 0.65541744,
+        "systemPct": 0.73365957,
+        "totalPct": 1.3890771,
+        "memRss": 22310912,
+        "memCache": 55013376,
+        "started": 1772119708,
+        "tags": [
+          "kube_namespace:kube-system",
+          "pod_phase:running",
+          "kube_container_name:coredns",
+          "image_tag:v1.13.1",
+          "image_id:********@sha256:9b9128672209474da07c91439bf15ed704ae05ad918dd6454e5b6ae14e35fee6",
+          "kube_deployment:coredns",
+          "kube_priority_class:system-cluster-critical",
+          "kube_qos:Burstable",
+          "image_name:registry.k8s.io/coredns/coredns",
+          "short_image:coredns",
+          "kube_service:kube-dns",
+          "kube_ownerref_kind:replicaset",
+          "kube_replica_set:coredns-7d764666f9",
+          "docker_image:registry.k8s.io/coredns/coredns:v1.13.1",
+          "pod_name:coredns-7d764666f9-m99c8",
+          "kube_ownerref_name:coredns-7d764666f9",
+          "container_id:a5174fe929ef3485b415c04fefdda3b4aa5a83ba03fc780f7bdc87e4ed854a4e",
+          "display_container_name:coredns_coredns-7d764666f9-m99c8",
+          "container_name:coredns"
+        ],
+        "threadCount": 15,
+        "memUsage": 84660224,
+        "cpuUsageNs": 13890770,
+        "memAccounted": 84586496,
+        "cpuRequest": 10,
+        "memoryRequest": 73400320,
+        "repoDigest": "sha256:9b9128672209474da07c91439bf15ed704ae05ad918dd6454e5b6ae14e35fee6"
+      },
+      {
+        "type": "docker",
+        "id": "38c6f8ace85e9f4ac5eb7aeda57a927214daf0032ee005c12f8b7bddca16aaf3",
+        "state": 3,
+        "health": 2,
+        "created": 1772119707,
+        "netRcvdPs": 63.30183,
+        "netSentPs": 77.102234,
+        "netRcvdBps": 114996.73,
+        "netSentBps": 117918.31,
+        "userPct": 0.0006700193,
+        "systemPct": 0.0055401595,
+        "totalPct": 0.006210179,
+        "memRss": 21450752,
+        "memCache": 44208128,
+        "started": 1772119708,
+        "tags": [
+          "image_id:********@sha256:c818ca1eff765e35348b77e484da915175cdf483f298e1f9885ed706fcbcb34c",
+          "kube_ownerref_kind:daemonset",
+          "kube_daemon_set:kube-proxy",
+          "kube_namespace:kube-system",
+          "pod_phase:running",
+          "kube_priority_class:system-node-critical",
+          "kube_qos:BestEffort",
+          "kube_container_name:kube-proxy",
+          "image_tag:v1.35.0",
+          "image_name:registry.k8s.io/kube-proxy",
+          "short_image:kube-proxy",
+          "docker_image:registry.k8s.io/kube-proxy:v1.35.0",
+          "pod_name:kube-proxy-r4f7x",
+          "kube_ownerref_name:kube-proxy",
+          "container_id:38c6f8ace85e9f4ac5eb7aeda57a927214daf0032ee005c12f8b7bddca16aaf3",
+          "display_container_name:kube-proxy_kube-proxy-r4f7x",
+          "container_name:kube-proxy"
+        ],
+        "threadCount": 12,
+        "memUsage": 68362240,
+        "cpuUsageNs": 62101.79,
+        "memAccounted": 67661824,
+        "repoDigest": "sha256:c818ca1eff765e35348b77e484da915175cdf483f298e1f9885ed706fcbcb34c"
+      },
+      {
+        "type": "docker",
+        "id": "090527ec762d391fe1fe3c6bfd6cb8063f641ce8abd74a34ad1f12bb6405b49e",
+        "state": 3,
+        "health": 2,
+        "created": 1772119701,
+        "netRcvdPs": 63.30208,
+        "netSentPs": 77.10253,
+        "netRcvdBps": 114997.17,
+        "netSentBps": 117918.77,
+        "userPct": 1.6383839,
+        "systemPct": 2.43341,
+        "totalPct": 4.0717835,
+        "memRss": 80150528,
+        "memCache": 61181952,
+        "started": 1772119701,
+        "tags": [
+          "kube_container_name:kube-controller-manager",
+          "image_name:registry.k8s.io/kube-controller-manager",
+          "kube_qos:Burstable",
+          "short_image:kube-controller-manager",
+          "image_tag:v1.35.0",
+          "image_id:********@sha256:3e343fd915d2e214b9a68c045b94017832927edb89aafa471324f8d05a191111",
+          "kube_namespace:kube-system",
+          "pod_phase:running",
+          "kube_priority_class:system-node-critical",
+          "docker_image:registry.k8s.io/kube-controller-manager:v1.35.0",
+          "pod_name:kube-controller-manager-pattykube",
+          "container_id:090527ec762d391fe1fe3c6bfd6cb8063f641ce8abd74a34ad1f12bb6405b49e",
+          "display_container_name:kube-controller-manager_kube-controller-manager-pattykube",
+          "container_name:kube-controller-manager"
+        ],
+        "threadCount": 13,
+        "memUsage": 164605952,
+        "cpuUsageNs": 40717836,
+        "memAccounted": 164528128,
+        "cpuRequest": 20,
+        "repoDigest": "sha256:3e343fd915d2e214b9a68c045b94017832927edb89aafa471324f8d05a191111"
+      },
+      {
+        "type": "docker",
+        "id": "76d2e35e241b39b3e519cdf449bfef9c32859e6efbb627ad4425ab1ad89fbf9b",
+        "state": 3,
+        "health": 2,
+        "created": 1772119701,
+        "netRcvdPs": 63.302,
+        "netSentPs": 77.10243,
+        "netRcvdBps": 114997.03,
+        "netSentBps": 117918.625,
+        "userPct": 2.4629672,
+        "systemPct": 1.7351444,
+        "totalPct": 4.1981115,
+        "memRss": 27652096,
+        "memCache": 40681472,
+        "started": 1772119701,
+        "tags": [
+          "kube_namespace:kube-system",
+          "kube_priority_class:system-node-critical",
+          "kube_qos:Burstable",
+          "kube_container_name:kube-scheduler",
+          "image_name:registry.k8s.io/kube-scheduler",
+          "image_tag:v1.35.0",
+          "pod_phase:running",
+          "short_image:kube-scheduler",
+          "image_id:********@sha256:0ab622491a82532e01876d55e365c08c5bac01bcd5444a8ed58c1127ab47819f",
+          "docker_image:registry.k8s.io/kube-scheduler:v1.35.0",
+          "pod_name:kube-scheduler-pattykube",
+          "container_id:76d2e35e241b39b3e519cdf449bfef9c32859e6efbb627ad4425ab1ad89fbf9b",
+          "display_container_name:kube-scheduler_kube-scheduler-pattykube",
+          "container_name:kube-scheduler"
+        ],
+        "threadCount": 15,
+        "memUsage": 70230016,
+        "cpuUsageNs": 41981116,
+        "memAccounted": 70180864,
+        "cpuRequest": 10,
+        "repoDigest": "sha256:0ab622491a82532e01876d55e365c08c5bac01bcd5444a8ed58c1127ab47819f"
+      },
+      {
+        "type": "docker",
+        "id": "cba24559722b7c7c7e19a2eedf3d42984c99964bae5019468a51ac791c873cea",
+        "state": 3,
+        "health": 2,
+        "created": 1772131614,
+        "netRcvdPs": 26.300945,
+        "netSentPs": 13.800496,
+        "netRcvdBps": 30384.791,
+        "netSentBps": 53534.223,
+        "userPct": 0.60935116,
+        "systemPct": 0.60145086,
+        "totalPct": 1.210792,
+        "memRss": 32018432,
+        "memCache": 430080,
+        "started": 1772131614,
+        "tags": [
+          "kube_daemon_set:datadog",
+          "kube_qos:BestEffort",
+          "kube_app_component:agent",
+          "kube_container_name:trace-agent",
+          "image_name:gcr.io/datadoghq/agent",
+          "image_tag:7.75.4",
+          "image_id:********@sha256:367cd0746dd9feb9b997e87a72d063d0c1a20a7bd784b81b1b3602b98856516a",
+          "kube_app_managed_by:Helm",
+          "kube_app_instance:datadog-agent",
+          "kube_service:datadog",
+          "kube_ownerref_kind:daemonset",
+          "short_image:agent",
+          "kube_app_part_of:default-datadog",
+          "kube_app_name:datadog",
+          "kube_namespace:default",
+          "pod_phase:running",
+          "docker_image:datadoghq.azurecr.io/agent:7.75.4",
+          "git.commit.sha:"***********************************75d38"",
+          "git.repository_url:https://github.com/DataDog/datadog-agent",
+          "pod_name:datadog-gkwbc",
+          "kube_ownerref_name:datadog",
+          "display_container_name:trace-agent_datadog-gkwbc",
+          "container_id:cba24559722b7c7c7e19a2eedf3d42984c99964bae5019468a51ac791c873cea",
+          "container_name:trace-agent"
+        ],
+        "threadCount": 8,
+        "memUsage": 33128448,
+        "cpuUsageNs": 12107920,
+        "memAccounted": 33112064
+      },
+      {
+        "type": "docker",
+        "id": "4840c015c792563e3a0f53ce0f9924ccef5db4ad4b6c4075e9ab2d478113c4a6",
+        "state": 3,
+        "health": 2,
+        "created": 1772131602,
+        "wbps": 819.2336,
+        "netRcvdPs": 7.7003193,
+        "netSentPs": 7.200299,
+        "netRcvdBps": 2050.7852,
+        "netSentBps": 2632.5093,
+        "userPct": 1.0790143,
+        "systemPct": 0.63284594,
+        "totalPct": 1.7118602,
+        "memRss": 68243456,
+        "memCache": 4349952,
+        "started": 1772131602,
+        "tags": [
+          "kube_app_instance:datadog-cluster-agent",
+          "kube_service:datadog-cluster-agent",
+          "pod_phase:running",
+          "image_name:gcr.io/datadoghq/cluster-agent",
+          "kube_service:datadog-cluster-agent-admission-controller",
+          "kube_container_name:cluster-agent",
+          "short_image:cluster-agent",
+          "kube_app_component:cluster-agent",
+          "kube_replica_set:datadog-cluster-agent-6445697f5b",
+          "image_id:********@sha256:9407202820adf2adc6b55d9db02b370b3a9311ff1cce178d41e3c39ea609d59e",
+          "kube_qos:BestEffort",
+          "kube_app_managed_by:Helm",
+          "kube_app_part_of:default-datadog",
+          "kube_deployment:datadog-cluster-agent",
+          "image_tag:7.75.4",
+          "kube_app_name:datadog",
+          "kube_ownerref_kind:replicaset",
+          "kube_namespace:default",
+          "docker_image:datadoghq.azurecr.io/cluster-agent:7.75.4",
+          "git.commit.sha:"***********************************75d38"",
+          "git.repository_url:https://github.com/DataDog/datadog-agent",
+          "pod_name:datadog-cluster-agent-6445697f5b-287lr",
+          "kube_ownerref_name:datadog-cluster-agent-6445697f5b",
+          "container_id:4840c015c792563e3a0f53ce0f9924ccef5db4ad4b6c4075e9ab2d478113c4a6",
+          "display_container_name:cluster-agent_datadog-cluster-agent-6445697f5b-287lr",
+          "container_name:cluster-agent"
+        ],
+        "threadCount": 16,
+        "memUsage": 79470592,
+        "cpuUsageNs": 17118602,
+        "memAccounted": 79314944
+      },
+      {
+        "type": "docker",
+        "id": "0bd7e1a6afb1f5bd193ee56f9762cc8d237d55a595392f3f439025a673ff237b",
+        "state": 3,
+        "health": 2,
+        "created": 1772119701,
+        "wbps": 26215.4,
+        "netRcvdPs": 63.302414,
+        "netSentPs": 77.10294,
+        "netRcvdBps": 114997.78,
+        "netSentBps": 117919.4,
+        "userPct": 3.2954757,
+        "systemPct": 4.124237,
+        "totalPct": 7.419723,
+        "memRss": 99733504,
+        "memCache": 133910528,
+        "started": 1772119701,
+        "tags": [
+          "kube_qos:Burstable",
+          "kube_container_name:etcd",
+          "image_name:registry.k8s.io/etcd",
+          "image_tag:3.6.6-0",
+          "kube_namespace:kube-system",
+          "pod_phase:running",
+          "short_image:etcd",
+          "image_id:********@sha256:60a30b5d81b2217555e2cfb9537f655b7ba97220b99c39ee2e162a7127225890",
+          "kube_priority_class:system-node-critical",
+          "docker_image:registry.k8s.io/etcd:3.6.6-0",
+          "pod_name:etcd-pattykube",
+          "container_id:0bd7e1a6afb1f5bd193ee56f9762cc8d237d55a595392f3f439025a673ff237b",
+          "display_container_name:etcd_etcd-pattykube",
+          "container_name:etcd"
+        ],
+        "threadCount": 19,
+        "memUsage": 255610880,
+        "cpuUsageNs": 74197230,
+        "memAccounted": 162840576,
+        "cpuRequest": 10,
+        "memoryRequest": 104857600,
+        "repoDigest": "sha256:60a30b5d81b2217555e2cfb9537f655b7ba97220b99c39ee2e162a7127225890"
+      },
+      {
+        "type": "docker",
+        "id": "06bff94baba197cfb5095fdc57882a08921516ea1ff00f83739f30242c5089df",
+        "state": 3,
+        "health": 2,
+        "created": 1772131615,
+        "netRcvdPs": 26.286854,
+        "netSentPs": 13.793102,
+        "netRcvdBps": 30368.514,
+        "netSentBps": 53505.543,
+        "userPct": 1.4782549,
+        "systemPct": 1.6973096,
+        "totalPct": 3.1755645,
+        "memRss": 90607616,
+        "memCache": 2609152,
+        "started": 1772131615,
+        "tags": [
+          "kube_app_instance:datadog-agent",
+          "image_tag:7.75.4",
+          "image_id:********@sha256:367cd0746dd9feb9b997e87a72d063d0c1a20a7bd784b81b1b3602b98856516a",
+          "kube_daemon_set:datadog",
+          "kube_service:datadog",
+          "kube_container_name:system-probe",
+          "pod_phase:running",
+          "kube_app_managed_by:Helm",
+          "kube_app_name:datadog",
+          "kube_namespace:default",
+          "kube_app_component:agent",
+          "kube_ownerref_kind:daemonset",
+          "kube_app_part_of:default-datadog",
+          "kube_qos:BestEffort",
+          "image_name:gcr.io/datadoghq/agent",
+          "short_image:agent",
+          "git.commit.sha:"***********************************75d38"",
+          "git.repository_url:https://github.com/DataDog/datadog-agent",
+          "docker_image:datadoghq.azurecr.io/agent:7.75.4",
+          "kube_ownerref_name:datadog",
+          "pod_name:datadog-gkwbc",
+          "container_id:06bff94baba197cfb5095fdc57882a08921516ea1ff00f83739f30242c5089df",
+          "display_container_name:system-probe_datadog-gkwbc",
+          "container_name:system-probe"
+        ],
+        "threadCount": 11,
+        "memUsage": 330182656,
+        "cpuUsageNs": 31755646,
+        "memAccounted": 327815168
+      }
+    ],
+    "Hints": {}
+  }
+]

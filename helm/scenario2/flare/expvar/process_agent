@@ -1,0 +1,37 @@
+connections_queue_bytes: 0
+connections_queue_size: 0
+container_count: 15
+container_id: ""
+docker_socket: ""
+drop_check_payloads: []
+enabled_checks:
+- process
+- rtprocess
+endpoints:
+  https://process.datadoghq.com.:
+  - d065d
+host: pattykube
+language_detection_enabled: false
+last_collect_time: "2026-02-26 18:48:53"
+pid: 55939
+pod_queue_bytes: 0
+pod_queue_size: 0
+process_count: 62
+process_queue_bytes: 0
+process_queue_size: 0
+rtprocess_queue_bytes: 0
+rtprocess_queue_size: 0
+submission_error_count: 0
+system_probe_process_module_enabled: false
+uptime: 126
+uptime_nano: 1.7721316149568381e+18
+version:
+  Commit: 0093026b48
+  Major: 7
+  Meta: ""
+  Minor: 75
+  Patch: 4
+  Pre: ""
+workloadmeta_extractor_cache_size: 0
+workloadmeta_extractor_diffs_dropped: 0
+workloadmeta_extractor_stale_diffs: 0

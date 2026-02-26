@@ -1,0 +1,53 @@
+Flare creation time: 2026-02-26T18:48:53Z
+Running flare provider github.com/DataDog/datadog-agent/comp/metadata/systemprobe/impl.NewComponent.(*InventoryPayload).FlareProvider.func1 with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/comp/process/agent.(*FlareHelper).FillFlare-fm with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/comp/host-profiler/flare/impl.(*flareImpl).fillFlare-fm with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/comp/metadata/host/hostimpl.(*host).fillFlare-fm with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/comp/metadata/securityagent/impl.NewComponent.(*InventoryPayload).FlareProvider.func1 with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/comp/core/lsof/impl.fillFlare with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/comp/logs/streamlogs/impl.(*streamlogsimpl).fillFlare-fm with timeout 10s
+flare provider 'github.com/DataDog/datadog-agent/comp/logs/streamlogs/impl.(*streamlogsimpl).fillFlare-fm' failed after 18.916µs: remote streamlogs has been disabled via an unset duration, exiting streamlogs flare filler
+Running flare provider github.com/DataDog/datadog-agent/comp/metadata/inventoryotel/inventoryotelimpl.newInventoryOtelProvider.(*InventoryPayload).FlareProvider.func2 with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/comp/metadata/inventoryagent/inventoryagentimpl.newInventoryAgentProvider.(*InventoryPayload).FlareProvider.func2 with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/comp/core/remoteagentregistry/impl.(*remoteAgentRegistry).fillFlare-fm with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/comp/snmpscanmanager/impl.(*snmpScanManagerImpl).fillFlare-fm with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/comp/metadata/hostgpu/impl.NewGPUHostProvider.(*InventoryPayload).FlareProvider.func1 with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/comp/core/profiler/impl.profiler.fillFlare-fm with timeout 10s
+Profiling retrieval has been disabled via an unset duration, exiting profile flare filler
+Running flare provider github.com/DataDog/datadog-agent/comp/metadata/inventorychecks/inventorychecksimpl.newInventoryChecksProvider.(*InventoryPayload).FlareProvider.func3 with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/comp/metadata/inventoryhost/inventoryhostimpl.newInventoryHostProvider.(*InventoryPayload).FlareProvider.func1 with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/comp/core/workloadmeta/impl.(*workloadmeta).sbomFlareProvider-fm with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/comp/metadata/haagent/impl.NewComponent.(*InventoryPayload).FlareProvider.func1 with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/comp/otelcol/collector/impl-pipeline.(*collectorImpl).fillFlare-fm with timeout 1m0s
+Running flare provider github.com/DataDog/datadog-agent/comp/metadata/packagesigning/packagesigningimpl.newPackageSigningProvider.(*InventoryPayload).FlareProvider.func1 with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/comp/core/diagnose/impl.(*diagnoseRegistry).fillFlare-fm with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/comp/core/autodiscovery/autodiscoveryimpl.(*AutoConfig).fillFlare-fm with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/comp/core/status/statusimpl.(*statusImplementation).fillFlare-fm with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/pkg/sbom/collectors/host.(*FlareProvider).ProvideFlare-fm with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/comp/logs/agent/flare.(*FlareController).FillFlare-fm with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/comp/core/config.(*cfg).fillFlare-fm with timeout 10s
+error reading file '/etc/datadog-agent/security-agent.yaml' to be copy to 'etc/security-agent.yaml': open /etc/datadog-agent/security-agent.yaml: no such file or directory
+error reading file '/etc/datadog-agent/application_monitoring.yaml' to be copy to 'etc/application_monitoring.yaml': open /etc/datadog-agent/application_monitoring.yaml: no such file or directory
+Running flare provider github.com/DataDog/datadog-agent/comp/core/workloadfilter/baseimpl.(*BaseFilterStore).FlareCallback-fm with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/comp/core/secrets/impl.(*secretResolver).fillFlare-fm with timeout 10s
+error reading file '/opt/datadog-agent/run/secret-audit-file.json' to be copy to 'secret-audit-file.json': open /opt/datadog-agent/run/secret-audit-file.json: no such file or directory
+Running flare provider github.com/DataDog/datadog-agent/pkg/flare.(*RemoteFlareProvider).provideExtraFiles-fm with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/pkg/flare.provideSystemProbe with timeout 10s
+error collecting data for 'system-probe/dmesg.log': non-ok status code: url: http://sysprobe/debug/dmesg, status_code: 500, response: `failed to read dmesg: failed to query size of log buffer [operation not permitted]`
+error collecting data for 'system-probe/vpc_subnets.log': could not detect VPC subnets: EC2: GetVPCSubnetsForHost failed to get mac addresses: could not fetch token from IMDSv2: Put "http://169.254.169.254/latest/api/token": dial tcp 169.254.169.254:80: connect: connection refused
+Running flare provider github.com/DataDog/datadog-agent/pkg/flare.(*RemoteFlareProvider).provideConfigDump-fm with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/pkg/flare.(*RemoteFlareProvider).provideRemoteConfig-fm with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/pkg/flare.getRegistryJSON with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/pkg/flare.getVersionHistory with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/pkg/flare.getWindowsData with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/pkg/flare/common.GetExpVar with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/pkg/flare.provideInstallInfo with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/pkg/flare.provideAuthTokenPerm with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/pkg/flare.ExtraFlareProviders.provideContainers.func14 with timeout 10s
+error collecting data for 'ecs_metadata.json': temporary failure in ecsutil-meta-v1, will retry later: could not detect ECS agent, tried URLs: [http://10.244.0.1:51678/ http://169.254.172.1:51678/ http://localhost:51678/]
+Running flare provider github.com/DataDog/datadog-agent/pkg/flare.ExtraFlareProviders.func3 with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/pkg/flare.ExtraFlareProviders.func3 with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/pkg/flare.ExtraFlareProviders.func3 with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/pkg/flare.ExtraFlareProviders.func3 with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/comp/core/flare.(*flare).collectLogsFiles-fm with timeout 10s
+Running flare provider github.com/DataDog/datadog-agent/comp/core/flare.(*flare).collectConfigFiles-fm with timeout 10s

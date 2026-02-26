@@ -1,0 +1,1 @@
+Error retrieving vars: Get "https://127.0.0.1:5012/debug/vars": tls: failed to verify certificate: x509: certificate signed by unknown authority

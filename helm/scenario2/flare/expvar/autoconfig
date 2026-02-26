@@ -1,0 +1,5 @@
+ConfigErrors: {}
+ResolveWarnings:
+  datadog_cluster_agent:
+  - 'error resolving template datadog_cluster_agent for service docker://ce91c4996a466471c977ac3240140415fd4703809f69db925fff26cbeb5beb6b:
+    unable to resolve, service not ready'

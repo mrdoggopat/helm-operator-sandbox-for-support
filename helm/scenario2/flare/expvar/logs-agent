@@ -1,0 +1,67 @@
+BytesMissed: 0
+BytesSent: 2.213248e+06
+DestinationErrors: 0
+DestinationLogsDropped: {}
+EncodedBytesSent: 148251
+Errors: ""
+HttpDestinationStats:
+  container-images_q0s0_reliable_0:
+    idleMs: 40787
+    inUseMs: 0
+  container-lifecycle_q0s0_reliable_0:
+    idleMs: 37761
+    inUseMs: 0
+  container-sbom_q0s0_reliable_0:
+    idleMs: 0
+    inUseMs: 0
+  data-streams-message_q0s0_reliable_0:
+    idleMs: 0
+    inUseMs: 0
+  dbm-activity_q0s0_reliable_0:
+    idleMs: 0
+    inUseMs: 0
+  dbm-health_q0s0_reliable_0:
+    idleMs: 0
+    inUseMs: 0
+  dbm-metadata_q0s0_reliable_0:
+    idleMs: 0
+    inUseMs: 0
+  dbm-metrics_q0s0_reliable_0:
+    idleMs: 0
+    inUseMs: 0
+  dbm-samples_q0s0_reliable_0:
+    idleMs: 0
+    inUseMs: 0
+  event-management_q0s0_reliable_0:
+    idleMs: 0
+    inUseMs: 0
+  logs_q0s0_reliable_0:
+    idleMs: 120033
+    inUseMs: 0
+  ndmconfig_q0s0_reliable_0:
+    idleMs: 0
+    inUseMs: 0
+  network-devices-metadata_q0s0_reliable_0:
+    idleMs: 0
+    inUseMs: 0
+  network-devices-netflow_q0s0_reliable_0:
+    idleMs: 0
+    inUseMs: 0
+  network-devices-snmp-traps_q0s0_reliable_0:
+    idleMs: 0
+    inUseMs: 0
+  network-path_q0s0_reliable_0:
+    idleMs: 0
+    inUseMs: 0
+  synthetics_q0s0_reliable_0:
+    idleMs: 0
+    inUseMs: 0
+IsRunning: true
+LogsDecoded: 1700
+LogsProcessed: 1700
+LogsSent: 1654
+LogsTruncated: 0
+RetryCount: 0
+RetryTimeSpent: 0
+SenderLatency: 71
+Warnings: ""

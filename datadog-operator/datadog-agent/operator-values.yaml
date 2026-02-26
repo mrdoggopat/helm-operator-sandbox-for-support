@@ -1,0 +1,7 @@
+#some dummy values
+datadogMonitor:
+  enabled: true
+
+datadogCRDs:
+  crds:
+    datadogMonitors: true

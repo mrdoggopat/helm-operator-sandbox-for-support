@@ -1,0 +1,1178 @@
+{
+	"Entities": {
+		"container_id://06bff94baba197cfb5095fdc57882a08921516ea1ff00f83739f30242c5089df": {
+			"tags": {
+				"workloadmeta-container": [
+					"git.commit.sha:"***********************************75d38"",
+					"git.repository_url:https://github.com/DataDog/datadog-agent",
+					"image_name:datadoghq.azurecr.io/agent",
+					"short_image:agent",
+					"image_tag:7.75.4",
+					"image_id:********@sha256:367cd0746dd9feb9b997e87a72d063d0c1a20a7bd784b81b1b3602b98856516a",
+					"docker_image:datadoghq.azurecr.io/agent:7.75.4",
+					"container_name:system-probe",
+					"container_id:06bff94baba197cfb5095fdc57882a08921516ea1ff00f83739f30242c5089df"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_app_instance:datadog-agent",
+					"image_tag:7.75.4",
+					"image_id:********@sha256:367cd0746dd9feb9b997e87a72d063d0c1a20a7bd784b81b1b3602b98856516a",
+					"kube_daemon_set:datadog",
+					"kube_service:datadog",
+					"kube_container_name:system-probe",
+					"pod_phase:running",
+					"kube_app_managed_by:Helm",
+					"kube_app_name:datadog",
+					"kube_namespace:default",
+					"kube_app_component:agent",
+					"kube_ownerref_kind:daemonset",
+					"kube_app_part_of:default-datadog",
+					"kube_qos:BestEffort",
+					"image_name:gcr.io/datadoghq/agent",
+					"short_image:agent",
+					"kube_ownerref_name:datadog",
+					"pod_name:datadog-gkwbc",
+					"container_id:06bff94baba197cfb5095fdc57882a08921516ea1ff00f83739f30242c5089df",
+					"display_container_name:system-probe_datadog-gkwbc"
+				]
+			}
+		},
+		"container_id://090527ec762d391fe1fe3c6bfd6cb8063f641ce8abd74a34ad1f12bb6405b49e": {
+			"tags": {
+				"workloadmeta-container": [
+					"docker_image:registry.k8s.io/kube-controller-manager:v1.35.0",
+					"image_name:registry.k8s.io/kube-controller-manager",
+					"short_image:kube-controller-manager",
+					"image_tag:v1.35.0",
+					"image_id:********@sha256:3e343fd915d2e214b9a68c045b94017832927edb89aafa471324f8d05a191111",
+					"container_name:kube-controller-manager",
+					"container_id:090527ec762d391fe1fe3c6bfd6cb8063f641ce8abd74a34ad1f12bb6405b49e"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_container_name:kube-controller-manager",
+					"image_name:registry.k8s.io/kube-controller-manager",
+					"kube_qos:Burstable",
+					"short_image:kube-controller-manager",
+					"image_tag:v1.35.0",
+					"image_id:********@sha256:3e343fd915d2e214b9a68c045b94017832927edb89aafa471324f8d05a191111",
+					"kube_namespace:kube-system",
+					"pod_phase:running",
+					"kube_priority_class:system-node-critical",
+					"pod_name:kube-controller-manager-pattykube",
+					"container_id:090527ec762d391fe1fe3c6bfd6cb8063f641ce8abd74a34ad1f12bb6405b49e",
+					"display_container_name:kube-controller-manager_kube-controller-manager-pattykube"
+				]
+			}
+		},
+		"container_id://0bd7e1a6afb1f5bd193ee56f9762cc8d237d55a595392f3f439025a673ff237b": {
+			"tags": {
+				"workloadmeta-container": [
+					"short_image:etcd",
+					"image_tag:3.6.6-0",
+					"image_id:********@sha256:60a30b5d81b2217555e2cfb9537f655b7ba97220b99c39ee2e162a7127225890",
+					"docker_image:registry.k8s.io/etcd:3.6.6-0",
+					"image_name:registry.k8s.io/etcd",
+					"container_name:etcd",
+					"container_id:0bd7e1a6afb1f5bd193ee56f9762cc8d237d55a595392f3f439025a673ff237b"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_qos:Burstable",
+					"kube_container_name:etcd",
+					"image_name:registry.k8s.io/etcd",
+					"image_tag:3.6.6-0",
+					"kube_namespace:kube-system",
+					"pod_phase:running",
+					"short_image:etcd",
+					"image_id:********@sha256:60a30b5d81b2217555e2cfb9537f655b7ba97220b99c39ee2e162a7127225890",
+					"kube_priority_class:system-node-critical",
+					"pod_name:etcd-pattykube",
+					"container_id:0bd7e1a6afb1f5bd193ee56f9762cc8d237d55a595392f3f439025a673ff237b",
+					"display_container_name:etcd_etcd-pattykube"
+				]
+			}
+		},
+		"container_id://0be18888ad8e491cd0b2e9ca9aed8c80d39ca82fb115e8b334a95299a037bbd7": {
+			"tags": {
+				"workloadmeta-container": [
+					"git.repository_url:https://github.com/DataDog/datadog-agent",
+					"image_name:datadoghq.azurecr.io/agent",
+					"short_image:agent",
+					"image_tag:7.75.4",
+					"image_id:********@sha256:367cd0746dd9feb9b997e87a72d063d0c1a20a7bd784b81b1b3602b98856516a",
+					"docker_image:datadoghq.azurecr.io/agent:7.75.4",
+					"git.commit.sha:"***********************************75d38"",
+					"container_name:agent",
+					"container_id:0be18888ad8e491cd0b2e9ca9aed8c80d39ca82fb115e8b334a95299a037bbd7"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"short_image:agent",
+					"image_id:********@sha256:367cd0746dd9feb9b997e87a72d063d0c1a20a7bd784b81b1b3602b98856516a",
+					"kube_app_component:agent",
+					"kube_daemon_set:datadog",
+					"kube_container_name:agent",
+					"kube_service:datadog",
+					"kube_app_managed_by:Helm",
+					"kube_app_name:datadog",
+					"kube_app_part_of:default-datadog",
+					"kube_qos:BestEffort",
+					"kube_ownerref_kind:daemonset",
+					"pod_phase:running",
+					"image_name:gcr.io/datadoghq/agent",
+					"image_tag:7.75.4",
+					"kube_namespace:default",
+					"kube_app_instance:datadog-agent",
+					"pod_name:datadog-gkwbc",
+					"kube_ownerref_name:datadog",
+					"container_id:0be18888ad8e491cd0b2e9ca9aed8c80d39ca82fb115e8b334a95299a037bbd7",
+					"display_container_name:agent_datadog-gkwbc"
+				]
+			}
+		},
+		"container_id://167074306ee212e32d29c4f3bbeaa08daeaa05a3c446f0879244ba8a0e4a8412": {
+			"tags": {
+				"workloadmeta-container": [
+					"short_image:agent",
+					"image_tag:7.75.4",
+					"image_id:********@sha256:367cd0746dd9feb9b997e87a72d063d0c1a20a7bd784b81b1b3602b98856516a",
+					"docker_image:datadoghq.azurecr.io/agent:7.75.4",
+					"image_name:datadoghq.azurecr.io/agent",
+					"container_name:init-volume",
+					"container_id:167074306ee212e32d29c4f3bbeaa08daeaa05a3c446f0879244ba8a0e4a8412"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_qos:BestEffort",
+					"kube_app_instance:datadog-agent",
+					"kube_container_name:init-volume",
+					"kube_namespace:default",
+					"image_name:gcr.io/datadoghq/agent",
+					"image_tag:7.75.4",
+					"kube_app_managed_by:Helm",
+					"kube_app_part_of:default-datadog",
+					"kube_service:datadog",
+					"kube_ownerref_kind:daemonset",
+					"image_id:********@sha256:367cd0746dd9feb9b997e87a72d063d0c1a20a7bd784b81b1b3602b98856516a",
+					"kube_daemon_set:datadog",
+					"kube_app_component:agent",
+					"short_image:agent",
+					"pod_phase:running",
+					"kube_app_name:datadog",
+					"pod_name:datadog-gkwbc",
+					"kube_ownerref_name:datadog",
+					"container_id:167074306ee212e32d29c4f3bbeaa08daeaa05a3c446f0879244ba8a0e4a8412",
+					"display_container_name:init-volume_datadog-gkwbc"
+				]
+			}
+		},
+		"container_id://2a906df4c415547458104955fbc8548140126ddd44ab3a19fb26bfde4eb9de18": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:datadoghq.azurecr.io/cluster-agent",
+					"short_image:cluster-agent",
+					"image_tag:7.75.4",
+					"image_id:********@sha256:9407202820adf2adc6b55d9db02b370b3a9311ff1cce178d41e3c39ea609d59e",
+					"docker_image:datadoghq.azurecr.io/cluster-agent:7.75.4",
+					"container_name:init-volume",
+					"container_id:2a906df4c415547458104955fbc8548140126ddd44ab3a19fb26bfde4eb9de18"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_app_name:datadog",
+					"kube_namespace:default",
+					"short_image:cluster-agent",
+					"kube_qos:BestEffort",
+					"kube_replica_set:datadog-cluster-agent-78b48ffdfb",
+					"image_id:********@sha256:9407202820adf2adc6b55d9db02b370b3a9311ff1cce178d41e3c39ea609d59e",
+					"pod_phase:succeeded",
+					"kube_app_instance:datadog-cluster-agent",
+					"kube_app_part_of:default-datadog",
+					"kube_ownerref_kind:replicaset",
+					"kube_app_component:cluster-agent",
+					"kube_app_managed_by:Helm",
+					"kube_deployment:datadog-cluster-agent",
+					"kube_container_name:init-volume",
+					"image_name:gcr.io/datadoghq/cluster-agent",
+					"image_tag:7.75.4",
+					"pod_name:datadog-cluster-agent-78b48ffdfb-9tmtm",
+					"kube_ownerref_name:datadog-cluster-agent-78b48ffdfb",
+					"container_id:2a906df4c415547458104955fbc8548140126ddd44ab3a19fb26bfde4eb9de18",
+					"display_container_name:init-volume_datadog-cluster-agent-78b48ffdfb-9tmtm"
+				]
+			}
+		},
+		"container_id://38c6f8ace85e9f4ac5eb7aeda57a927214daf0032ee005c12f8b7bddca16aaf3": {
+			"tags": {
+				"workloadmeta-container": [
+					"docker_image:registry.k8s.io/kube-proxy:v1.35.0",
+					"image_name:registry.k8s.io/kube-proxy",
+					"short_image:kube-proxy",
+					"image_tag:v1.35.0",
+					"image_id:********@sha256:c818ca1eff765e35348b77e484da915175cdf483f298e1f9885ed706fcbcb34c",
+					"container_name:kube-proxy",
+					"container_id:38c6f8ace85e9f4ac5eb7aeda57a927214daf0032ee005c12f8b7bddca16aaf3"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"image_id:********@sha256:c818ca1eff765e35348b77e484da915175cdf483f298e1f9885ed706fcbcb34c",
+					"kube_ownerref_kind:daemonset",
+					"kube_daemon_set:kube-proxy",
+					"kube_namespace:kube-system",
+					"pod_phase:running",
+					"kube_priority_class:system-node-critical",
+					"kube_qos:BestEffort",
+					"kube_container_name:kube-proxy",
+					"image_tag:v1.35.0",
+					"image_name:registry.k8s.io/kube-proxy",
+					"short_image:kube-proxy",
+					"pod_name:kube-proxy-r4f7x",
+					"kube_ownerref_name:kube-proxy",
+					"container_id:38c6f8ace85e9f4ac5eb7aeda57a927214daf0032ee005c12f8b7bddca16aaf3",
+					"display_container_name:kube-proxy_kube-proxy-r4f7x"
+				]
+			}
+		},
+		"container_id://3ad202e411ec8c9a6bc9719a791f74de8a7ccee4b7a98e0fd4edf277ef8054b2": {
+			"tags": {
+				"workloadmeta-container": [
+					"short_image:storage-provisioner",
+					"image_tag:v5",
+					"image_id:********@sha256:18eb69d1418e854ad5a19e399310e52808a8321e4c441c1dddad8977a0d7a944",
+					"docker_image:gcr.io/k8s-minikube/storage-provisioner:v5",
+					"image_name:gcr.io/k8s-minikube/storage-provisioner",
+					"container_name:storage-provisioner",
+					"container_id:3ad202e411ec8c9a6bc9719a791f74de8a7ccee4b7a98e0fd4edf277ef8054b2"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"image_id:********@sha256:18eb69d1418e854ad5a19e399310e52808a8321e4c441c1dddad8977a0d7a944",
+					"kube_namespace:kube-system",
+					"pod_phase:running",
+					"kube_qos:BestEffort",
+					"kube_container_name:storage-provisioner",
+					"image_name:gcr.io/k8s-minikube/storage-provisioner",
+					"short_image:storage-provisioner",
+					"image_tag:v5",
+					"pod_name:storage-provisioner",
+					"container_id:3ad202e411ec8c9a6bc9719a791f74de8a7ccee4b7a98e0fd4edf277ef8054b2",
+					"display_container_name:storage-provisioner_storage-provisioner"
+				]
+			}
+		},
+		"container_id://4840c015c792563e3a0f53ce0f9924ccef5db4ad4b6c4075e9ab2d478113c4a6": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:datadoghq.azurecr.io/cluster-agent",
+					"short_image:cluster-agent",
+					"image_tag:7.75.4",
+					"image_id:********@sha256:9407202820adf2adc6b55d9db02b370b3a9311ff1cce178d41e3c39ea609d59e",
+					"docker_image:datadoghq.azurecr.io/cluster-agent:7.75.4",
+					"git.commit.sha:"***********************************75d38"",
+					"git.repository_url:https://github.com/DataDog/datadog-agent",
+					"container_id:4840c015c792563e3a0f53ce0f9924ccef5db4ad4b6c4075e9ab2d478113c4a6",
+					"container_name:cluster-agent"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_app_instance:datadog-cluster-agent",
+					"kube_service:datadog-cluster-agent",
+					"pod_phase:running",
+					"image_name:gcr.io/datadoghq/cluster-agent",
+					"kube_service:datadog-cluster-agent-admission-controller",
+					"kube_container_name:cluster-agent",
+					"short_image:cluster-agent",
+					"kube_app_component:cluster-agent",
+					"kube_replica_set:datadog-cluster-agent-6445697f5b",
+					"image_id:********@sha256:9407202820adf2adc6b55d9db02b370b3a9311ff1cce178d41e3c39ea609d59e",
+					"kube_qos:BestEffort",
+					"kube_app_managed_by:Helm",
+					"kube_app_part_of:default-datadog",
+					"kube_deployment:datadog-cluster-agent",
+					"image_tag:7.75.4",
+					"kube_app_name:datadog",
+					"kube_ownerref_kind:replicaset",
+					"kube_namespace:default",
+					"pod_name:datadog-cluster-agent-6445697f5b-287lr",
+					"kube_ownerref_name:datadog-cluster-agent-6445697f5b",
+					"container_id:4840c015c792563e3a0f53ce0f9924ccef5db4ad4b6c4075e9ab2d478113c4a6",
+					"display_container_name:cluster-agent_datadog-cluster-agent-6445697f5b-287lr"
+				]
+			}
+		},
+		"container_id://5684eab595ecf8c3e9f1baedbba4b4f17adaf7fff7e5582e1aa44ae413ffc211": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_tag:7.75.4",
+					"image_id:********@sha256:9407202820adf2adc6b55d9db02b370b3a9311ff1cce178d41e3c39ea609d59e",
+					"docker_image:datadoghq.azurecr.io/cluster-agent:7.75.4",
+					"image_name:datadoghq.azurecr.io/cluster-agent",
+					"short_image:cluster-agent",
+					"container_name:init-volume",
+					"container_id:5684eab595ecf8c3e9f1baedbba4b4f17adaf7fff7e5582e1aa44ae413ffc211"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"short_image:cluster-agent",
+					"kube_qos:BestEffort",
+					"kube_app_part_of:default-datadog",
+					"kube_app_instance:datadog-cluster-agent",
+					"kube_app_name:datadog",
+					"kube_ownerref_kind:replicaset",
+					"kube_deployment:datadog-cluster-agent",
+					"kube_replica_set:datadog-cluster-agent-6445697f5b",
+					"kube_container_name:init-volume",
+					"image_name:gcr.io/datadoghq/cluster-agent",
+					"image_tag:7.75.4",
+					"kube_app_managed_by:Helm",
+					"kube_service:datadog-cluster-agent",
+					"kube_service:datadog-cluster-agent-admission-controller",
+					"pod_phase:running",
+					"image_id:********@sha256:9407202820adf2adc6b55d9db02b370b3a9311ff1cce178d41e3c39ea609d59e",
+					"kube_app_component:cluster-agent",
+					"kube_namespace:default",
+					"pod_name:datadog-cluster-agent-6445697f5b-287lr",
+					"kube_ownerref_name:datadog-cluster-agent-6445697f5b",
+					"container_id:5684eab595ecf8c3e9f1baedbba4b4f17adaf7fff7e5582e1aa44ae413ffc211",
+					"display_container_name:init-volume_datadog-cluster-agent-6445697f5b-287lr"
+				]
+			}
+		},
+		"container_id://6bd4a07cd10ab204a17f1ba6f804cc152e71be0aaa15c4c95ee1de110f37cf49": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:datadoghq.azurecr.io/agent",
+					"short_image:agent",
+					"image_tag:7.75.4",
+					"image_id:********@sha256:367cd0746dd9feb9b997e87a72d063d0c1a20a7bd784b81b1b3602b98856516a",
+					"docker_image:datadoghq.azurecr.io/agent:7.75.4",
+					"container_name:seccomp-setup",
+					"container_id:6bd4a07cd10ab204a17f1ba6f804cc152e71be0aaa15c4c95ee1de110f37cf49"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_app_instance:datadog-agent",
+					"kube_container_name:seccomp-setup",
+					"kube_namespace:default",
+					"kube_app_component:agent",
+					"kube_service:datadog",
+					"kube_app_managed_by:Helm",
+					"kube_app_part_of:default-datadog",
+					"image_id:********@sha256:367cd0746dd9feb9b997e87a72d063d0c1a20a7bd784b81b1b3602b98856516a",
+					"kube_ownerref_kind:daemonset",
+					"kube_daemon_set:datadog",
+					"short_image:agent",
+					"kube_qos:BestEffort",
+					"pod_phase:running",
+					"kube_app_name:datadog",
+					"image_name:gcr.io/datadoghq/agent",
+					"image_tag:7.75.4",
+					"pod_name:datadog-gkwbc",
+					"kube_ownerref_name:datadog",
+					"container_id:6bd4a07cd10ab204a17f1ba6f804cc152e71be0aaa15c4c95ee1de110f37cf49",
+					"display_container_name:seccomp-setup_datadog-gkwbc"
+				]
+			}
+		},
+		"container_id://76d178d18d134e93cc02837fc4dd8bc1c869c8d125f69f588289e863e4b05dac": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:tomcat",
+					"short_image:tomcat",
+					"image_tag:11.0",
+					"image_id:********@sha256:4874e87440a9c2c69f783d73a39a7d11a561256144d23fe78aa6e243382b1a28",
+					"docker_image:tomcat:11.0",
+					"container_name:tomcat",
+					"container_id:76d178d18d134e93cc02837fc4dd8bc1c869c8d125f69f588289e863e4b05dac"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_namespace:default",
+					"pod_phase:running",
+					"kube_qos:BestEffort",
+					"kube_container_name:tomcat",
+					"short_image:tomcat",
+					"image_tag:11.0",
+					"kube_service:tomcat-service",
+					"image_name:tomcat",
+					"image_id:********@sha256:4874e87440a9c2c69f783d73a39a7d11a561256144d23fe78aa6e243382b1a28",
+					"pod_name:tomcat",
+					"container_id:76d178d18d134e93cc02837fc4dd8bc1c869c8d125f69f588289e863e4b05dac",
+					"display_container_name:tomcat_tomcat"
+				]
+			}
+		},
+		"container_id://76d2e35e241b39b3e519cdf449bfef9c32859e6efbb627ad4425ab1ad89fbf9b": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_tag:v1.35.0",
+					"image_id:********@sha256:0ab622491a82532e01876d55e365c08c5bac01bcd5444a8ed58c1127ab47819f",
+					"docker_image:registry.k8s.io/kube-scheduler:v1.35.0",
+					"image_name:registry.k8s.io/kube-scheduler",
+					"short_image:kube-scheduler",
+					"container_name:kube-scheduler",
+					"container_id:76d2e35e241b39b3e519cdf449bfef9c32859e6efbb627ad4425ab1ad89fbf9b"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_namespace:kube-system",
+					"kube_priority_class:system-node-critical",
+					"kube_qos:Burstable",
+					"kube_container_name:kube-scheduler",
+					"image_name:registry.k8s.io/kube-scheduler",
+					"image_tag:v1.35.0",
+					"pod_phase:running",
+					"short_image:kube-scheduler",
+					"image_id:********@sha256:0ab622491a82532e01876d55e365c08c5bac01bcd5444a8ed58c1127ab47819f",
+					"pod_name:kube-scheduler-pattykube",
+					"container_id:76d2e35e241b39b3e519cdf449bfef9c32859e6efbb627ad4425ab1ad89fbf9b",
+					"display_container_name:kube-scheduler_kube-scheduler-pattykube"
+				]
+			}
+		},
+		"container_id://8e67107272384206fe3b447b3e87f74136ed39d71c93d7ab6d4afecef0fe6610": {
+			"tags": {
+				"workloadmeta-container": [
+					"docker_image:registry.k8s.io/kube-apiserver:v1.35.0",
+					"image_name:registry.k8s.io/kube-apiserver",
+					"short_image:kube-apiserver",
+					"image_tag:v1.35.0",
+					"image_id:********@sha256:32f98b308862e1cf98c900927d84630fb86a836a480f02752a779eb85c1489f3",
+					"container_name:kube-apiserver",
+					"container_id:8e67107272384206fe3b447b3e87f74136ed39d71c93d7ab6d4afecef0fe6610"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_namespace:kube-system",
+					"kube_priority_class:system-node-critical",
+					"kube_qos:Burstable",
+					"kube_container_name:kube-apiserver",
+					"image_tag:v1.35.0",
+					"pod_phase:running",
+					"image_name:registry.k8s.io/kube-apiserver",
+					"short_image:kube-apiserver",
+					"image_id:********@sha256:32f98b308862e1cf98c900927d84630fb86a836a480f02752a779eb85c1489f3",
+					"pod_name:kube-apiserver-pattykube",
+					"container_id:8e67107272384206fe3b447b3e87f74136ed39d71c93d7ab6d4afecef0fe6610",
+					"display_container_name:kube-apiserver_kube-apiserver-pattykube"
+				]
+			}
+		},
+		"container_id://92b3356af012922cb509ef6e397f6ccee6550dea16b3c0867a11ea31316b1530": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_id:********@sha256:367cd0746dd9feb9b997e87a72d063d0c1a20a7bd784b81b1b3602b98856516a",
+					"docker_image:datadoghq.azurecr.io/agent:7.75.4",
+					"image_name:datadoghq.azurecr.io/agent",
+					"short_image:agent",
+					"image_tag:7.75.4",
+					"container_name:init-config",
+					"container_id:92b3356af012922cb509ef6e397f6ccee6550dea16b3c0867a11ea31316b1530"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"image_name:gcr.io/datadoghq/agent",
+					"image_tag:7.75.4",
+					"image_id:********@sha256:367cd0746dd9feb9b997e87a72d063d0c1a20a7bd784b81b1b3602b98856516a",
+					"pod_phase:running",
+					"kube_app_part_of:default-datadog",
+					"kube_qos:BestEffort",
+					"kube_container_name:init-config",
+					"kube_app_managed_by:Helm",
+					"kube_app_name:datadog",
+					"kube_app_instance:datadog-agent",
+					"kube_app_component:agent",
+					"kube_service:datadog",
+					"short_image:agent",
+					"kube_daemon_set:datadog",
+					"kube_namespace:default",
+					"kube_ownerref_kind:daemonset",
+					"pod_name:datadog-gkwbc",
+					"kube_ownerref_name:datadog",
+					"display_container_name:init-config_datadog-gkwbc",
+					"container_id:92b3356af012922cb509ef6e397f6ccee6550dea16b3c0867a11ea31316b1530"
+				]
+			}
+		},
+		"container_id://a5174fe929ef3485b415c04fefdda3b4aa5a83ba03fc780f7bdc87e4ed854a4e": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_id:********@sha256:9b9128672209474da07c91439bf15ed704ae05ad918dd6454e5b6ae14e35fee6",
+					"docker_image:registry.k8s.io/coredns/coredns:v1.13.1",
+					"image_name:registry.k8s.io/coredns/coredns",
+					"short_image:coredns",
+					"image_tag:v1.13.1",
+					"container_name:coredns",
+					"container_id:a5174fe929ef3485b415c04fefdda3b4aa5a83ba03fc780f7bdc87e4ed854a4e"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_namespace:kube-system",
+					"pod_phase:running",
+					"kube_container_name:coredns",
+					"image_tag:v1.13.1",
+					"image_id:********@sha256:9b9128672209474da07c91439bf15ed704ae05ad918dd6454e5b6ae14e35fee6",
+					"kube_deployment:coredns",
+					"kube_priority_class:system-cluster-critical",
+					"kube_qos:Burstable",
+					"image_name:registry.k8s.io/coredns/coredns",
+					"short_image:coredns",
+					"kube_service:kube-dns",
+					"kube_ownerref_kind:replicaset",
+					"kube_replica_set:coredns-7d764666f9",
+					"pod_name:coredns-7d764666f9-m99c8",
+					"kube_ownerref_name:coredns-7d764666f9",
+					"container_id:a5174fe929ef3485b415c04fefdda3b4aa5a83ba03fc780f7bdc87e4ed854a4e",
+					"display_container_name:coredns_coredns-7d764666f9-m99c8"
+				]
+			}
+		},
+		"container_id://bfe490a19a9899c258ead6d159808472b2cd6e31ccfda6171e1f8a0fc61f0be3": {
+			"tags": {
+				"workloadmeta-container": [
+					"short_image:prometheus",
+					"image_tag:latest",
+					"image_id:********@sha256:4a61322ac1103a0e3aea2a61ef1718422a48fa046441f299d71e660a3bc71ae9",
+					"docker_image:prom/prometheus:latest",
+					"git.repository_url:https://github.com/prometheus/prometheus",
+					"image_name:prom/prometheus",
+					"container_name:prometheus",
+					"container_id:bfe490a19a9899c258ead6d159808472b2cd6e31ccfda6171e1f8a0fc61f0be3"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"pod_phase:running",
+					"kube_container_name:prometheus",
+					"image_name:prom/prometheus",
+					"short_image:prometheus",
+					"image_tag:latest",
+					"image_id:********@sha256:4a61322ac1103a0e3aea2a61ef1718422a48fa046441f299d71e660a3bc71ae9",
+					"kube_qos:BestEffort",
+					"kube_service:prometheus-example-service",
+					"kube_deployment:prometheus",
+					"kube_namespace:default",
+					"kube_ownerref_kind:replicaset",
+					"kube_replica_set:prometheus-567d6b54b4",
+					"kube_ownerref_name:prometheus-567d6b54b4",
+					"pod_name:prometheus-567d6b54b4-4tmwm",
+					"container_id:bfe490a19a9899c258ead6d159808472b2cd6e31ccfda6171e1f8a0fc61f0be3",
+					"display_container_name:prometheus_prometheus-567d6b54b4-4tmwm"
+				]
+			}
+		},
+		"container_id://cba24559722b7c7c7e19a2eedf3d42984c99964bae5019468a51ac791c873cea": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_tag:7.75.4",
+					"image_id:********@sha256:367cd0746dd9feb9b997e87a72d063d0c1a20a7bd784b81b1b3602b98856516a",
+					"docker_image:datadoghq.azurecr.io/agent:7.75.4",
+					"git.commit.sha:"***********************************75d38"",
+					"git.repository_url:https://github.com/DataDog/datadog-agent",
+					"image_name:datadoghq.azurecr.io/agent",
+					"short_image:agent",
+					"container_name:trace-agent",
+					"container_id:cba24559722b7c7c7e19a2eedf3d42984c99964bae5019468a51ac791c873cea"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_daemon_set:datadog",
+					"kube_qos:BestEffort",
+					"kube_app_component:agent",
+					"kube_container_name:trace-agent",
+					"image_name:gcr.io/datadoghq/agent",
+					"image_tag:7.75.4",
+					"image_id:********@sha256:367cd0746dd9feb9b997e87a72d063d0c1a20a7bd784b81b1b3602b98856516a",
+					"kube_app_managed_by:Helm",
+					"kube_app_instance:datadog-agent",
+					"kube_service:datadog",
+					"kube_ownerref_kind:daemonset",
+					"short_image:agent",
+					"kube_app_part_of:default-datadog",
+					"kube_app_name:datadog",
+					"kube_namespace:default",
+					"pod_phase:running",
+					"pod_name:datadog-gkwbc",
+					"kube_ownerref_name:datadog",
+					"display_container_name:trace-agent_datadog-gkwbc",
+					"container_id:cba24559722b7c7c7e19a2eedf3d42984c99964bae5019468a51ac791c873cea"
+				]
+			}
+		},
+		"container_id://ce8933cc7cbf0353f4c90881114da5bfed41620dd4f508f10727e6ed24b0088b": {
+			"tags": {
+				"workloadmeta-container": [
+					"git.repository_url:https://github.com/DataDog/datadog-agent",
+					"image_name:datadoghq.azurecr.io/agent",
+					"short_image:agent",
+					"image_tag:7.75.4",
+					"image_id:********@sha256:367cd0746dd9feb9b997e87a72d063d0c1a20a7bd784b81b1b3602b98856516a",
+					"docker_image:datadoghq.azurecr.io/agent:7.75.4",
+					"git.commit.sha:"***********************************75d38"",
+					"container_name:process-agent",
+					"container_id:ce8933cc7cbf0353f4c90881114da5bfed41620dd4f508f10727e6ed24b0088b"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"pod_phase:running",
+					"kube_daemon_set:datadog",
+					"short_image:agent",
+					"kube_app_part_of:default-datadog",
+					"kube_namespace:default",
+					"image_tag:7.75.4",
+					"image_id:********@sha256:367cd0746dd9feb9b997e87a72d063d0c1a20a7bd784b81b1b3602b98856516a",
+					"kube_app_instance:datadog-agent",
+					"kube_app_component:agent",
+					"kube_container_name:process-agent",
+					"kube_service:datadog",
+					"kube_ownerref_kind:daemonset",
+					"kube_app_managed_by:Helm",
+					"kube_app_name:datadog",
+					"kube_qos:BestEffort",
+					"image_name:gcr.io/datadoghq/agent",
+					"pod_name:datadog-gkwbc",
+					"kube_ownerref_name:datadog",
+					"container_id:ce8933cc7cbf0353f4c90881114da5bfed41620dd4f508f10727e6ed24b0088b",
+					"display_container_name:process-agent_datadog-gkwbc"
+				]
+			}
+		},
+		"container_id://ce91c4996a466471c977ac3240140415fd4703809f69db925fff26cbeb5beb6b": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:datadoghq.azurecr.io/cluster-agent",
+					"short_image:cluster-agent",
+					"image_tag:7.75.4",
+					"image_id:********@sha256:9407202820adf2adc6b55d9db02b370b3a9311ff1cce178d41e3c39ea609d59e",
+					"docker_image:datadoghq.azurecr.io/cluster-agent:7.75.4",
+					"container_name:cluster-agent",
+					"container_id:ce91c4996a466471c977ac3240140415fd4703809f69db925fff26cbeb5beb6b"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_app_part_of:default-datadog",
+					"short_image:cluster-agent",
+					"kube_qos:BestEffort",
+					"kube_ownerref_kind:replicaset",
+					"kube_deployment:datadog-cluster-agent",
+					"image_tag:7.75.4",
+					"image_id:********@sha256:9407202820adf2adc6b55d9db02b370b3a9311ff1cce178d41e3c39ea609d59e",
+					"kube_app_name:datadog",
+					"kube_container_name:cluster-agent",
+					"kube_app_managed_by:Helm",
+					"image_name:gcr.io/datadoghq/cluster-agent",
+					"pod_phase:succeeded",
+					"kube_app_instance:datadog-cluster-agent",
+					"kube_app_component:cluster-agent",
+					"kube_replica_set:datadog-cluster-agent-78b48ffdfb",
+					"kube_namespace:default",
+					"pod_name:datadog-cluster-agent-78b48ffdfb-9tmtm",
+					"kube_ownerref_name:datadog-cluster-agent-78b48ffdfb",
+					"container_id:ce91c4996a466471c977ac3240140415fd4703809f69db925fff26cbeb5beb6b",
+					"display_container_name:cluster-agent_datadog-cluster-agent-78b48ffdfb-9tmtm"
+				]
+			}
+		},
+		"container_id://e742cbc43cf9a75ada6bf121167886e06c01ac0c8dfa1b654d44cdb5265eca9a": {
+			"tags": {
+				"workloadmeta-container": [
+					"image_name:redis",
+					"short_image:redis",
+					"image_tag:latest",
+					"image_id:********@sha256:5cb00b0f236e286254ce9f3eea989b00bb69d04fb9b6c9a9d0b07e588e49f44e",
+					"docker_image:redis:latest",
+					"container_name:redis",
+					"container_id:e742cbc43cf9a75ada6bf121167886e06c01ac0c8dfa1b654d44cdb5265eca9a"
+				],
+				"workloadmeta-kubernetes_pod": [
+					"kube_qos:Burstable",
+					"image_name:redis",
+					"kube_deployment:redis-deployment",
+					"kube_replica_set:redis-deployment-56479df6fc",
+					"kube_ownerref_kind:replicaset",
+					"kube_container_name:redis",
+					"short_image:redis",
+					"image_tag:latest",
+					"image_id:********@sha256:5cb00b0f236e286254ce9f3eea989b00bb69d04fb9b6c9a9d0b07e588e49f44e",
+					"kube_namespace:default",
+					"pod_phase:running",
+					"kube_ownerref_name:redis-deployment-56479df6fc",
+					"pod_name:redis-deployment-56479df6fc-jv4z9",
+					"container_id:e742cbc43cf9a75ada6bf121167886e06c01ac0c8dfa1b654d44cdb5265eca9a",
+					"display_container_name:redis_redis-deployment-56479df6fc-jv4z9"
+				]
+			}
+		},
+		"container_image_metadata://sha256:20ab43eeca11d9d9322477bfb9f2991b91c387e9d587bbfa3231c2045bc2b790": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"image_name:gcr.io/datadoghq/agent:7.75.0",
+					"short_image:agent",
+					"image_tag:7.75.0",
+					"os_name:linux",
+					"architecture:arm64",
+					"git.commit.sha:"***********************************d2b4c"",
+					"git.repository_url:https://github.com/DataDog/datadog-agent"
+				]
+			}
+		},
+		"container_image_metadata://sha256:26d5855b2b1bab754f7c7a793f8b5bf321c9e5d527d33b2860342c2872fdb648": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"image_name:tomcat:11.0",
+					"short_image:tomcat",
+					"image_tag:11.0",
+					"os_name:linux",
+					"architecture:arm64"
+				]
+			}
+		},
+		"container_image_metadata://sha256:271e49a0ebc56647476845128fcd2a73bb138beeca3878cc3bf52b4ff1172a57": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"image_name:registry.k8s.io/etcd:3.6.6-0",
+					"short_image:etcd",
+					"image_tag:3.6.6-0",
+					"os_name:linux",
+					"architecture:arm64"
+				]
+			}
+		},
+		"container_image_metadata://sha256:35267b49b0841029c5168ff138d4ea5e820a868ff87c07c1972cc674c41677c4": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"image_name:redis:latest",
+					"short_image:redis",
+					"image_tag:latest",
+					"os_name:linux",
+					"architecture:arm64"
+				]
+			}
+		},
+		"container_image_metadata://sha256:570a6bd4de5664d3f49d5fedcbebb2b7f29639faea14afb29ca35229564151bd": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"image_name:gcr.io/datadoghq/cluster-agent:7.74.0",
+					"short_image:cluster-agent",
+					"image_tag:7.74.0",
+					"os_name:linux",
+					"architecture:arm64",
+					"git.repository_url:https://github.com/DataDog/datadog-agent",
+					"git.commit.sha:"***********************************6c007""
+				]
+			}
+		},
+		"container_image_metadata://sha256:5ac01c67d821c461507992cb836f4958a62293734be85f0b5eeb99f449bcd2cc": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"image_name:gcr.io/datadoghq/operator:1.23.0",
+					"short_image:operator",
+					"image_tag:1.23.0",
+					"os_name:linux",
+					"architecture:arm64",
+					"git.commit.sha:"***********************************d881a""
+				]
+			}
+		},
+		"container_image_metadata://sha256:5ccfaca220fcb8f8144d7eedd9899246f4ad8273ccfe6eb079264a612df15f92": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"git.repository_url:https://github.com/prometheus/prometheus",
+					"image_name:prom/prometheus:latest",
+					"short_image:prometheus",
+					"image_tag:latest",
+					"os_name:linux",
+					"architecture:arm64"
+				]
+			}
+		},
+		"container_image_metadata://sha256:5f7401262bbd6893496c87f84aef11daa18c366b5b021053512c7041ca08a08f": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"image_tag:7.75.0",
+					"os_name:linux",
+					"architecture:arm64",
+					"git.commit.sha:"***********************************d2b4c"",
+					"git.repository_url:https://github.com/DataDog/datadog-agent",
+					"image_name:gcr.io/datadoghq/cluster-agent:7.75.0",
+					"short_image:cluster-agent"
+				]
+			}
+		},
+		"container_image_metadata://sha256:62806537a7017ad0cb96608062c8db7dd9ee8d45ebd7ef3066bb2044ea771dde": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"image_name:python",
+					"short_image:python",
+					"os_name:linux",
+					"architecture:arm64"
+				]
+			}
+		},
+		"container_image_metadata://sha256:7d0e72194d741b7bdc30b4fefc64a389a4240aff606630d6c52af2eabff02b4a": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"short_image:agent",
+					"image_tag:7.75.4",
+					"os_name:linux",
+					"architecture:arm64",
+					"git.repository_url:https://github.com/DataDog/datadog-agent",
+					"git.commit.sha:"***********************************75d38"",
+					"image_name:datadoghq.azurecr.io/agent:7.75.4"
+				]
+			}
+		},
+		"container_image_metadata://sha256:88898f1d1a62a3ea9db5d4d099dee7aa52ebe8191016c5b3c721388a309983e0": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"os_name:linux",
+					"architecture:arm64",
+					"image_name:registry.k8s.io/kube-controller-manager:v1.35.0",
+					"short_image:kube-controller-manager",
+					"image_tag:v1.35.0"
+				]
+			}
+		},
+		"container_image_metadata://sha256:90f2bccf94481fad0ffaade3a8a16ca6fa8587e5f1c44f52d6746df3347568ef": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"image_name:gcr.io/datadoghq/cluster-agent:7.74.1",
+					"short_image:cluster-agent",
+					"image_tag:7.74.1",
+					"os_name:linux",
+					"architecture:arm64",
+					"git.commit.sha:"***********************************92182"",
+					"git.repository_url:https://github.com/DataDog/datadog-agent"
+				]
+			}
+		},
+		"container_image_metadata://sha256:b107f2784ffaf12bbbaf0a9cd9d9b3673c31830578e4ff79c8fce9eb7f8e898a": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"short_image:python",
+					"image_tag:3-slim",
+					"os_name:linux",
+					"architecture:arm64",
+					"image_name:python:3-slim"
+				]
+			}
+		},
+		"container_image_metadata://sha256:ba04bb24b95753201135cbc420b233c1b0b9fa2e1fd21d28319c348c33fbcde6": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"architecture:amd64",
+					"image_name:gcr.io/k8s-minikube/storage-provisioner:v5",
+					"short_image:storage-provisioner",
+					"image_tag:v5",
+					"os_name:linux"
+				]
+			}
+		},
+		"container_image_metadata://sha256:c3fcf259c473a57a5d7da116e29161904491091743512d27467c907c5516f856": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"image_name:registry.k8s.io/kube-apiserver:v1.35.0",
+					"short_image:kube-apiserver",
+					"image_tag:v1.35.0",
+					"os_name:linux",
+					"architecture:arm64"
+				]
+			}
+		},
+		"container_image_metadata://sha256:cbca6d4e92d30b5c6f04e2a6c95aa148cf4d9768d2b328f2d6487344b1d119fb": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"image_name:datadoghq.azurecr.io/cluster-agent:7.75.4",
+					"short_image:cluster-agent",
+					"image_tag:7.75.4",
+					"os_name:linux",
+					"architecture:arm64",
+					"git.commit.sha:"***********************************75d38"",
+					"git.repository_url:https://github.com/DataDog/datadog-agent"
+				]
+			}
+		},
+		"container_image_metadata://sha256:cfd1c2ab00052d0cce008219b58546b9e2a91cc1255ac822f047348f12a58e0a": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"image_tag:1.15.0",
+					"os_name:linux",
+					"architecture:arm64",
+					"image_name:gcr.io/datadoghq/operator:1.15.0",
+					"short_image:operator"
+				]
+			}
+		},
+		"container_image_metadata://sha256:d7b100cd9a77ba782c5e428c8dd5a1df4a1e79d4cb6294acd7d01290ab3babbd": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"architecture:arm64",
+					"image_name:registry.k8s.io/pause:3.10.1",
+					"short_image:pause",
+					"image_tag:3.10.1",
+					"os_name:linux"
+				]
+			}
+		},
+		"container_image_metadata://sha256:ddc8422d4d35a6fc66c34be61e24df795e5cebf197eb546f62740d0bafef874f": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"image_name:registry.k8s.io/kube-scheduler:v1.35.0",
+					"short_image:kube-scheduler",
+					"image_tag:v1.35.0",
+					"os_name:linux",
+					"architecture:arm64"
+				]
+			}
+		},
+		"container_image_metadata://sha256:de369f46c2ff55c31ea783a663eb203caa820f3db1f9b9c935e79e7d1e9fd9e5": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"image_name:registry.k8s.io/kube-proxy:v1.35.0",
+					"short_image:kube-proxy",
+					"image_tag:v1.35.0",
+					"os_name:linux",
+					"architecture:arm64"
+				]
+			}
+		},
+		"container_image_metadata://sha256:e08f4d9d2e6ede8185064c13b41f8eeee95b609c0ca93b6fe7509fe527c907cf": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"image_name:registry.k8s.io/coredns/coredns:v1.13.1",
+					"short_image:coredns",
+					"image_tag:v1.13.1",
+					"os_name:linux",
+					"architecture:arm64"
+				]
+			}
+		},
+		"container_image_metadata://sha256:e47c96d4fc36f098076e6bc850e315bce12937fad6922e472915ade6fbe00e8c": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"git.repository_url:https://github.com/DataDog/datadog-agent",
+					"image_name:gcr.io/datadoghq/agent:7.74.0",
+					"short_image:agent",
+					"image_tag:7.74.0",
+					"os_name:linux",
+					"architecture:arm64",
+					"git.commit.sha:"***********************************6c007""
+				]
+			}
+		},
+		"container_image_metadata://sha256:eae1b0f4ed04c07b2576d12c9692337139b54d7bf82a1c55a8b8a96fa7056e1a": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"architecture:arm64",
+					"git.commit.sha:"***********************************92182"",
+					"git.repository_url:https://github.com/DataDog/datadog-agent",
+					"image_name:gcr.io/datadoghq/agent:7.74.1-jmx",
+					"short_image:agent",
+					"image_tag:7.74.1-jmx",
+					"os_name:linux"
+				]
+			}
+		},
+		"container_image_metadata://sha256:f2392e5d02f03853d99cf112d7e9e996c08b4e7ded7758bf42631ee247aff3b5": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"architecture:arm64",
+					"git.commit.sha:"***********************************d881a"",
+					"image_name:gcr.io/datadoghq/operator:1.22.0",
+					"short_image:operator",
+					"image_tag:1.22.0",
+					"os_name:linux"
+				]
+			}
+		},
+		"container_image_metadata://sha256:f38632ab192d16da2295410d9dcce2f4c1db486412571970ee004c5a705642da": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"image_tag:1.23.1",
+					"os_name:linux",
+					"architecture:arm64",
+					"git.commit.sha:"***********************************d881a"",
+					"image_name:gcr.io/datadoghq/operator:1.23.1",
+					"short_image:operator"
+				]
+			}
+		},
+		"container_image_metadata://sha256:fd079ad652200210c10db763c12e60030b269cf7aa50878f408857c8b3e6cf80": {
+			"tags": {
+				"workloadmeta-container_image_metadata": [
+					"image_name:gcr.io/datadoghq/agent:7.74.1",
+					"short_image:agent",
+					"image_tag:7.74.1",
+					"os_name:linux",
+					"architecture:arm64",
+					"git.repository_url:https://github.com/DataDog/datadog-agent",
+					"git.commit.sha:"***********************************92182""
+				]
+			}
+		},
+		"kubernetes_pod_uid://2595af7c-adbe-4e87-984c-759876340e8a": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"kube_qos:Burstable",
+					"kube_service:kube-dns",
+					"kube_ownerref_kind:replicaset",
+					"kube_deployment:coredns",
+					"kube_replica_set:coredns-7d764666f9",
+					"kube_namespace:kube-system",
+					"pod_phase:running",
+					"kube_priority_class:system-cluster-critical",
+					"pod_name:coredns-7d764666f9-m99c8",
+					"kube_ownerref_name:coredns-7d764666f9"
+				]
+			}
+		},
+		"kubernetes_pod_uid://***************************43484": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"kube_qos:Burstable",
+					"kube_namespace:kube-system",
+					"pod_phase:running",
+					"kube_priority_class:system-node-critical",
+					"pod_name:kube-scheduler-pattykube"
+				]
+			}
+		},
+		"kubernetes_pod_uid://2d70b2fb-8270-4751-8176-e3852186231a": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"kube_namespace:default",
+					"pod_phase:running",
+					"kube_qos:Burstable",
+					"kube_ownerref_kind:replicaset",
+					"kube_deployment:redis-deployment",
+					"kube_replica_set:redis-deployment-56479df6fc",
+					"pod_name:redis-deployment-56479df6fc-jv4z9",
+					"kube_ownerref_name:redis-deployment-56479df6fc"
+				]
+			}
+		},
+		"kubernetes_pod_uid://3611c5d8-6624-4102-88df-04a77237846b": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"pod_phase:running",
+					"kube_app_managed_by:Helm",
+					"kube_app_name:datadog",
+					"kube_app_part_of:default-datadog",
+					"kube_daemon_set:datadog",
+					"kube_namespace:default",
+					"kube_qos:BestEffort",
+					"kube_app_instance:datadog-agent",
+					"kube_app_component:agent",
+					"kube_service:datadog",
+					"kube_ownerref_kind:daemonset",
+					"pod_name:datadog-gkwbc",
+					"kube_ownerref_name:datadog"
+				]
+			}
+		},
+		"kubernetes_pod_uid://44965510-7773-47df-879e-df5b4cded201": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"kube_namespace:default",
+					"pod_phase:running",
+					"kube_qos:BestEffort",
+					"kube_service:prometheus-example-service",
+					"kube_ownerref_kind:replicaset",
+					"kube_deployment:prometheus",
+					"kube_replica_set:prometheus-567d6b54b4",
+					"pod_name:prometheus-567d6b54b4-4tmwm",
+					"kube_ownerref_name:prometheus-567d6b54b4"
+				]
+			}
+		},
+		"kubernetes_pod_uid://4c1acc23-7cec-4b96-af4f-a8d4056e04b3": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"kube_namespace:kube-system",
+					"pod_phase:running",
+					"kube_qos:BestEffort",
+					"pod_name:storage-provisioner"
+				]
+			}
+		},
+		"kubernetes_pod_uid://***************************30812": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"kube_priority_class:system-node-critical",
+					"kube_qos:Burstable",
+					"kube_namespace:kube-system",
+					"pod_phase:running",
+					"pod_name:etcd-pattykube"
+				]
+			}
+		},
+		"kubernetes_pod_uid://72150617-7154-43b9-b149-1890f64e1f1d": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"kube_ownerref_kind:daemonset",
+					"kube_daemon_set:kube-proxy",
+					"kube_namespace:kube-system",
+					"pod_phase:running",
+					"kube_priority_class:system-node-critical",
+					"kube_qos:BestEffort",
+					"pod_name:kube-proxy-r4f7x",
+					"kube_ownerref_name:kube-proxy"
+				]
+			}
+		},
+		"kubernetes_pod_uid://***************************e94d9": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"kube_namespace:kube-system",
+					"pod_phase:running",
+					"kube_priority_class:system-node-critical",
+					"kube_qos:Burstable",
+					"pod_name:kube-apiserver-pattykube"
+				]
+			}
+		},
+		"kubernetes_pod_uid://7f6fc6e1-6cd1-4540-8ae7-30b5a16d679f": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"pod_phase:succeeded",
+					"kube_qos:BestEffort",
+					"kube_app_instance:datadog-cluster-agent",
+					"kube_app_name:datadog",
+					"kube_app_component:cluster-agent",
+					"kube_app_managed_by:Helm",
+					"kube_replica_set:datadog-cluster-agent-78b48ffdfb",
+					"kube_namespace:default",
+					"kube_app_part_of:default-datadog",
+					"kube_ownerref_kind:replicaset",
+					"kube_deployment:datadog-cluster-agent",
+					"pod_name:datadog-cluster-agent-78b48ffdfb-9tmtm",
+					"kube_ownerref_name:datadog-cluster-agent-78b48ffdfb"
+				]
+			}
+		},
+		"kubernetes_pod_uid://***************************9e306": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"pod_phase:running",
+					"kube_priority_class:system-node-critical",
+					"kube_qos:Burstable",
+					"kube_namespace:kube-system",
+					"pod_name:kube-controller-manager-pattykube"
+				]
+			}
+		},
+		"kubernetes_pod_uid://eedac68d-ae54-4193-82d3-5845a2f59356": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"kube_namespace:default",
+					"pod_phase:running",
+					"kube_qos:BestEffort",
+					"kube_service:tomcat-service",
+					"pod_name:tomcat"
+				]
+			}
+		},
+		"kubernetes_pod_uid://ef4cb795-56e7-45c1-a8cd-a98809edd5d9": {
+			"tags": {
+				"workloadmeta-kubernetes_pod": [
+					"kube_app_part_of:default-datadog",
+					"kube_ownerref_kind:replicaset",
+					"kube_deployment:datadog-cluster-agent",
+					"kube_namespace:default",
+					"kube_app_instance:datadog-cluster-agent",
+					"kube_service:datadog-cluster-agent",
+					"kube_service:datadog-cluster-agent-admission-controller",
+					"kube_replica_set:datadog-cluster-agent-6445697f5b",
+					"pod_phase:running",
+					"kube_qos:BestEffort",
+					"kube_app_managed_by:Helm",
+					"kube_app_name:datadog",
+					"kube_app_component:cluster-agent",
+					"pod_name:datadog-cluster-agent-6445697f5b-287lr",
+					"kube_ownerref_name:datadog-cluster-agent-6445697f5b"
+				]
+			}
+		}
+	}
+}

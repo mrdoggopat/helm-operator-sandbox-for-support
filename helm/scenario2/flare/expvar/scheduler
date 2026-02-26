@@ -1,0 +1,18 @@
+ChecksEntered: 22
+Queues:
+- Buckets: 600
+  Interval: 600
+  Size: 1
+- Buckets: 15
+  Interval: 15
+  Size: 18
+- Buckets: 60
+  Interval: 60
+  Size: 1
+- Buckets: 20
+  Interval: 20
+  Size: 1
+- Buckets: 900
+  Interval: 900
+  Size: 1
+QueuesCount: 5

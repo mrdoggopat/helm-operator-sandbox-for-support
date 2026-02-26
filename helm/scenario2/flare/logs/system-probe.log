@@ -1,0 +1,86 @@
+2026-02-26 18:46:55 UTC | SYS-PROBE | INFO | (pkg/util/log/setup/log.go:60 in SetupLogger) | SYS-PROBE: using slog logger
+2026-02-26 18:46:55 UTC | SYS-PROBE | INFO | (pkg/util/log/log.go:738 in func1) | Starting to load the configuration
+2026-02-26 18:46:55 UTC | SYS-PROBE | INFO | (pkg/util/log/log.go:738 in func1) | Loading proxy settings
+2026-02-26 18:46:55 UTC | SYS-PROBE | INFO | (pkg/util/log/log.go:738 in func1) | Starting to resolve secrets
+2026-02-26 18:46:55 UTC | SYS-PROBE | INFO | (pkg/util/log/log.go:738 in func1) | Finished resolving secrets
+2026-02-26 18:46:55 UTC | SYS-PROBE | INFO | (pkg/util/log/log.go:743 in func1) | Agent did not find PodResources socket at /var/lib/kubelet/pod-resources/kubelet.sock
+2026-02-26 18:46:55 UTC | SYS-PROBE | INFO | (pkg/util/log/log.go:743 in func1) | 3 Features detected from environment: kubernetes,kube_orchestratorexplorer,kubelet_config_orchestrator_check
+2026-02-26 18:46:55 UTC | SYS-PROBE | INFO | (pkg/util/log/log.go:738 in func1) | Starting to load the configuration
+2026-02-26 18:46:55 UTC | SYS-PROBE | WARN | (pkg/util/log/setup/log.go:62 in SetupLogger) | config key "event_monitoring_config.socket" is unknown
+2026-02-26 18:46:55 UTC | SYS-PROBE | WARN | (pkg/util/log/setup/log.go:62 in SetupLogger) | config key "runtime_security_config.activity_dump.cgroup_wait_list_size" is unknown
+2026-02-26 18:46:55 UTC | SYS-PROBE | WARN | (pkg/util/log/setup/log.go:62 in SetupLogger) | config key "runtime_security_config.activity_dump.path_merge.enabled" is unknown
+2026-02-26 18:46:55 UTC | SYS-PROBE | WARN | (pkg/util/log/setup/log.go:62 in SetupLogger) | config key "runtime_security_config.network.enabled" is unknown
+2026-02-26 18:46:55 UTC | SYS-PROBE | WARN | (pkg/util/log/setup/log.go:62 in SetupLogger) | config key "runtime_security_config.syscall_monitor.enabled" is unknown
+2026-02-26 18:46:55 UTC | SYS-PROBE | WARN | (pkg/util/log/log.go:778 in func1) | configuration key `runtime_security_config.activity_dump.cgroup_dump_timeout` is deprecated, use `runtime_security_config.activity_dump.dump_duration` instead
+2026-02-26 18:46:55 UTC | SYS-PROBE | WARN | (pkg/util/log/setup/log.go:62 in SetupLogger) | config key "event_monitoring_config.process.enabled" is unknown
+2026-02-26 18:46:55 UTC | SYS-PROBE | INFO | (comp/core/ipc/impl/ipc.go:73 in NewReadWriteComponent) | starting to load the IPC auth primitives (timeout: 30s)
+2026-02-26 18:46:55 UTC | SYS-PROBE | WARN | (pkg/api/security/cert/cert_getter.go:37 in getCertFilepath) | IPC cert/key created or retrieved next to auth_token_file_path location: /etc/datadog-agent/auth/ipc_cert.pem
+2026-02-26 18:46:55 UTC | SYS-PROBE | INFO | (comp/core/ipc/impl/ipc.go:194 in printAuthSignature) | successfully loaded the IPC auth primitives (fingerprint: e9d2ecf9f12bc612)
+2026-02-26 18:46:55 UTC | SYS-PROBE | INFO | (comp/core/configsync/configsyncimpl/module.go:70 in newComponent) | configsync disabled (agent_ipc.port: 0 | agent_ipc.config_refresh_interval: 0)
+2026-02-26 18:46:55 UTC | SYS-PROBE | WARN | (pkg/networkpath/traceroute/runner/runner.go:86 in New) | gateway lookup is not enabled
+2026-02-26 18:46:55 UTC | SYS-PROBE | INFO | (comp/core/workloadmeta/impl/store.go:104 in start) | workloadmeta store initialized successfully
+2026-02-26 18:46:55 UTC | SYS-PROBE | INFO | (pkg/config/remote/client/client.go:459 in pollLoop) | retrying the first update of remote-config state (rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp [::1]:5001: connect: connection refused"), consecutive failures: 1
+2026-02-26 18:46:55 UTC | SYS-PROBE | INFO | (comp/core/tagger/impl-remote/remote.go:258 in start) | remote tagger initialized successfully
+2026-02-26 18:46:55 UTC | SYS-PROBE | INFO | (comp/core/workloadmeta/collectors/internal/remote/generic.go:122 in Start) | remote workloadmeta initialized successfully
+2026-02-26 18:46:55 UTC | SYS-PROBE | INFO | (comp/core/workloadmeta/impl/store.go:664 in startCandidates) | workloadmeta collector "remote-workloadmeta" started successfully
+2026-02-26 18:46:55 UTC | SYS-PROBE | INFO | (comp/core/workloadmeta/collectors/internal/remote/generic.go:161 in func1) | unable to establish stream, will possibly retry: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5001: connect: connection refused"
+2026-02-26 18:46:55 UTC | SYS-PROBE | WARN | (comp/core/tagger/impl-remote/remote.go:492 in run) | error received trying to start stream with target ":5001": rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5001: connect: connection refused"
+2026-02-26 18:46:56 UTC | SYS-PROBE | INFO | (comp/core/workloadmeta/collectors/internal/remote/generic.go:161 in func1) | unable to establish stream, will possibly retry: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5001: connect: connection refused"
+2026-02-26 18:46:56 UTC | SYS-PROBE | INFO | (comp/core/workloadmeta/collectors/internal/remote/generic.go:161 in func1) | unable to establish stream, will possibly retry: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5001: connect: connection refused"
+2026-02-26 18:46:56 UTC | SYS-PROBE | WARN | (comp/core/tagger/impl-remote/remote.go:492 in run) | error received trying to start stream with target ":5001": rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5001: connect: connection refused"
+2026-02-26 18:46:56 UTC | SYS-PROBE | INFO | (pkg/config/remote/client/client.go:459 in pollLoop) | retrying the first update of remote-config state (rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp [::1]:5001: connect: connection refused"), consecutive failures: 2
+2026-02-26 18:46:57 UTC | SYS-PROBE | WARN | (comp/core/tagger/impl-remote/remote.go:492 in run) | error received trying to start stream with target ":5001": rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5001: connect: connection refused"
+2026-02-26 18:46:57 UTC | SYS-PROBE | WARN | (comp/core/tagger/impl-remote/remote.go:492 in run) | error received trying to start stream with target ":5001": rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5001: connect: connection refused"
+2026-02-26 18:46:57 UTC | SYS-PROBE | INFO | (comp/core/workloadmeta/collectors/internal/remote/generic.go:161 in func1) | unable to establish stream, will possibly retry: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5001: connect: connection refused"
+2026-02-26 18:46:57 UTC | SYS-PROBE | INFO | (pkg/config/remote/client/client.go:459 in pollLoop) | retrying the first update of remote-config state (rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp [::1]:5001: connect: connection refused"), consecutive failures: 3
+2026-02-26 18:46:58 UTC | SYS-PROBE | INFO | (pkg/config/remote/client/client.go:459 in pollLoop) | retrying the first update of remote-config state (rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp [::1]:5001: connect: connection refused"), consecutive failures: 4
+2026-02-26 18:46:59 UTC | SYS-PROBE | WARN | (comp/core/tagger/impl-remote/remote.go:492 in run) | error received trying to start stream with target ":5001": rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5001: connect: connection refused"
+2026-02-26 18:46:59 UTC | SYS-PROBE | INFO | (comp/core/workloadmeta/collectors/internal/remote/generic.go:161 in func1) | unable to establish stream, will possibly retry: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5001: connect: connection refused"
+2026-02-26 18:46:59 UTC | SYS-PROBE | ERROR | (pkg/config/remote/client/client.go:457 in pollLoop) | retrying the first update of remote-config state (rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp [::1]:5001: connect: connection refused"), consecutive failures: 5
+2026-02-26 18:47:00 UTC | SYS-PROBE | ERROR | (pkg/networkpath/traceroute/runner/runner.go:96 in func1) | failed to get network ID: failed to get network ID after 4 attempts: could not detect network ID: EC2: GetNetworkID failed to get mac addresses: could not fetch token from IMDSv2: Put "http://169.254.169.254/latest/api/token": dial tcp 169.254.169.254:80: connect: connection refused
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (pkg/runtime/runtime.go:28 in func1) | runtime: set GOMAXPROCS to: 2
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (cmd/system-probe/subcommands/run/command.go:358 in startSystemProbe) | starting system-probe v7.75.4
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (cmd/system-probe/subcommands/run/command.go:466 in logUserAndGroupID) | current user id/name: 0/root
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (cmd/system-probe/subcommands/run/command.go:469 in logUserAndGroupID) | current group id/name: 0/root
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (pkg/system-probe/api/module/loader.go:69 in Register) | module ebpf disabled
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (pkg/system-probe/api/module/loader.go:69 in Register) | module tcp_queue_length_tracer disabled
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (pkg/system-probe/api/module/loader.go:69 in Register) | module oom_kill_probe disabled
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (pkg/system-probe/api/module/loader.go:69 in Register) | module process disabled
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (pkg/system-probe/api/module/loader.go:69 in Register) | module dynamic_instrumentation disabled
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (pkg/system-probe/api/module/loader.go:69 in Register) | module language_detection disabled
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (pkg/system-probe/api/module/loader.go:69 in Register) | module compliance disabled
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (pkg/system-probe/api/module/loader.go:69 in Register) | module ping disabled
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (pkg/system-probe/api/module/loader.go:69 in Register) | module traceroute disabled
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (pkg/system-probe/api/module/loader.go:69 in Register) | module gpu disabled
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (pkg/system-probe/api/module/loader.go:69 in Register) | module privileged_logs disabled
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (pkg/network/tracer/utils_linux.go:39 in IsTracerSupportedByOS) | running on platform: debian
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (cmd/system-probe/modules/network_tracer.go:49 in createNetworkTracerModule) | enabling network performance monitoring (NPM)
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (pkg/network/tracer/connection/ebpf_tracer.go:260 in newEbpfTracer) | loading kprobe-based tracer
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (pkg/network/tracer/ebpf_conntracker.go:174 in NewEBPFConntracker) | initialized ebpf conntracker
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (pkg/network/tracer/cilium_lb.go:119 in newCiliumLoadBalancerConntracker) | not loading cilium conntracker since cilium maps are not present
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (pkg/network/dns/snooper.go:70 in newSocketFilterSnooper) | DNS Stats Collection has been enabled. Maximum number of stats objects: 20000
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (pkg/network/dns/snooper.go:72 in newSocketFilterSnooper) | DNS domain collection has been enabled
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (pkg/network/dns/parser.go:92 in newDNSParser) | Recording dns query types: [A AAAA]
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (pkg/network/tracer/tracer.go:329 in newReverseDNS) | dns inspection enabled
+2026-02-26 18:47:00 UTC | SYS-PROBE | INFO | (pkg/system-probe/api/module/loader.go:104 in Register) | module network_tracer started
+2026-02-26 18:47:00 UTC | SYS-PROBE | WARN | (pkg/security/probe/config/config.go:321 in getBool) | runtime_security_config.network.enabled has been deprecated: please set event_monitoring_config.network.enabled instead
+2026-02-26 18:47:00 UTC | SYS-PROBE | WARN | (pkg/security/probe/probe_ebpf.go:365 in sanityChecks) | the raw packet feature of CWS requires event_monitoring_config.network.enabled to be true, setting event_monitoring_config.network.raw_packet.enabled to false
+2026-02-26 18:47:00 UTC | SYS-PROBE | WARN | (pkg/security/probe/probe_ebpf.go:2943 in NewEBPFProbe) | the current environment may be misconfigured: 3 errors occurred:
+	* /etc/passwd doesn't seem to be a mountpoint
+	* /etc/group doesn't seem to be a mountpoint
+	* /host/sys/kernel/security doesn't seem to be a mountpoint
+
+2026-02-26 18:47:01 UTC | SYS-PROBE | INFO | (cmd/system-probe/modules/eventmonitor.go:77 in createEventMonitorModule) | event monitoring network consumer initialized
+2026-02-26 18:47:02 UTC | SYS-PROBE | INFO | (pkg/security/probe/probe_ebpf.go:1851 in apply) | Setting in-kernel filter policy to [`open`: `deny`, `mkdir`: `deny`, `link`: `deny`, `rename`: `deny`, `unlink`: `deny`, `rmdir`: `deny`, `chmod`: `deny`, `chown`: `deny`, `utimes`: `deny`, `mmap`: `deny`, `mprotect`: `deny`, `splice`: `deny`, `setxattr`: `deny`, `removexattr`: `deny`, `chdir`: `deny`, `bpf`: `deny`, `sysctl`: `deny`, `connect`: `deny`, `prctl`: `deny`, `setsockopt`: `deny`, `mount`: `deny`, `umount`: `deny`, `fork`: `deny`, `exec`: `deny`, `exit`: `deny`, `invalidate_dentry`: `deny`, `setuid`: `deny`, `setgid`: `deny`, `capset`: `deny`, `args_envs`: `deny`, `mount_released`: `deny`, `selinux`: `deny`, `ptrace`: `deny`, `load_module`: `deny`, `unload_module`: `deny`, `signal`: `deny`, `cgroup_tracing`: `deny`, `dns`: `deny`, `dns_response_short`: `deny`, `dns_response`: `deny`, `net_device`: `deny`, `veth_pair`: `deny`, `veth_pair_ns`: `deny`, `accept`: `deny`, `bind`: `deny`, `unshare_mntns`: `deny`, `syscalls`: `deny`]
+2026-02-26 18:47:02 UTC | SYS-PROBE | INFO | (pkg/system-probe/api/module/loader.go:104 in Register) | module event_monitor started
+2026-02-26 18:47:02 UTC | SYS-PROBE | INFO | (pkg/system-probe/api/module/loader.go:104 in Register) | module discovery started
+2026-02-26 18:47:02 UTC | SYS-PROBE | WARN | (comp/core/tagger/impl-remote/remote.go:492 in run) | error received trying to start stream with target ":5001": rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5001: connect: connection refused"
+2026-02-26 18:47:02 UTC | SYS-PROBE | INFO | (comp/core/workloadmeta/collectors/internal/remote/generic.go:165 in func1) | workloadmeta stream established successfully
+2026-02-26 18:47:04 UTC | SYS-PROBE | WARN | (comp/core/tagger/impl-remote/remote.go:492 in run) | error received trying to start stream with target ":5001": rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5001: connect: connection refused"
+2026-02-26 18:47:07 UTC | SYS-PROBE | INFO | (comp/core/remoteagent/helper/serverhelper.go:268 in registerWithAgent) | Registered with Core Agent. Recommended refresh interval of 10 seconds.
+2026-02-26 18:47:08 UTC | SYS-PROBE | INFO | (comp/core/tagger/impl-remote/remote.go:529 in run) | tagger stream successfully initialized
+2026-02-26 18:47:12 UTC | SYS-PROBE | INFO | (pkg/config/remote/client/client.go:489 in pollLoop) | first update successful after 8 attempts
+2026-02-26 18:47:14 UTC | SYS-PROBE | INFO | (cmd/system-probe/modules/network_tracer.go:214 in logRequests) | Got request on /connections?client_id=process-agent-unique-id (count: 1): retrieved 549 connections in 3.6175ms
+2026-02-26 18:47:44 UTC | SYS-PROBE | INFO | (cmd/system-probe/modules/network_tracer.go:214 in logRequests) | Got request on /connections?client_id=process-agent-unique-id (count: 2): retrieved 903 connections in 7.642458ms
+2026-02-26 18:48:14 UTC | SYS-PROBE | INFO | (cmd/system-probe/modules/network_tracer.go:214 in logRequests) | Got request on /connections?client_id=process-agent-unique-id (count: 3): retrieved 793 connections in 6.08425ms
+2026-02-26 18:48:44 UTC | SYS-PROBE | INFO | (cmd/system-probe/modules/network_tracer.go:214 in logRequests) | Got request on /connections?client_id=process-agent-unique-id (count: 4): retrieved 772 connections in 8.920667ms

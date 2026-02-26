@@ -1,0 +1,480 @@
+discovery:
+  cpu_usage_update_delay: 60s
+  enabled: true
+  ignored_command_names:
+    - chronyd
+    - cilium-agent
+    - containerd
+    - dhclient
+    - dockerd
+    - kubelet
+    - livenessprobe
+    - local-volume-pr
+    - sshd
+    - systemd
+  service_collection_interval: 60s
+event_monitoring_config:
+  capabilities_monitoring:
+    enabled: false
+    period: 5s
+  custom_sensitive_regexps: []
+  custom_sensitive_words: []
+  dentry_cache_size: 8000
+  dns_resolution:
+    cache_size: 1024
+    enabled: true
+  enable_all_probes: false
+  enable_approvers: false
+  enable_discarders: false
+  enable_kernel_filters: true
+  env_vars_resolution:
+    enabled: true
+  envs_with_value:
+    - LD_PRELOAD
+    - LD_LIBRARY_PATH
+    - PATH
+    - HISTSIZE
+    - HISTFILESIZE
+    - GLIBC_TUNABLES
+    - SSH_CLIENT
+  erpc_dentry_resolution_enabled: true
+  event_stream:
+    buffer_size: 0
+    kretprobe_max_active: 512
+    use_fentry: false
+    use_kprobe_fallback: true
+    use_ring_buffer: true
+  events_stats:
+    polling_interval: 20
+    tags_cardinality: high
+  flush_discarder_window: 3
+  map_dentry_resolution_enabled: true
+  network:
+    classifier_handle: 0
+    classifier_priority: 10
+    enabled: true
+    extra_private_ip_ranges: []
+    flow_monitor:
+      enabled: false
+      period: 10s
+      sk_storage:
+        enabled: false
+    ingress:
+      enabled: true
+    lazy_interface_prefixes: []
+    private_ip_ranges:
+      - 10.0.0.0/8
+      - 172.16.0.0/12
+      - 192.168.0.0/16
+      - 0.0.0.0/8
+      - 127.0.0.0/8
+      - 169.254.0.0/16
+      - 192.0.0.0/24
+      - 192.0.2.0/24
+      - 198.18.0.0/15
+      - 198.51.100.0/24
+      - 203.0.113.0/24
+      - 224.0.0.0/4
+      - 240.0.0.0/4
+      - 100.64.0.0/10
+      - fc00::/7
+      - ::1/128
+    raw_classifier_handle: 0
+    raw_packet:
+      enabled: true
+      filter: no_pid_tcp_syn
+      limiter_rate: 10
+  network_process:
+    container_store:
+      enabled: true
+      max_containers_tracked: 1024
+    enabled: true
+    max_processes_tracked: 1024
+  pid_cache_size: 10000
+  runtime_compilation:
+    enabled: false
+  snapshot_using_listmount: false
+  socket: /var/run/sysprobe/event-monitor.sock
+  span_tracking:
+    cache_size: 4096
+    enabled: false
+  syscalls_monitor:
+    enabled: false
+gpu_monitoring:
+  attacher_detailed_logs: false
+  cgroup_reapply_infinitely: false
+  cgroup_reapply_interval: 30s
+  configure_cgroup_perms: false
+  device_cache_refresh_interval: 5s
+  enable_fatbin_parsing: false
+  enabled: false
+  fatbin_request_queue_size: 100
+  initial_process_sync: true
+  process_scan_interval_seconds: 5
+  ring_buffer_pages_per_device: 32
+  ringbuffer_flush_interval: 1s
+  ringbuffer_wakeup_size: 3000
+  streams:
+    max_active: 100
+    max_kernel_launches: 1000
+    max_mem_alloc_events: 1000
+    max_pending_kernel_spans: 1000
+    max_pending_memory_spans: 1000
+    timeout_seconds: 30
+network_config:
+  allow_netlink_conntracker_fallback: true
+  cert_collection_map_cleaner_interval: 30s
+  closed_buffer_wakeup_count: 4
+  closed_channel_size: 500
+  collect_tcp_v4: true
+  collect_tcp_v6: true
+  collect_udp_v4: true
+  collect_udp_v6: true
+  conntrack_init_timeout: 10s
+  direct_send: false
+  dns_recorded_query_types: []
+  enable_cert_collection: false
+  enable_cilium_lb_conntracker: true
+  enable_connection_rollup: false
+  enable_custom_batching: false
+  enable_dns_by_querytype: false
+  enable_ebpf_conntracker: true
+  enable_ebpfless: false
+  enable_fentry: false
+  enable_gateway_lookup: true
+  enable_http_monitoring: true
+  enable_protocol_classification: true
+  enable_ringbuffers: true
+  enable_root_netns: true
+  enable_tcp_failed_connections: true
+  enabled: true
+  http_max_request_fragment: 512
+  http_notification_threshold: 512
+  ignore_conntrack_init_failure: false
+  max_failed_connections_buffered: 131072
+  max_http_stats_buffered: 100000
+  max_tracked_http_connections: 1024
+ping:
+  enabled: false
+runtime_security_config:
+  activity_dump:
+    auto_suppression:
+      enabled: true
+    cgroup_differentiate_args: false
+    cgroup_dump_timeout: 20
+    cgroup_wait_list_size: 0
+    cgroup_wait_list_timeout: 4500s
+    cleanup_period: 30s
+    dump_duration: 20m0s
+    enabled: false
+    load_controller_period: 60s
+    local_storage:
+      compression: false
+      formats:
+        - profile
+      max_dumps_count: 100
+      output_directory: /var/run/sysprobe/runtime-security/profiles
+    max_dump_count_per_workload: 25
+    max_dump_size: 1750
+    min_timeout: 10m
+    path_merge:
+      enabled: false
+    rate_limiter: 500
+    silent_workloads:
+      delay: 10s
+      ticker: 10s
+    syscall_monitor:
+      period: 60s
+    tag_rules:
+      enabled: true
+    tags_resolution_period: 60s
+    trace_systemd_cgroups: false
+    traced_cgroups_count: 3
+    traced_event_types:
+      - exec
+      - open
+      - dns
+      - imds
+    workload_deny_list: []
+  cmd_socket: ""
+  compliance_module:
+    enabled: false
+  container_exclude: []
+  container_include: []
+  cookie_cache_size: 100
+  direct_send_from_system_probe: false
+  ebpfless:
+    enabled: false
+    socket: localhost:5678
+  enabled: false
+  enforcement:
+    disarmer:
+      container:
+        enabled: true
+        max_allowed: 5
+        period: 1m
+      executable:
+        enabled: true
+        max_allowed: 5
+        period: 1m
+    enabled: true
+    exclude_binaries: []
+    raw_syscall:
+      enabled: false
+    rule_source_allowed:
+      - file
+      - remote-config
+  env_as_tags: []
+  etw_events_channel_size: 16384
+  event_grpc_server: ""
+  event_server:
+    burst: 40
+    rate: 10
+    retention: 6s
+  exclude_pause_container: true
+  file_metadata_resolver:
+    enabled: false
+  fim_enabled: false
+  hash_resolver:
+    cache_size: 500
+    enabled: true
+    event_types:
+      - exec
+      - open
+    hash_algorithms:
+      - sha1
+      - sha256
+      - ssdeep
+    max_file_size: 10485760
+    max_hash_rate: 500
+    replace: {}
+  imds_ipv4: 169.254.169.254
+  internal_monitoring:
+    enabled: false
+  log_patterns: []
+  log_tags: []
+  network:
+    enabled: true
+  network_monitoring:
+    enabled: false
+  on_demand:
+    enabled: true
+    rate_limiter:
+      enabled: true
+  policies:
+    dir: /etc/datadog-agent/runtime-security.d
+    monitor:
+      enabled: false
+      per_rule_enabled: false
+      report_internal_policies: false
+  reduced_proc_pid_cache_size: false
+  remote_configuration:
+    dump_policies: false
+    enabled: false
+  sbom:
+    enabled: false
+    host:
+      enabled: false
+    workloads_cache_size: 10
+  security_profile:
+    anomaly_detection:
+      default_minimum_stable_period: 900s
+      enabled: true
+      event_types:
+        - exec
+      minimum_stable_period:
+        dns: 900s
+        exec: 900s
+      rate_limiter:
+        num_events_allowed: 10
+        num_keys: 256
+        period: 1m
+      silent_rule_events:
+        enabled: false
+      tag_rules:
+        enabled: true
+      unstable_profile_size_threshold: 5000000
+      unstable_profile_time_threshold: 1h
+      workload_warmup_period: 180s
+    auto_suppression:
+      enabled: true
+      event_types:
+        - exec
+        - dns
+    cache_size: 10
+    dir: /var/run/sysprobe/runtime-security/profiles
+    dns_match_max_depth: 3
+    enabled: false
+    max_count: 400
+    max_image_tags: 20
+    node_eviction_timeout: 0s
+    watch_dir: true
+  self_test:
+    enabled: true
+    send_report: true
+  socket: /var/run/sysprobe/runtime-security.sock
+  syscall_monitor:
+    enabled: false
+  sysctl:
+    ebpf:
+      enabled: true
+    enabled: true
+    snapshot:
+      enabled: true
+      ignored_base_names:
+        - netdev_rss_key
+        - stable_secret
+      kernel_compilation_flags: []
+      period: 1h
+  use_secruntime_track: true
+  user_sessions:
+    cache_size: 1024
+  windows_filename_cache_max: 16384
+  windows_probe_block_on_channel_send: false
+  windows_registry_cache_max: 4096
+  windows_write_event_rate_limiter_max_allowed: 4096
+  windows_write_event_rate_limiter_period: 1s
+service_monitoring_config:
+  data_channel_size: 100
+  direct_consumer:
+    buffer_wakeup_count_per_cpu: 8
+    channel_size: 1000
+    kernel_buffer_size_per_cpu: 65536
+  disable_map_preallocation: true
+  enable_event_stream: true
+  enable_http_monitoring: true
+  enable_http2_monitoring: false
+  enable_kafka_monitoring: false
+  enable_ring_buffers: true
+  enabled: false
+  http:
+    enabled: true
+    idle_connection_ttl_seconds: 30
+    map_cleaner_interval_seconds: 300
+    max_request_fragment: 512
+    max_stats_buffered: 100000
+    max_tracked_connections: 1024
+    notification_threshold: 512
+    use_direct_consumer: false
+  http_idle_connection_ttl_in_s: 30
+  http_map_cleaner_interval_in_s: 300
+  http_max_request_fragment: 512
+  http_notification_threshold: 512
+  http2:
+    dynamic_table_map_cleaner_interval_seconds: 30
+    enabled: false
+  http2_dynamic_table_map_cleaner_interval_seconds: 30
+  kafka:
+    enabled: false
+    max_stats_buffered: 100000
+  kernel_buffer_pages: 16
+  max_concurrent_requests: 131072
+  max_http_stats_buffered: 100000
+  max_kafka_stats_buffered: 100000
+  max_tracked_http_connections: 1024
+  postgres:
+    enabled: false
+    max_stats_buffered: 100000
+    max_telemetry_buffer: 160
+  redis:
+    enabled: false
+    max_stats_buffered: 100000
+    track_resources: false
+  tls:
+    go:
+      enabled: true
+      exclude_self: true
+    istio:
+      enabled: true
+      envoy_path: /bin/envoy
+    native:
+      enabled: true
+system_probe_config:
+  adjusted: true
+  allow_runtime_compiled_fallback: true
+  apt_config_dir: /host/etc/apt
+  attach_kprobes_with_kprobe_events_abi: false
+  bpf_debug: false
+  bpf_dir: /opt/datadog-agent/embedded/share/system-probe/ebpf
+  btf_output_dir: /var/tmp/datadog-agent/system-probe/btf
+  btf_path: ""
+  collect_dns_domains: true
+  collect_dns_stats: true
+  collect_local_dns: false
+  conntrack_max_state_size: 131072
+  conntrack_rate_limit: 500
+  debug_port: 0
+  dest_excludes: {}
+  disable_dns_inspection: false
+  disable_ipv6: false
+  disable_tcp: false
+  disable_thp: true
+  disable_udp: false
+  dns_timeout_in_s: 15
+  enable_co_re: true
+  enable_conntrack: true
+  enable_conntrack_all_namespaces: true
+  enable_oom_kill: false
+  enable_tcp_queue_length: false
+  enable_tracepoints: false
+  enabled: true
+  excluded_linux_versions: []
+  expected_tags_duration: 30m0s
+  external: false
+  health_port: 0
+  http_idle_connection_ttl_in_s: 30
+  http_map_cleaner_interval_in_s: 300
+  internal_profiling:
+    api_key: '***************************d065d'
+    block_profile_rate: 0
+    cpu_duration: 1m0s
+    custom_attributes:
+      - module
+      - rule_id
+    delta_profiles: true
+    enable_block_profiling: false
+    enable_goroutine_stacktraces: false
+    enable_mutex_profiling: false
+    enabled: false
+    env: ""
+    extra_tags: []
+    mutex_profile_fraction: 0
+    period: 5m0s
+    profile_dd_url: ""
+    site: datadoghq.com
+    unix_socket: ""
+  kernel_header_dirs: []
+  kernel_header_download_dir: /var/tmp/datadog-agent/system-probe/kernel-headers
+  language_detection:
+    enabled: false
+  log_file: ""
+  log_level: ""
+  max_closed_connections_buffered: 131072
+  max_connection_state_buffered: 75000
+  max_conns_per_message: 600
+  max_dns_stats: 20000
+  max_tracked_connections: 131072
+  memory_controller:
+    enabled: false
+    hierarchy: v1
+    pressure_levels: {}
+    thresholds: {}
+  offset_guess_threshold: 400
+  process_config:
+    enabled: false
+  process_service_inference:
+    enabled: false
+    use_improved_algorithm: false
+    use_windows_service_name: true
+  remote_config_btf_enabled: false
+  runtime_compiler_output_dir: /var/tmp/datadog-agent/system-probe/build
+  source_excludes: {}
+  sysprobe_socket: /var/run/sysprobe/sysprobe.sock
+  telemetry_enabled: false
+  telemetry_perf_buffer_emit_per_cpu: false
+  windows:
+    enable_monotonic_count: false
+  yum_repos_dir: /host/etc/yum.repos.d
+  zypper_repos_dir: /host/etc/zypp/repos.d
+traceroute:
+  enabled: false

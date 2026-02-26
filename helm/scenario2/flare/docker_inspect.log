@@ -1,0 +1,596 @@
+{
+	"Id": "0be18888ad8e491cd0b2e9ca9aed8c80d39ca82fb115e8b334a95299a037bbd7",
+	"Created": "2026-02-26T18:46:54.853186Z",
+	"Path": "agent",
+	"Args": [
+		"run"
+	],
+	"State": {
+		"Status": "running",
+		"Running": true,
+		"Paused": false,
+		"Restarting": false,
+		"OOMKilled": false,
+		"Dead": false,
+		"Pid": 55939,
+		"ExitCode": 0,
+		"Error": "",
+		"StartedAt": "2026-02-26T18:46:54.87277425Z",
+		"FinishedAt": "0001-01-01T00:00:00Z"
+	},
+	datadoghq.azurecr.io/agent:7.75.4,
+	"ResolvConfPath": "/var/lib/docker/containers/c48b1a8eea26b1d97a1a0196ce3aec82a716154635e5774c3a2c25b5e85828c1/resolv.conf",
+	"HostnamePath": "/var/lib/docker/containers/c48b1a8eea26b1d97a1a0196ce3aec82a716154635e5774c3a2c25b5e85828c1/hostname",
+	"HostsPath": "/var/lib/kubelet/pods/3611c5d8-6624-4102-88df-04a77237846b/etc-hosts",
+	"LogPath": "/var/lib/docker/containers/0be18888ad8e491cd0b2e9ca9aed8c80d39ca82fb115e8b334a95299a037bbd7/0be18888ad8e491cd0b2e9ca9aed8c80d39ca82fb115e8b334a95299a037bbd7-json.log",
+	"Name": "/k8s_agent_datadog-gkwbc_default_3611c5d8-6624-4102-88df-04a77237846b_0",
+	"RestartCount": 0,
+	"Driver": "overlay2",
+	"Platform": "linux",
+	"MountLabel": "",
+	"ProcessLabel": "",
+	"AppArmorProfile": "",
+	"ExecIDs": [
+		"ab0f41b54f7ef5db81595208f64af33f6dac60c3465a99992e441171ffc2f1db"
+	],
+	"HostConfig": {
+		"Binds": null,
+		"ContainerIDFile": "",
+		"LogConfig": {
+			"Type": "json-file",
+			"Config": {
+				"max-size": "100m"
+			}
+		},
+		"NetworkMode": "container:c48b1a8eea26b1d97a1a0196ce3aec82a716154635e5774c3a2c25b5e85828c1",
+		"PortBindings": {},
+		"RestartPolicy": {
+			"Name": "no",
+			"MaximumRetryCount": 0
+		},
+		"AutoRemove": false,
+		"VolumeDriver": "",
+		"VolumesFrom": null,
+		"ConsoleSize": [
+			0,
+			0
+		],
+		"CapAdd": null,
+		"CapDrop": null,
+		"CgroupnsMode": "private",
+		"Dns": null,
+		"DnsOptions": null,
+		"DnsSearch": null,
+		"ExtraHosts": null,
+		"GroupAdd": null,
+		"IpcMode": "container:c48b1a8eea26b1d97a1a0196ce3aec82a716154635e5774c3a2c25b5e85828c1",
+		"Cgroup": "",
+		"Links": null,
+		"OomScoreAdj": 1000,
+		"PidMode": "host",
+		"Privileged": false,
+		"PublishAllPorts": false,
+		"ReadonlyRootfs": true,
+		"SecurityOpt": [
+			"seccomp=unconfined",
+			"label=disable"
+		],
+		"UTSMode": "",
+		"UsernsMode": "",
+		"ShmSize": 67108864,
+		"Runtime": "runc",
+		"Isolation": "",
+		"CpuShares": 2,
+		"Memory": 0,
+		"NanoCpus": 0,
+		"CgroupParent": "/kubepods/besteffort/pod3611c5d8-6624-4102-88df-04a77237846b",
+		"BlkioWeight": 0,
+		"BlkioWeightDevice": null,
+		"BlkioDeviceReadBps": null,
+		"BlkioDeviceWriteBps": null,
+		"BlkioDeviceReadIOps": null,
+		"BlkioDeviceWriteIOps": null,
+		"CpuPeriod": 100000,
+		"CpuQuota": 0,
+		"CpuRealtimePeriod": 0,
+		"CpuRealtimeRuntime": 0,
+		"CpusetCpus": "",
+		"CpusetMems": "",
+		"Devices": [],
+		"DeviceCgroupRules": null,
+		"DeviceRequests": null,
+		"MemoryReservation": 0,
+		"MemorySwap": 0,
+		"MemorySwappiness": null,
+		"OomKillDisable": null,
+		"PidsLimit": null,
+		"Ulimits": [
+			{
+				"Name": "nofile",
+				"Hard": 1048576,
+				"Soft": 1048576
+			}
+		],
+		"CpuCount": 0,
+		"CpuPercent": 0,
+		"IOMaximumIOps": 0,
+		"IOMaximumBandwidth": 0,
+		"Mounts": [
+			{
+				"Type": "bind",
+				"Source": "/var/lib/kubelet/pods/3611c5d8-6624-4102-88df-04a77237846b/volumes/kubernetes.io~empty-dir/logdatadog",
+				"Target": "/var/log/datadog",
+				"BindOptions": {
+					"CreateMountpoint": true
+				}
+			},
+			{
+				"Type": "bind",
+				"Source": "/var/lib/kubelet/pods/3611c5d8-6624-4102-88df-04a77237846b/volume-subpaths/installinfo/agent/1",
+				"Target": "/etc/datadog-agent/install_info",
+				"ReadOnly": true,
+				"BindOptions": {
+					"CreateMountpoint": true,
+					"ReadOnlyNonRecursive": true
+				}
+			},
+			{
+				"Type": "bind",
+				"Source": "/var/lib/kubelet/pods/3611c5d8-6624-4102-88df-04a77237846b/volumes/kubernetes.io~empty-dir/tmpdir",
+				"Target": "/tmp",
+				"BindOptions": {
+					"CreateMountpoint": true
+				}
+			},
+			{
+				"Type": "bind",
+				"Source": "/etc/os-release",
+				"Target": "/host/etc/os-release",
+				"ReadOnly": true,
+				"BindOptions": {
+					"CreateMountpoint": true,
+					"ReadOnlyNonRecursive": true
+				}
+			},
+			{
+				"Type": "bind",
+				"Source": "/var/lib/kubelet/pods/3611c5d8-6624-4102-88df-04a77237846b/volumes/kubernetes.io~empty-dir/config",
+				"Target": "/etc/datadog-agent",
+				"BindOptions": {
+					"CreateMountpoint": true
+				}
+			},
+			{
+				"Type": "bind",
+				"Source": "/var/lib/kubelet/pods/3611c5d8-6624-4102-88df-04a77237846b/volumes/kubernetes.io~empty-dir/auth-token",
+				"Target": "/etc/datadog-agent/auth",
+				"BindOptions": {
+					"CreateMountpoint": true
+				}
+			},
+			{
+				"Type": "bind",
+				"Source": "/var/run",
+				"Target": "/host/var/run",
+				"ReadOnly": true,
+				"BindOptions": {
+					"CreateMountpoint": true,
+					"ReadOnlyNonRecursive": true
+				}
+			},
+			{
+				"Type": "bind",
+				"Source": "/var/run/datadog",
+				"Target": "/var/run/datadog",
+				"BindOptions": {
+					"CreateMountpoint": true
+				}
+			},
+			{
+				"Type": "bind",
+				"Source": "/var/lib/kubelet/pods/3611c5d8-6624-4102-88df-04a77237846b/volumes/kubernetes.io~empty-dir/sysprobe-socket-dir",
+				"Target": "/var/run/sysprobe",
+				"ReadOnly": true,
+				"BindOptions": {
+					"CreateMountpoint": true,
+					"ReadOnlyNonRecursive": true
+				}
+			},
+			{
+				"Type": "bind",
+				"Source": "/var/lib/kubelet/pods/3611c5d8-6624-4102-88df-04a77237846b/volume-subpaths/sysprobe-config/agent/9",
+				"Target": "/etc/datadog-agent/system-probe.yaml",
+				"ReadOnly": true,
+				"BindOptions": {
+					"CreateMountpoint": true,
+					"ReadOnlyNonRecursive": true
+				}
+			},
+			{
+				"Type": "bind",
+				"Source": "/proc",
+				"Target": "/host/proc",
+				"ReadOnly": true,
+				"BindOptions": {
+					"CreateMountpoint": true,
+					"ReadOnlyNonRecursive": true
+				}
+			},
+			{
+				"Type": "bind",
+				"Source": "/sys/fs/cgroup",
+				"Target": "/host/sys/fs/cgroup",
+				"ReadOnly": true,
+				"BindOptions": {
+					"CreateMountpoint": true,
+					"ReadOnlyNonRecursive": true
+				}
+			},
+			{
+				"Type": "bind",
+				"Source": "/etc/passwd",
+				"Target": "/etc/passwd",
+				"ReadOnly": true,
+				"BindOptions": {
+					"CreateMountpoint": true,
+					"ReadOnlyNonRecursive": true
+				}
+			},
+			{
+				"Type": "bind",
+				"Source": "/var/lib/datadog-agent/logs",
+				"Target": "/opt/datadog-agent/run",
+				"BindOptions": {
+					"CreateMountpoint": true
+				}
+			},
+			{
+				"Type": "bind",
+				"Source": "/var/log/pods",
+				"Target": "/var/log/pods",
+				"ReadOnly": true,
+				"BindOptions": {
+					"CreateMountpoint": true,
+					"ReadOnlyNonRecursive": true
+				}
+			},
+			{
+				"Type": "bind",
+				"Source": "/var/log/containers",
+				"Target": "/var/log/containers",
+				"ReadOnly": true,
+				"BindOptions": {
+					"CreateMountpoint": true,
+					"ReadOnlyNonRecursive": true
+				}
+			},
+			{
+				"Type": "bind",
+				"Source": "/var/lib/docker/containers",
+				"Target": "/var/lib/docker/containers",
+				"ReadOnly": true,
+				"BindOptions": {
+					"CreateMountpoint": true,
+					"ReadOnlyNonRecursive": true
+				}
+			},
+			{
+				"Type": "bind",
+				"Source": "/var/lib/kubelet/pods/3611c5d8-6624-4102-88df-04a77237846b/volumes/kubernetes.io~projected/kube-api-access-sgl6l",
+				"Target": "/var/run/secrets/kubernetes.io/serviceaccount",
+				"ReadOnly": true,
+				"BindOptions": {
+					"CreateMountpoint": true,
+					"ReadOnlyNonRecursive": true
+				}
+			},
+			{
+				"Type": "bind",
+				"Source": "/var/lib/kubelet/pods/3611c5d8-6624-4102-88df-04a77237846b/etc-hosts",
+				"Target": "/etc/hosts",
+				"BindOptions": {
+					"CreateMountpoint": true
+				}
+			},
+			{
+				"Type": "bind",
+				"Source": "/var/lib/kubelet/pods/3611c5d8-6624-4102-88df-04a77237846b/containers/agent/487a6171",
+				"Target": "/dev/termination-log",
+				"BindOptions": {
+					"CreateMountpoint": true
+				}
+			}
+		],
+		"MaskedPaths": [
+			"/proc/asound",
+			"/proc/acpi",
+			"/proc/interrupts",
+			"/proc/kcore",
+			"/proc/keys",
+			"/proc/latency_stats",
+			"/proc/timer_list",
+			"/proc/timer_stats",
+			"/proc/sched_debug",
+			"/proc/scsi",
+			"/sys/firmware",
+			"/sys/devices/virtual/powercap"
+		],
+		"ReadonlyPaths": [
+			"/proc/bus",
+			"/proc/fs",
+			"/proc/irq",
+			"/proc/sys",
+			"/proc/sysrq-trigger"
+		]
+	},
+	"GraphDriver": {
+		"Data": {
+			"ID": "0be18888ad8e491cd0b2e9ca9aed8c80d39ca82fb115e8b334a95299a037bbd7",
+			"LowerDir": "/var/lib/docker/overlay2/7109b0447793277c24bbb80993383afb9847e57295cdfd757f57a64ea10fa807-init/diff:/var/lib/docker/overlay2/49ec21ca5132ca052c8bc0ded5fbaf0648ccd6229e0f6211222a1a3108244ae5/diff",
+			"MergedDir": "/var/lib/docker/overlay2/7109b0447793277c24bbb80993383afb9847e57295cdfd757f57a64ea10fa807/merged",
+			"UpperDir": "/var/lib/docker/overlay2/7109b0447793277c24bbb80993383afb9847e57295cdfd757f57a64ea10fa807/diff",
+			"WorkDir": "/var/lib/docker/overlay2/7109b0447793277c24bbb80993383afb9847e57295cdfd757f57a64ea10fa807/work"
+		},
+		"Name": "overlay2"
+	},
+	"Mounts": [
+		{
+			"Type": "bind",
+			"Source": "/sys/fs/cgroup",
+			"Destination": "/host/sys/fs/cgroup",
+			"Mode": "",
+			"RW": false,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "/etc/passwd",
+			"Destination": "/etc/passwd",
+			"Mode": "",
+			"RW": false,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "/var/lib/kubelet/pods/3611c5d8-6624-4102-88df-04a77237846b/etc-hosts",
+			"Destination": "/etc/hosts",
+			"Mode": "",
+			"RW": true,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "/var/lib/kubelet/pods/3611c5d8-6624-4102-88df-04a77237846b/volumes/kubernetes.io~empty-dir/logdatadog",
+			"Destination": "/var/log/datadog",
+			"Mode": "",
+			"RW": true,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "/var/lib/kubelet/pods/3611c5d8-6624-4102-88df-04a77237846b/volumes/kubernetes.io~empty-dir/config",
+			"Destination": "/etc/datadog-agent",
+			"Mode": "",
+			"RW": true,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "/var/run",
+			"Destination": "/host/var/run",
+			"Mode": "",
+			"RW": false,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "/var/lib/kubelet/pods/3611c5d8-6624-4102-88df-04a77237846b/volume-subpaths/sysprobe-config/agent/9",
+			"Destination": "/etc/datadog-agent/system-probe.yaml",
+			"Mode": "",
+			"RW": false,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "/var/lib/datadog-agent/logs",
+			"Destination": "/opt/datadog-agent/run",
+			"Mode": "",
+			"RW": true,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "/var/log/pods",
+			"Destination": "/var/log/pods",
+			"Mode": "",
+			"RW": false,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "/var/lib/docker/containers",
+			"Destination": "/var/lib/docker/containers",
+			"Mode": "",
+			"RW": false,
+			"Propagation": "rslave"
+		},
+		{
+			"Type": "bind",
+			"Source": "/var/lib/kubelet/pods/3611c5d8-6624-4102-88df-04a77237846b/volume-subpaths/installinfo/agent/1",
+			"Destination": "/etc/datadog-agent/install_info",
+			"Mode": "",
+			"RW": false,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "/var/lib/kubelet/pods/3611c5d8-6624-4102-88df-04a77237846b/volumes/kubernetes.io~empty-dir/tmpdir",
+			"Destination": "/tmp",
+			"Mode": "",
+			"RW": true,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "/var/lib/kubelet/pods/3611c5d8-6624-4102-88df-04a77237846b/volumes/kubernetes.io~projected/kube-api-access-sgl6l",
+			"Destination": "/var/run/secrets/kubernetes.io/serviceaccount",
+			"Mode": "",
+			"RW": false,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "/var/lib/kubelet/pods/3611c5d8-6624-4102-88df-04a77237846b/containers/agent/487a6171",
+			"Destination": "/dev/termination-log",
+			"Mode": "",
+			"RW": true,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "/etc/os-release",
+			"Destination": "/host/etc/os-release",
+			"Mode": "",
+			"RW": false,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "/var/lib/kubelet/pods/3611c5d8-6624-4102-88df-04a77237846b/volumes/kubernetes.io~empty-dir/sysprobe-socket-dir",
+			"Destination": "/var/run/sysprobe",
+			"Mode": "",
+			"RW": false,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "/var/log/containers",
+			"Destination": "/var/log/containers",
+			"Mode": "",
+			"RW": false,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "volume",
+			"Name": "575c1571100ccb1d345ee1ea284a7c9ada981bd72fefd93fc3b51112ca29e85f",
+			"Source": "/var/lib/docker/volumes/575c1571100ccb1d345ee1ea284a7c9ada981bd72fefd93fc3b51112ca29e85f/_data",
+			"Destination": "/var/run/s6",
+			"Driver": "local",
+			"Mode": "",
+			"RW": true,
+			"Propagation": ""
+		},
+		{
+			"Type": "bind",
+			"Source": "/var/lib/kubelet/pods/3611c5d8-6624-4102-88df-04a77237846b/volumes/kubernetes.io~empty-dir/auth-token",
+			"Destination": "/etc/datadog-agent/auth",
+			"Mode": "",
+			"RW": true,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "/var/run/datadog",
+			"Destination": "/var/run/datadog",
+			"Mode": "",
+			"RW": true,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "/proc",
+			"Destination": "/host/proc",
+			"Mode": "",
+			"RW": false,
+			"Propagation": "rprivate"
+		}
+	],
+	"Config": {
+		"Hostname": "datadog-gkwbc",
+		"Domainname": "",
+		"User": "0",
+		"AttachStdin": false,
+		"AttachStdout": false,
+		"AttachStderr": false,
+		"ExposedPorts": {
+			"8125/udp": {},
+			"8126/tcp": {}
+		},
+		"Tty": false,
+		"OpenStdin": false,
+		"StdinOnce": false,
+		"Env": [
+			"Stripped out",
+			"See runtime_config_dump.yaml for consolidated configuration",
+			"and envvars.log for whitelisted envvars if found"
+		],
+		"Cmd": null,
+		"Healthcheck": {
+			"Test": [
+				"NONE"
+			],
+			"Interval": 30000000000,
+			"Timeout": 5000000000,
+			"Retries": 2
+		},
+		datadoghq.azurecr.io/agent:7.75.4,
+		"Volumes": {
+			"/var/log/datadog": {},
+			"/var/run/s6": {}
+		},
+		"WorkingDir": "",
+		"Entrypoint": [
+			"agent",
+			"run"
+		],
+		"OnBuild": null,
+		"Labels": {
+			"annotation.io.kubernetes.container.hash": "a35da78c",
+			"annotation.io.kubernetes.container.ports": "[{\"name\":\"dogstatsdport\",\"containerPort\":8125,\"protocol\":\"UDP\"}]",
+			"annotation.io.kubernetes.container.restartCount": "0",
+			"annotation.io.kubernetes.container.terminationMessagePath": "/dev/termination-log",
+			"annotation.io.kubernetes.container.terminationMessagePolicy": "File",
+			"annotation.io.kubernetes.pod.terminationGracePeriod": "30",
+			"baseimage.name": "ubuntu:24.04",
+			"baseimage.os": "ubuntu noble",
+			"io.kubernetes.container.logpath": "/var/log/pods/default_datadog-gkwbc_3611c5d8-6624-4102-88df-04a77237846b/agent/0.log",
+			"io.kubernetes.container.name": "agent",
+			"io.kubernetes.docker.type": "container",
+			"io.kubernetes.pod.name": "datadog-gkwbc",
+			"io.kubernetes.pod.namespace": "default",
+			"io.kubernetes.pod.uid": "3611c5d8-6624-4102-88df-04a77237846b",
+			"io.kubernetes.sandbox.id": "c48b1a8eea26b1d97a1a0196ce3aec82a716154635e5774c3a2c25b5e85828c1",
+			"maintainer": "Datadog \u003cpackage@datadoghq.com\u003e",
+			"org.opencontainers.image.authors": "Datadog \u003cpackage@datadoghq.com\u003e",
+			"org.opencontainers.image.base.name": "ubuntu:24.04",
+			"org.opencontainers.image.created": "2026-02-16 09:52:50+00:00",
+			"org.opencontainers.image.ref.name": "ubuntu",
+			"org.opencontainers.image.revision": "***********************************75d38",
+			"org.opencontainers.image.source": "https://github.com/DataDog/datadog-agent",
+			"org.opencontainers.image.title": "Datadog Agent",
+			"org.opencontainers.image.vendor": "Datadog, Inc.",
+			"org.opencontainers.image.version": "7.75.4",
+			"target": "none"
+		}
+	},
+	"NetworkSettings": {
+		"Bridge": "",
+		"SandboxID": "",
+		"SandboxKey": "",
+		"Ports": {},
+		"HairpinMode": false,
+		"LinkLocalIPv6Address": "",
+		"LinkLocalIPv6PrefixLen": 0,
+		"SecondaryIPAddresses": null,
+		"SecondaryIPv6Addresses": null,
+		"EndpointID": "",
+		"Gateway": "",
+		"GlobalIPv6Address": "",
+		"GlobalIPv6PrefixLen": 0,
+		"IPAddress": "",
+		"IPPrefixLen": 0,
+		"IPv6Gateway": "",
+		"MacAddress": "",
+		"Networks": {}
+	}
+}

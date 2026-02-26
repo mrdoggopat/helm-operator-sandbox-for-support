@@ -1,0 +1,1 @@
+command failed: exec: "sestatus": executable file not found in $PATH
