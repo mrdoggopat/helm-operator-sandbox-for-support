@@ -21,7 +21,7 @@ datadog:
       value: "10m"
   # SOLUTION originally they had env: dev so the tag populated as dev:dev instead of env:dev
   podLabelsAsTags:
-    env: dev
+    env: env
   logs:
     enabled: true
     containerCollectAll: true
